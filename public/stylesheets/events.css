@@ -1,0 +1,29 @@
+/*
+ * @pages: /templates/events_view.php
+ */
+
+#event_form
+{
+    float: left;
+    margin: 5px;
+    padding: 10px;
+    width: 50%;
+}
+
+#event_form input
+{
+    margin-top: 5px;
+    width: 75%;
+}
+
+#event_form label
+{
+    font-weight: bold;
+    padding: 5px;
+}
+
+#event_register_announcement_a
+{
+    text-align:left;
+    font-weight:bold;
+}
