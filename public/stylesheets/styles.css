@@ -1,0 +1,310 @@
+.text
+{
+	font-size: 15px;
+	-webkit-font-smoothing: antialiased;
+	font-family: 'Open Sans', arial;
+	font-weight:300;
+	color:#555;
+}
+
+.header_title
+{
+	font-size: 38px;
+	font-weight:300;
+	text-align:center;
+}
+.header_subtitle
+{
+	font-size: 24px;
+	font-weight:200;
+	text-align:center;
+}
+
+.header_apology
+{
+    color:#F00;
+	text-align:center;
+}
+
+.text_apology
+{
+    color:#F00;
+}
+
+.form_text
+{
+	margin-bottom:0;
+	direction: ltr;
+	height: 44px;
+	font-size: 16px;
+	width: 20%;
+	display: block;
+	z-index: 1;
+	position: relative;
+	box-sizing: border-box;
+	padding: 0 8px;
+	margin: 0;
+	background: #fff;
+	border: 1px solid #d9d9d9;
+	border-top: 1px solid #c0c0c0;
+}
+
+.form_submit
+{
+	width: 20%;
+	display: block;
+	margin-bottom: 10px;
+	z-index: 1;
+	position: relative;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 10;
+	font-family: Arial, sans-serif;
+	font-size: 13px;
+	border: 1px solid #3079ed;
+	color: #fff;
+	text-shadow: 0 1px rgba(0,0,0,0.1);
+	background-color: #4d90fe;
+	background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);
+	font-weight: 700;
+	height: 36px;
+}
+
+.margin_body
+{
+    margin: 100px;
+    margin-top: 0px;
+    padding: 100;
+    border: 200;
+    display: block;
+
+}
+
+.margin_body_lower
+{
+    margin: 35px;
+    margin-top: 0px;
+    padding: 100;
+    border: 200;
+    display: block;
+
+}
+
+a:link { text-decoration:none; }
+a:visited { color: #0000EE; text-decoration:none; }
+a:hover { text-decoration:none; }
+a:active { text-decoration:none; }
+
+.navbar
+{
+    background-color: #f7f7f7;
+    margin-top:85px;
+    padding:10px;
+    padding-left:15px;
+}
+
+.navbar ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li
+{
+    float: left;
+    text-align:center;
+}
+
+.navbar a
+{
+    display: block;
+    width: 150px;
+    font-family: verdana, helvetica, arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    height: 17px;
+    color: #555;
+}
+
+.navbar a:hover
+{
+    color: #000;
+}
+
+.navbar #current_navpos
+{
+    color: #000;
+}
+
+/*
+ * Stylization specific to log-in page 
+ */
+
+#loginform
+{
+	background-color: #f7f7f7;
+	padding: 10px 10px;
+	display: block;
+	margin: 0 auto 25px;
+	border-radius: 2px;
+	margin-bottom: 20px;
+}
+
+/*
+ * Stylization specific to sign-up page 
+ */
+
+.recover_contraction
+{
+    width: 60%;
+}
+
+.aboutus_header
+{
+    text-align:justify;
+    margin:10px;
+}
+
+ .youtube_video
+{
+    margin-left:10px;
+}
+
+#register_birthday_month
+{
+    -webkit-user-select: none;
+    background-color: rgb(245, 245, 245);
+    background-image: -webkit-linear-gradient(top, rgb(245, 245, 245), rgb(241, 241, 241));
+    border-bottom-color: rgb(220, 220, 220);
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-image-outset: 0px;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-color: rgb(220, 220, 220);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: rgb(220, 220, 220);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: rgb(220, 220, 220);
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    color: rgb(68, 68, 68);
+    cursor: default;
+    direction: ltr;
+    display: inline-block;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    height: 40px;
+    line-height: 27px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: -3px;
+    min-width: 46px;
+    outline-color: rgb(68, 68, 68);
+    outline-style: none;
+    outline-width: 0px;
+    padding-bottom: 0px;
+    padding-left: 6px;
+    padding-right: 18px;
+    padding-top: 0px;
+    position: relative;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 60%;
+}
+
+#signup
+{
+	background-color: #f7f7f7;
+    width: 50%;
+    float: right;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: block;
+}
+
+#signup_about
+{
+    width: 50%;
+	text-align:center;
+    float: left;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: block;
+}
+
+#signup_box
+{
+	background-color: #f7f7f7;
+    width: 80%;
+    float: center;
+    padding: 0;
+    border: 0;
+    display: block;
+    text-align:left;
+}
+
+/*
+ * Stylization specific to events_view
+ */
+
+#header_dashboard_redirect
+{
+    width:10%;
+    float:right;
+    margin-right:75px;
+    margin-top:25px;
+}
+
+#event_form
+{
+    float: left;
+    margin: 5px;
+    padding: 10px;
+    width: 50%;
+}
+
+#event_form input
+{
+    margin-top: 5px;
+    width: 75%;
+}
+
+#event_form label
+{
+    font-weight: bold;
+    padding: 5px;
+}
+
+#event_register_announcement_a
+{
+    text-align:left;
+    font-weight:bold;
+}
+
+#courseware_main_nav
+{
+    float: left;
+    padding: 10px;
+    width: 20%;
+    background-color: #555;
+}
