@@ -5,8 +5,10 @@
 
     if($_SESSION["access"] == "Developer")
     {
-        // render events view
-        render("events_view.php");
+        // render under development page
+        render("under_development.php", ["catchnotimplementederror" => "Some subsections of this page have been built in part.
+        Development of the index page has not yet started. Redirect to <a href=\"".CONTROLLER."/eventforms_cont.php?f=event_1\"> 
+        Event Registeration form for NSEJS </a>"]);
     }
     else
     {

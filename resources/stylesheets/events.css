@@ -1,0 +1,75 @@
+/*
+ * @pages: /templates/events_view.php
+ */
+
+#event_form
+{
+    float: left;
+    margin: 5px;
+    padding: 10px;
+    width: 45%;
+}
+
+#event_form input[type="text"]
+{
+    margin-top: 5px;
+    width: 75%;
+    font-size:15px;
+}
+
+#event_form input[type="email"]
+{
+    margin-top: 5px;
+    width: 75%;
+    font-size:15px;
+}
+
+#event_form input[type="submit"]
+{
+    margin-top: 15px;
+    margin-left: 20px;
+    width: 30%
+}
+
+#event_form input[type="radio"]
+{
+    margin-left:25px;
+}
+
+#event_form label
+{
+    font-weight: bold;
+    padding: 5px;
+}
+
+#event_form input[type="submit"]
+{
+	display:inline;
+}
+
+#event_notice
+{
+    float: right;
+    margin: 5px;
+    padding: 10px;
+    width: 50%;
+}
+
+#event_notice div
+{
+    text-align: justify;
+}
+
+#event_register_announcement_a
+{
+    text-align:left;
+    font-weight:bold;
+}
+
+.header_eventform
+{
+	font-size: 20px;
+	font-weight:200;
+	text-align:center;
+	text-decoration:underline;
+}

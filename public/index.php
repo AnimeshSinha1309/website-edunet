@@ -5,11 +5,12 @@
     
     // get catchnotimplementederror message ready
     if ($_SESSION["access"] == "Developer")
-        $catchnotimplementederror = "Work on this page has not yet started. Any plans will be available on the Google
-        drive and Google+ page as soon as they are made, and all developers will be notified by Email.";
+        $catchnotimplementederror = "Since this page has a lot of dynamic content, I would need quite a bit of help. This
+        page has just started, and has a long way to go before being complete, so please help.";
     else
-        $catchnotimplementederror = "Work on this page has not yet started.";
+        $catchnotimplementederror = "Work on this page has not yet started. Dynamic content would take 
+        significant time to be prepared.";
 
     // render the under development page
-    render("under_development.php", ["catchnotimplementederror" => $catchnotimplementederror]);
+    render("home.php", ["catchnotimplementederror" => $catchnotimplementederror]);
 ?>

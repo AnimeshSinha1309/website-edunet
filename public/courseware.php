@@ -2,7 +2,7 @@
 
     // configuration
     require("../includes/config.php"); 
-
+    
     if($_SESSION["access"] == "Developer")
     {
         // render courseware page

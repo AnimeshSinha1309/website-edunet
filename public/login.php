@@ -38,7 +38,7 @@
                 $_SESSION["access"] = $row["account"];
 
                 // redirect to portfolio
-                redirect("/");
+                redirect(CONTROLLER."/");
             }
         }
 

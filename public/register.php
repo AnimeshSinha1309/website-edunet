@@ -16,10 +16,12 @@
             $timestamp = $_POST["BirthDate"] . '/' . $_POST["BirthMonth"] . '/' . $_POST["BirthYear"];
             $timestamp = date_create_from_format('d/m/Y', $timestamp);
             $timestamp = date_format($timestamp, 'Y-m-d');
-
+            
+            // TODO: Check if all data is valid
             // query into the database to add the user with all his details
-            $register_flag = query("INSERT INTO users (firstname, lastname, password, username, birthday, school, grade, googleacc, account) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)", 
-            $_POST["FirstName"], $_POST["LastName"], crypt($_POST["Password"]), $_POST["Username"], $timestamp, $_POST["School"], $_POST["Grade"], $_POST["GoogleAcc"], $_POST["Account"]);
+            if(!isset($_POST["Intro"])) $_POST["Intro"] = NULL;
+            $register_flag = query("INSERT INTO users (firstname, lastname, password, username, birthday, school, grade, googleacc, account, intro) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
+            $_POST["FirstName"], $_POST["LastName"], crypt($_POST["Password"]), $_POST["Username"], $timestamp, $_POST["School"], $_POST["Grade"], $_POST["GoogleAcc"], $_POST["Account"], $_POST["Intro"]);
 
             // handle exception if query could not be completed
             if ($register_flag === false)
@@ -41,7 +43,7 @@
                 $_SESSION["name"] = $row["firstname"] . " " . $row["lastname"]; 
 
                 // redirect to home page after logging the user in
-                redirect("./index.php");
+                redirect(CONTROLLER."/index.php");
             }
         }
         // if all required fields are not filled
