@@ -23,11 +23,12 @@
     define("USERNAME", "jharvard");
     
     // links to resources
-    define("IMAGES", "/edunet/resources/images");
-    define("STYLESHEETS", "/edunet/resources/stylesheets");
+    define("IMAGES", "/edunet/images");
+    define("STYLESHEETS", "/edunet/stylesheets");
     define("CONTROLLER", "/edunet/public");
     define("TEMPLATES", "/edunet/templates");
     define("INCLUDES", "/edunet/includes");
+    define("JAVASCRIPT", "/edunet/javascript");
     
     /*
      * The following hardcoded links exist in the follwing files

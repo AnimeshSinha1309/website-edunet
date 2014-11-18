@@ -39,6 +39,12 @@
         // SQL statement
         $sql = func_get_arg(0);
 
+        // protect against injection attacks
+        foreach(func_get_args() as $argument)
+        {
+            $agument = htmlspecialchars($argument);
+        } 
+
         // parameters, if any
         $parameters = array_slice(func_get_args(), 1);
 
@@ -130,12 +136,6 @@
         // if template exists, render it
         if (file_exists("../templates/$template"))
         {
-            // sanitize all arguments
-            foreach($values as $value)
-            {
-                $value = htmlspecialchars($value);
-            }
-            
             // extract variables into local scope
             extract($values);
 

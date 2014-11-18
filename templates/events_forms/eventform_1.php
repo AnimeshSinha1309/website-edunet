@@ -34,8 +34,8 @@
             <br/><br/><hr/>
             <br/> <input name="pay" type="checkbox" class="form_checkbox"> <span class="text"> I will be paying the registeration fee of Rs. 100 to the concerned teacher </span> </input>
             <br/> <input class="form_submit" type="submit" value="Sign up for NSEJS"/>
-            <input class="form_submit_red" type="submit" value="View Database"/>
         </form>
+        <a <?php print("href=".CONTROLLER."/eventforms_cont.php?d=event_1"); ?>> <input class="form_submit_red" type="submit" value="View Database"/> </a>
     </div>
     <div id="event_notice">
         <div class="text">
