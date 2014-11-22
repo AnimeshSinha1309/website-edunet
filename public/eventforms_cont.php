@@ -10,10 +10,13 @@
     }
     if (isset($_GET["d"]))
     {
-        // query the database for the entire data on registerations
-        $rows = query("SELECT * FROM " . $_GET["d"]);
+        // get catchnotimplementederror message ready
+        if ($_SESSION["access"] == "Developer")
+            $catchnotimplementederror = "Work on this page has not yet started. All developers will be notified of any new data via Github.";
+        else
+            $catchnotimplementederror = "Work on this page has not yet started.";
 
-        // render the template to show the signup database
-        render("events_showdata.php", ["rows" => $rows]);
+        // render the under development page
+        render("under_development.php", ["catchnotimplementederror" => $catchnotimplementederror]);
     }
 ?>

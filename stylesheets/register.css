@@ -1,0 +1,58 @@
+/*
+ * @pages: /templates/register_form.php 
+ */
+
+.header_aboutus
+{
+    text-align:justify;
+    margin:10px;
+}
+
+#signup_form
+{
+	background-color: #f7f7f7;
+    width: 50%;
+    float: right;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: block;
+}
+
+#signup_about
+{
+    width: 50%;
+	text-align:center;
+    float: left;
+    margin: 0;
+    padding: 0px;
+    border: 0;
+    display: block;
+    padding-bottom: 10px;
+}
+
+#signup_formbox
+{
+	background-color: #f7f7f7;
+	margin-top: 50px;
+	margin-bottom: 125px;
+    width: 80%;
+    float: center;
+    padding: 0;
+    border: 0;
+    display: block;
+    text-align:left;
+}
+
+#signup_aboutbox
+{
+	margin-top: 10px;
+	margin-bottom: 100px;
+    margin-left:10px;
+    margin-right:15px;
+    float: center;
+    padding: 0;
+    border: 0;
+    display: block;
+    text-align:left;
+}

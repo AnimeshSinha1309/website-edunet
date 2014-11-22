@@ -25,7 +25,7 @@
             <p class="login_text header_apology"> <?= htmlspecialchars($apology) ?> </p>
         <?php endif ?>
         <form method="post" action="login.php">
-			<input align="middle" class="form_text" name="Email" type="email" placeholder="Email" spellcheck="false">
+			<input align="middle" class="form_text" name="Email" type="email" placeholder="Email" spellcheck="false" autofocus>
 			<input align="middle" class="form_text" name="Password" type="password" placeholder="Password" spellcheck="false">
             <br/>
 			<input align="middle" type="submit" class="form_submit" value="Sign in">

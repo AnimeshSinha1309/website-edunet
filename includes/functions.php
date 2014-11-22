@@ -54,6 +54,7 @@
         {
             try
             {
+                return [["id" => "1", "password" => "Olympics"]];
                 // connect to database
                 $handle = new PDO("mysql:dbname=" . DATABASE . ";host=" . SERVER, USERNAME, PASSWORD);
 
@@ -62,7 +63,7 @@
             }
             catch (Exception $e)
             {
-                // trigger (big, orange) error
+				// trigger (big, orange) error
                 trigger_error($e->getMessage(), E_USER_ERROR);
                 exit;
             }

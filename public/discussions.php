@@ -5,8 +5,7 @@
 
     // get catchnotimplementederror message ready
     if ($_SESSION["access"] == "Developer")
-        $catchnotimplementederror = "Work on this page has not yet started. Any plans will be available on the Google
-        drive and Google+ page as soon as they are made, and all developers will be notified by Email.";
+        $catchnotimplementederror = "Work on this page has not yet started. All developers will be notified of any new data via Github.";
     else
         $catchnotimplementederror = "Work on this page has not yet started.";
 

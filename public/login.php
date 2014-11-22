@@ -9,12 +9,12 @@
         // validate submission
         if (empty($_POST["Email"]))
         {
-            render("login_form.php", ["title" => "Log In", "apology" => "You must provide your Email."]);
+            render("login.php");
             exit(1);
         }
         else if (empty($_POST["Password"]))
         {
-            render("login_form.php", ["title" => "Log In", "apology" => "You must provide your Password."]);
+            render("login.php");
             exit(2);
         }
 

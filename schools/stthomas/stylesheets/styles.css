@@ -1,0 +1,45 @@
+@charset "utf-8";
+a:hover
+{
+	text-decoration:none;
+	color:#09F;
+}
+.container-carousel
+{
+	padding-right:50px;
+	padding-left:50px;
+}
+.size-carousel
+{
+	width:75%;
+	margin-bottom:25px;
+	float:left;
+}
+.btn-full
+{
+	width:100%;
+	padding-top:20px;
+	height:60px;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+.label-align-right
+{
+	margin-left:500px;
+}
+#aboutus-gallery-links
+{
+	float:right;
+	width:25%;
+	text-align:center;
+	padding-left:15px;
+}
+#aboutus-gallery-links a
+{
+	padding-left:50px;
+	padding-right:50px;
+}
+#aboutus-gallery-links span
+{
+	text-align:right;
+}

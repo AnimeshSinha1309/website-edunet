@@ -10,8 +10,7 @@
      */
 
     // your database's name
-    define("DATABASE", "edunet_general");
-    define("DATAEVENTS", "edunet_events");
+    define("DATABASE", "edunet");
 
     // your database's password
     define("PASSWORD", "crimson");
@@ -30,6 +29,9 @@
     define("INCLUDES", "/edunet/includes");
     define("JAVASCRIPT", "/edunet/javascript");
     
+    // links to subsections
+    define("SCHOOLS", "/edunet/schools");
+
     /*
      * The following hardcoded links exist in the follwing files
      *      1. TEMPLATES/register_form.php

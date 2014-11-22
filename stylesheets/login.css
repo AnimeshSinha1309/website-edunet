@@ -1,0 +1,13 @@
+/*
+ * @pages: /templates/login_form.php
+ */
+
+#login_formbox
+{
+	background-color: #f7f7f7;
+	padding: 10px 10px;
+	display: block;
+	margin: 0 auto 25px;
+	border-radius: 2px;
+	margin-bottom: 20px;
+}
