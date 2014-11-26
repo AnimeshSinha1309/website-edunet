@@ -22,12 +22,12 @@
     define("USERNAME", "jharvard");
     
     // links to resources
-    define("IMAGES", "/edunet/images");
-    define("STYLESHEETS", "/edunet/stylesheets");
-    define("CONTROLLER", "/edunet/public");
-    define("TEMPLATES", "/edunet/templates");
-    define("INCLUDES", "/edunet/includes");
-    define("JAVASCRIPT", "/edunet/javascript");
+    define("IMAGES", "/images");
+    define("STYLESHEETS", "/stylesheets");
+    define("CONTROLLER", "/public");
+    define("TEMPLATES", "/templates");
+    define("INCLUDES", "/includes");
+    define("JAVASCRIPT", "/javascript");
     
     // links to subsections
     define("SCHOOLS", "/edunet/schools");

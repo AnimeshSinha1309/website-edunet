@@ -4,15 +4,15 @@
 	{
 		if (isset($_POST['nopass']) && $_POST['nopass'] === 'nosignin')
 		{
-			$_SESSION["id"] = 100000;
+			$_SESSION["id"] = 0;
+			redirect("../templates/home.html");
 			exit(1);
-			redirect("index.php");
 		}
-		if (empty($_POST['username']) || empty($_POST['password']))
+		else if (empty($_POST['username']) || empty($_POST['password']))
 		{
 			$error = 'Please fill in your username and password';
 			render("login.php", ["error" => $error]);
-			exit(1);
+			exit(2);
 		}
 		$users = query("SELECT (`id`, `password`) FROM `users` WHERE `username` = ?", $_POST['username']);
         if (count($users) == 1)
@@ -29,7 +29,8 @@
 			}
         }
 		else $error = 'Error in querying database.';
-		render("login.php", ["error" => $error]);
+		render("login.html", ["error" => $error]);
+		
         exit(3);
 	}
 	else
