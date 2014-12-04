@@ -35,7 +35,7 @@
                 
                 // store quick access data for display on webpages
                 $_SESSION["name"] = $row["firstname"] . " " . $row["lastname"]; 
-                $_SESSION["access"] = $row["account"];
+                $_SESSION["access"] = $row["access"];
 
                 // redirect to portfolio
                 redirect(CONTROLLER."/");
@@ -43,7 +43,7 @@
         }
 
         // else apologize
-        render("login_form.php", ["apology" => "Invalid Email and/or Password."]);
+        render("login_form.php", ["error" => "Invalid Email and/or Password."]);
         exit(3);
     }
     else

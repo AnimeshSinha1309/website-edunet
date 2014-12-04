@@ -30,7 +30,7 @@
     define("JAVASCRIPT", "/javascript");
     
     // links to subsections
-    define("SCHOOLS", "/edunet/schools");
+    define("SCHOOLS", "/schools");
 
     /*
      * The following hardcoded links exist in the follwing files

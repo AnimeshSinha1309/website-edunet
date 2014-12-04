@@ -20,7 +20,7 @@
             // TODO: Check if all data is valid
             // query into the database to add the user with all his details
             if(!isset($_POST["Intro"])) $_POST["Intro"] = NULL;
-            $register_flag = query("INSERT INTO users (firstname, lastname, password, username, birthday, school, grade, googleacc, account, intro) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
+            $register_flag = query("INSERT INTO users (firstname, lastname, password, username, birthday, school, grade, googleacc, access, intro) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
             $_POST["FirstName"], $_POST["LastName"], crypt($_POST["Password"]), $_POST["Username"], $timestamp, $_POST["School"], $_POST["Grade"], $_POST["GoogleAcc"], $_POST["Account"], $_POST["Intro"]);
 
             // handle exception if query could not be completed
@@ -39,8 +39,8 @@
                 $_SESSION["id"] = $rows[0]["id"];
                 
                 // store quick access data for easy display on webpages
-                $_SESSION["access"] = $row[0]["account"];
-                $_SESSION["name"] = $row["firstname"] . " " . $row["lastname"]; 
+                $_SESSION["access"] = $rows[0]["access"];
+                $_SESSION["name"] = $rows[0]["firstname"] . " " . $rows[0]["lastname"]; 
 
                 // redirect to home page after logging the user in
                 redirect(CONTROLLER."/index.php");

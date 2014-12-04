@@ -1,15 +1,6 @@
 <?php
 
-    /**
-     * functions.php
-     *
-     * Computer Science 50
-     * Animesh Sinha
-     * Edunet (Final Project)
-     *
-     * Helper functions.
-     */
-
+    require_once("constants.php");
 
     /**
      * Logs out current user, if any.  Based on Example #1 at
@@ -31,6 +22,56 @@
     }
 
     /**
+     * Returns a stock by symbol (case-insensitively) else false if not found.
+     */
+    function lookup($symbol)
+    {
+        // reject symbols that start with ^
+        if (preg_match("/^\^/", $symbol))
+        {
+            return false;
+        }
+
+        // reject symbols that contain commas
+        if (preg_match("/,/", $symbol))
+        {
+            return false;
+        }
+
+        // open connection to Yahoo
+        $handle = @fopen("http://download.finance.yahoo.com/d/quotes.csv?f=snl1&s=$symbol", "r");
+        if ($handle === false)
+        {
+            // trigger (big, orange) error
+            trigger_error("Could not connect to Yahoo!", E_USER_ERROR);
+            exit;
+        }
+
+        // download first line of CSV file
+        $data = fgetcsv($handle);
+        if ($data === false || count($data) == 1)
+        {
+            return false;
+        }
+
+        // close connection to Yahoo
+        fclose($handle);
+
+        // ensure symbol was found
+        if ($data[2] === "0.00")
+        {
+            return false;
+        }
+
+        // return stock as an associative array
+        return [
+            "symbol" => $data[0],
+            "name" => $data[1],
+            "price" => $data[2],
+        ];
+    }
+
+    /**
      * Executes SQL statement, possibly with parameters, returning
      * an array of all rows in result set or false on (non-fatal) error.
      */
@@ -38,12 +79,6 @@
     {
         // SQL statement
         $sql = func_get_arg(0);
-
-        // protect against injection attacks
-        foreach(func_get_args() as $argument)
-        {
-            $agument = htmlspecialchars($argument);
-        } 
 
         // parameters, if any
         $parameters = array_slice(func_get_args(), 1);
@@ -54,7 +89,6 @@
         {
             try
             {
-                return [["id" => "1", "password" => "Olympics"]];
                 // connect to database
                 $handle = new PDO("mysql:dbname=" . DATABASE . ";host=" . SERVER, USERNAME, PASSWORD);
 
@@ -63,7 +97,7 @@
             }
             catch (Exception $e)
             {
-				// trigger (big, orange) error
+                // trigger (big, orange) error
                 trigger_error($e->getMessage(), E_USER_ERROR);
                 exit;
             }
