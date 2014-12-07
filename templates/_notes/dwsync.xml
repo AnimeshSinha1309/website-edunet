@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="home.php" server="F:/XAMPP - Web Package/installed/htdocs/" local="130620862359752728" remote="130620862350000000" Dst="1" />
-<file name="header_foundation.php" server="F:/XAMPP - Web Package/installed/htdocs/" local="130618036336257231" remote="130618036330000000" Dst="1" />
+<file name="home.php" server="F:/XAMPP - Web Package/installed/htdocs/" local="130624343742772858" remote="130624343740000000" Dst="1" />
+<file name="header_foundation.php" server="F:/XAMPP - Web Package/installed/htdocs/" local="130624472941242588" remote="130624472940000000" Dst="1" />
 <file name="footer_foundation.php" server="F:/XAMPP - Web Package/installed/htdocs/" local="130617758591911853" remote="130617758590000000" Dst="1" />
 <file name="under_development.php" server="F:/XAMPP - Web Package/installed/htdocs/" local="130620865735095787" remote="130620865730000000" Dst="1" />
-<file name="login_form.php" server="F:/XAMPP - Web Package/installed/htdocs/" local="130620893998526631" remote="130620893990000000" Dst="1" />
+<file name="login_form.php" server="F:/XAMPP - Web Package/installed/htdocs/" local="130623428398585208" remote="130623428390000000" Dst="1" />
+<file name="register_form.php" server="F:/XAMPP - Web Package/installed/htdocs/" local="130624472591752599" remote="130624472590000000" Dst="1" />
+<file name="events.php" server="F:/XAMPP - Web Package/installed/htdocs/" local="130624526086442320" remote="130624526080000000" Dst="1" />
 </dwsync>

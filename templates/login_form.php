@@ -1,29 +1,58 @@
 <!DOCTYPE html>
 <head>
-	<title> Log in </title>
-	<link href="../foundation/css/foundation.css" rel="stylesheet" type="text/css"/>
-    <link href="../foundation/css/normalize.css" rel="stylesheet" type="text/css"/>
-    <link href="../images/favicon.ico" rel="icon"/>
-    <script src="../foundation/js/foundation.min.js" type="text/javascript" language="javascript"></script>
-    <style>
-		.lightgrey-body{background-color:#ddd;}
-		#login-formbox{padding:50px; margin-top:30px;}
-		#login-avatar{margin:30px;}
-	</style>
+  <title> Log in </title>
+  <link href="../foundation/css/foundation.css" rel="stylesheet" type="text/css"/>
+  <link href="../foundation/css/normalize.css" rel="stylesheet" type="text/css"/>
+  <link href="../stylesheets/login.css" rel="stylesheet" type="text/css"/>
+  <link href="../foundation/icons/foundation-icons/foundation-icons.css" rel="stylesheet" type="text/css"/>
+  <link href="../images/favicon.ico" rel="icon"/>
+  <script src="../foundation/js/foundation.min.js" type="text/javascript" language="javascript"></script>
 </head>
 <body class="lightgrey-body">
-    <div align="center" class="large-4 large-offset-4" id="login-formbox">
-    	<h1>Sign in to Edunet</h1><br/>
-        <form method="post" action="../public/login.php">
-            <div class="alert-box alert" <?php echo("style=\"display:"); if(isset($error)) echo("block\""); else echo("none\""); ?>>Invalid Username and/or Password</div>
-			<input align="middle" class="form_text" name="Email" type="email" placeholder="Email" spellcheck="false" autofocus>
-			<input align="middle" class="form_text" name="Password" type="password" placeholder="Password" spellcheck="false">
-            <br/>
-			<input align="middle" type="submit" id="signin-button" class="button large" value="Sign in">
-        </form>
+  <div class="center row">
+    <div class="section-container tabs" data-section="tabs">
+      <section>
+        <div class="content" data-section-content>
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="signin-panel">
+                <p class="welcome">Sign in to Edunet</p>
+                <form action="../public/login.php" method="post"/>
+                  <div class="row collapse">
+                    <label for="login-email" class="hide">Username</label>
+                    <div class="small-2 columns">
+                      <span class="prefix"><i class="fi-mail"></i></span>
+                    </div>
+                    <div class="small-10  columns">
+                      <input type="email" placeholder="Email" autofocus spellcheck="false" autocomplete="email" name="email" id="login-email"/>
+                    </div>
+                  </div>
+                  <div class="row collapse">
+                    <label for="login-password" class="hide">Password</label>
+                    <div class="small-2 columns ">
+                      <span class="prefix"><i class="fi-lock"></i></span>
+                    </div>
+                    <div class="small-10 columns">
+                      <input type="password" placeholder="Password" name="password" id="login-password"/>
+                    </div>
+                  </div>
+                  <?php if(isset($error)){ ?>
+	                  <div class="alert alert-box">
+	                    <?php if(isset($error))echo($error); ?>
+ 	                 </div>
+                  <?php } ?>
+                  <input type="submit" class="button center" id="sign-in-button" value="Sign in"/><br/>
+                </form>
+              </div>
+              <div class="large-10 small-12 large-offset-1 columns">
+                <a href="#" class="button alert center" id="sign-up-button">Not a part of Edunet? Sign Up Here.</a>
+                <a href="#" class="button success center" id="tour-go-button">See what Edunet is all about. Take the tour.</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-    <div class="text" align="center">
-    	<a href="#"> Register for an Account </a>
-    </div>
+  <div>
 </body>
 </html>

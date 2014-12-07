@@ -7,8 +7,13 @@
         <link href="../images/favicon.ico" rel="icon"/>
         <link href="../foundation/css/foundation.css" rel="stylesheet" type="text/css"/>
         <link href="../stylesheets/styles.css" rel="stylesheet" type="text/css"/>
-        <script src="../foundation/js/vendor/jquery.js"></script>
-        <script src="../foundation/js/foundation/foundation.js"></script>
+  		<script src="../foundation/js/vendor/modernizr.js"></script>
+  		<script src="../foundation/js/vendor/jquery.js" type="text/javascript"></script>
+  		<script src="../foundation/js/vendor/fastclick.js"></script>
+  		<script src="../javascript/function.js" type="text/javascript"></script>
+  		<script src="../foundation/js/foundation.min.js" type="text/javascript"></script>
+  		<script> $(document).ready(function(e) { $(document).foundation(); }); </script>
+		<link href="../bootstrap/vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
         <link href="../foundation/icons/foundation-icons/foundation-icons.css" rel="stylesheet" type="text/css"/>
 	<body>
       <header>

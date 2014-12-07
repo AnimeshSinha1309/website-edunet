@@ -7,19 +7,19 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST")
     {
         // validate submission
-        if (empty($_POST["Email"]))
+        if (empty($_POST["email"]))
         {
-            render("login.php");
+            render("login_form.php", ["error" => "Please provide your Email ID"]);
             exit(1);
         }
-        else if (empty($_POST["Password"]))
+        else if (empty($_POST["password"]))
         {
-            render("login.php");
+            render("login_form.php", ["error" => "Please type in you password"]);
             exit(2);
         }
 
         // query database for user
-        $rows = query("SELECT * FROM users WHERE googleacc = ?", $_POST["Email"]);
+        $rows = query("SELECT * FROM users WHERE googleacc = ?", $_POST["email"]);
 
         // if we found user, check Password
         if (count($rows) == 1)
@@ -28,7 +28,7 @@
             $row = $rows[0];
 
             // compare password of user's input against password that's in database
-            if (crypt($_POST["Password"], $row["password"]) == $row["password"])
+            if (crypt($_POST["password"], $row["password"]) == $row["password"])
             {
                 // remember that user's now logged in by storing user's ID in session
                 $_SESSION["id"] = $row["id"];

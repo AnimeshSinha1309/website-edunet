@@ -94,16 +94,23 @@
           </div>
           <div class="row">
             <label for="course-rating-slider"> Minimum Rating </label>
-            <div class="small-8 medium-9 columns">
-<div class="range-slider" data-slider="50" data-options="display_selector:#sliderOutput1;">
-          <span class="range-slider-handle" role="slider" tabindex="0" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" style="-webkit-transform: translateX(344.42px); transform: translateX(344.42px);"></span>
-          <span class="range-slider-active-segment" style="width: 57%;">50</span>
-        </div>
+            <div class="small-12 medium-9 columns">
+              <div class="row">
+                <div class="small-12 medium-11 columns">
+                  <div class="range-slider" data-slider data-options="display_selector: #sliderOutput3;">
+                    <span class="range-slider-handle" role="slider" tabindex="0"></span>
+                    <span class="range-slider-active-segment"></span>
+                  </div>
+                </div>
+                <div class="small-2 medium-1 columns">
+                  <span id="sliderOutput3"></span>
+                </div>
+              </div>
             </div>
             <div class="small-2 medium-1 columns">
               <span id="sliderOutput3"></span>
             </div>
-            <div class="small-2 medium-2 columns">
+            <div class="small-12 medium-2 columns">
               <input type="submit" value="Search" class="button"/>
             </div>
           </div>

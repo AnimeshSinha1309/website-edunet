@@ -1,126 +1,151 @@
 <!DOCTYPE html>
 <head>
-	<title> Register </title>
-	<link <?php echo("href=".STYLESHEETS."/styles.css"); ?> rel="stylesheet" type="text/css">
-	<link <?php echo("href=".STYLESHEETS."/register.css"); ?> rel="stylesheet" type="text/css">
+  <title> Register </title>
+  <link href="../foundation/css/foundation.css" rel="stylesheet" type="text/css"/>
+  <link href="../stylesheets/register.css" rel="stylesheet" type="text/css"/>
+  <link href="../foundation/icons/foundation-icons/foundation-icons.css" rel="stylesheet" type="text/css"/>
+  <link href="../bootstrap/vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+  <link href="../images/favicon.ico" rel="icon"/>
+  <script src="../foundation/js/vendor/modernizr.js"></script>
+  <script src="../javascript/function.js" type="text/javascript"></script>
+  <script src="../foundation/js/vendor/jquery.js" type="text/javascript"></script>
+  <script src="../foundation/js/vendor/fastclick.js"></script>
+  <script src="../foundation/js/foundation.min.js" type="text/javascript"></script>
+  <script> $(document).ready(function(e) { $(document).foundation(); }); </script>
 </head>
-<body id="body_avgmargin">
-	<header>
-        <table align="center"> <tr>
-            <td> <?php echo("<img src=".IMAGES."/logo.png"); ?> alt="Edunet" height="150"/> </td>
-            <td  width="30"> </td>
-            <td>
-				<table>
-	               	<tr> <td class="text header_title"> Sign up for Edunet </td> </tr>
-	                <tr> <td class="text header_subtitle"> And join in with a growing all-school network </td> </tr>
-				</table>
-            </td>
-		</tr> </table> <br/>
-    </header>
-    <main>
-        <div id="signup_about">
-            <div id="signup_aboutbox">
-                <div class="text header_subtitle header_aboutus">
-                    What is Edunet?
-                </div>
-                <div class="text header_aboutus">
-                    Edunet is my idea of what the website of a school or an educational institution should be like. But more than
-                    being for just one school, its for all schools, all students, all teacher, and everybody affiliated to any 
-                    educational institution. <br/>
-                    What are you going to see here. Well, here's what:
-                    <ul>
-                        <li> Discussion forums mediated by expert students and teachers. </li>
-                        <li> All time help by your friends and teachers on topics you need. </li>
-                        <li> Place to register for school activities, so you don't have to waste time in school. </li>
-                        <li> Showcase your abilities. Answer online tests and upload videos. </li>
-                        <li> Hear about design ideas and study strategies from the best students and teachers. </li>
-                        <li> Upload your website here, for free! </li>
-                        <li> Stay uptaded with whats being done in class, even if you missed it there. </li>
-                        <li> Have your schools homepage hosted with us. </li>
-                        <li> And, be a part of edunet team, and be super smart. </li>
-                    </ul>
-                </div>
-                <br/>
-                <div class="text header_subtitle header_aboutus">
-                    Take a tour.
-                </div>
-                <div class="text header_aboutus">
-                    Want to know what edunet is and looks like before signing up. Here is our video on what what edunet is till 
-                    now, so, go ahead and take a look.
-                </div>
-                <div class="iframe_youtubevideo">
-                    <iframe class="iframe_youtubevideo" align="left" width="512" height="306" src="//www.youtube.com/embed/r1qtaEB9vL4" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="text header_subtitle header_aboutus">
-                    Want to take a peek at the code. 
-                </div>
-                <div class="text header_aboutus">
-                    Here is a short video about what languages we have used in the website. Of course, this is just temporary and 
-                    I will soon replae this with more detailed analysis of the code, but that can happen only when I am dome with 
-                    a significant chunck of the website.
-                </div>
-                <div class="iframe_youtubevideo">
-                    <iframe class="iframe_youtubevideo" align="left" width="512" height="306" src="//www.youtube.com/embed/3f0tMs1mT24" frameborder="0" allowfullscreen></iframe>
-                </div>
-            </div>
+<body class="lightgrey-body">
+  <section class="large-5 large-offset-1 hide-for-small-down columns">
+    <!-- Advertisement of the website here, with a link to the tour -->
+    <div class="text-center">
+      <h2>Sign up for Edunet</h2>
+    </div>
+	<div>
+      <h2 class="text-center"><small>What and Why is Edunet</small></h2>
+    </div>
+  </section>
+  <section class="large-6 small-12 columns">
+    <!-- Signup Form -->
+    <div class="signup-panel large-8 small-12">
+      <form action="../public/register.php" method="post">
+        <div id="form-personal">
+          <strong>Personal Details</strong>
+          <p class="text-justify">Details about you go to your profile and also help us customize content for you. It is also used to autofill your forms.</p>
+	      <div class="row collapse">
+            <label for="form-fname" class="hide"></label>
+            <div class="small-2 columns"><span class="prefix"><i class="fi-torso"></i></span></div>
+            <div class="small-10 columns"><input type="text" placeholder="First Name" name="fname" autofocus autocomplete="name" id="form-fname"></div>
+          </div>
+	      <div class="row collapse">
+            <label for="form-lname" class="hide"></label>
+            <div class="small-2 columns"><span class="prefix"><i class="fi-torso"></i></span></div>
+            <div class="small-10 columns"><input type="text" placeholder="Last Name" name="lname" autocomplete="name" id="form-lname">
+          </div>
+          </div>
+	      <div class="row collapse">
+            <label for="form-fname" class="hide">Details</label>
+            <div class="small-12 columns"><a href="#" class="button secondary" data-reveal-id="modal-details">Add Details about yourself</a></div>
+          </div>
+	      <div class="row collapse">
+            <label for="form-fname" class="hide">Introduction</label>
+            <div class="small-12 columns"><a href="#" class="button secondary" data-reveal-id="modal-intro">Introduce yourself on Edunet</a></div>
+          </div>
         </div>
-        <div id="signup_form" align="center">
-            <div id="signup_formbox" align="center">
-                <?php if (isset($apology)): ?>
-                    <p class="text text_apology"> <?php print("Error: " . htmlspecialchars($apology)) ?> </p>
-                <?php endif ?>
-                <form method="post" action="register.php" id="floatingdivs">
-			        <label class="text"> <strong> Name </strong> </label>
-			        <input align="middle" class="form_text" name="FirstName" type="text" placeholder="First" spellcheck="false">
-			        <input align="middle" class="form_text" name="LastName" type="text" placeholder="Last" spellcheck="false">
-			        <br/> <label class="text"> <strong> Google Account </strong> </label>
-			        <input align="middle" class="form_text" name="GoogleAcc" type="email" placeholder="eg. AnimeshSinha1309@gmail.com" spellcheck="false">
-			        <br/> <label class="text"> <strong> Password </strong> </label>
-			        <input align="middle" class="form_text" name="Password" type="password" placeholder="Password" spellcheck="false">
-			        <br/> <label class="text"> <strong> Confirm Password </strong> </label>
-			        <input align="middle" class="form_text" name="Conformation" type="password" placeholder="Password" spellcheck="false">
-			        <br/> <label class="text"> <strong> Edunet Username </strong> (For future use only) </label>
-			        <input align="middle" class="form_text" name="Username" type="text" placeholder="eg. AnimeshSinha" spellcheck="false">
-			        <br/> <label class="text"> <strong> Date of Birth </strong> </label>
-			        <input align="middle" id="register_birthday_date" maxlegth="2" class="form_text" placeholder="Date" name="BirthDate" type="text" spellcheck="false">
-                    <select name="BirthMonth" class="form_select">
-                        <option value=""> Month </option>
-                        <option value="01"> January </option>
-                        <option value="02"> February </option>
-                        <option value="03"> March </option>
-                        <option value="04"> April </option>
-                        <option value="05"> May </option>
-                        <option value="06"> June </option>
-                        <option value="07"> July </option>
-                        <option value="08"> August </option>
-                        <option value="09"> September </option>
-                        <option value="10"> October </option>
-                        <option value="11"> November </option>
-                        <option value="12"> December </option>
-                    </select>
-			        <input align="middle" maxlegth="4" class="form_text" placeholder="Year" name="BirthYear" type="text" spellcheck="false">
-			        <br/> <label class="text text_small"> <strong> Account Type </strong> </label> <br/>
-			        <div id="">
-			            <input align="middle" class="form_radio" name="Account" type="radio" value="Student"> <label class="text"> Student </label> </input> <br/>
-			            <input align="middle" class="form_radio" name="Account" type="radio" value="Coach"> <label class="text"> Coach </label> </input> <br/>
-			            <input align="middle" class="form_radio" name="Account" type="radio" value="Developer"> <label class="text"> Developer </label> </input> <br/>
-                    </div>
-			        <br/> <label class="text text_small"> <strong> School </strong> </label>
-			        <input align="middle" class="form_text" name="School" type="text" placeholder="eg. St. Thomas" spellcheck="false">
-			        <br/> <label class="text text_small"> <strong> Grade / Standard </strong> </label>
-			        <input align="middle" class="form_text" name="Grade" type="text" placeholder="eg. Std. 9 or M.Tech" spellcheck="false">
-			        <br/> <label class="text text_small"> <strong> Introductary video (Youtube link) </strong> </label>
-			        <input align="middle" class="form_text" name="Intro" type="url" placeholder="Link to the video" spellcheck="false">
-                    <br/>
-			        <input align="middle" type="submit" class="form_submit" value="Register">
-                </form>
-                <br/>
-                <div class="text">
-                	<a href="login.php"> Log in if you already have an account. </a>
-                </div>
-            </div>
+        <hr>
+        <div id="form-account">
+          <strong>Your Account</strong>
+          <p class="text-justify">These are the setting are crucial to your account. They can be changed later if need be.</p>
+	      <div class="row collapse">
+            <label for="form-fname" class="hide">School</label>
+            <div class="small-12 columns"><a href="#" class="button" data-reveal-id="modal-school">Select School or University</a></div>
+          </div>
+	      <div class="row collapse">
+            <label for="form-fname" class="hide"></label>
+            <div class="small-2 columns"><span class="prefix"><i class="fa fa-user"></i></span></div>
+            <div class="small-10 columns"><input type="text" placeholder="Your Edunet Username" name="username" autocomplete="off" id="form-password"></div>
+          </div>
+	      <div class="row collapse">
+            <label for="form-fname" class="hide"></label>
+            <div class="small-2 columns"><span class="prefix"><i class="fi-lock"></i></span></div>
+            <div class="small-10 columns"><input type="password" placeholder="Type Password" name="password" autocomplete="name" id="form-password"></div>
+          </div>
+	      <div class="row collapse">
+            <label for="form-fname" class="hide"></label>
+            <div class="small-2 columns"><span class="prefix"><i class="fi-lock"></i></span></div>
+            <div class="small-10 columns"><input type="password" placeholder="Confirm Password" name="confirm" id="form-confirm"></div>
+          </div>
+          <div class="row collapse">
+            <label for="form-birth-date" class="hide"></label>
+            <div class="small-2 columns"><span class="prefix"><i class="fi-mobile"></i></span></div>
+            <div class="small-10 columns"><input type="tel" name="mobile" maxlength="20" placeholder="Mobile Number"/></div>
+          </div>
+          <ul class="button-group">
+          <label>Account Access Type</label>
+            <li><label class="button access-radio" id="access-radio-1"><input type="radio" name="options" id="option1" class="button-radio hide" onChange="radiobutton('access-radio-1');">Student</label></li>
+            <li><label class="button access-radio" id="access-radio-2"><input type="radio" name="options" id="option2" class="button-radio hide" onChange="radiobutton('access-radio-2');">Coach</label></li>
+            <li><label class="button access-radio" id="access-radio-3"><input type="radio" name="options" id="option3" class="button-radio hide" onChange="radiobutton('access-radio-3');">General</label></li>
+            <li><label class="button access-radio" id="access-radio-4"><input type="radio" name="options" id="option4" class="button-radio hide" onChange="radiobutton('access-radio-4');">Premium</label></li>
+            <li><label class="button access-radio" id="access-radio-5"><input type="radio" name="options" id="option5" class="button-radio hide" onChange="radiobutton('access-radio-5');">Special</label></li>
+            <li><label class="button access-radio text-center" id="access-radio-6"><input type="radio" name="options" id="option6" class="button-radio hide" onChange="radiobutton('access-radio-6');">Developer</label></li>
+            <li><label class="button access-radio" id="access-radio-7"><input type="radio" name="options" id="option6" class="button-radio hide" onChange="radiobutton('access-radio-7');">Coachster</label></li>
+            <li><label class="button access-radio" id="access-radio-8"><input type="radio" name="options" id="option6" class="button-radio hide" onChange="radiobutton('access-radio-8');">Achiever</label></li>
+            <li><label class="button access-radio" id="access-radio-9"><input type="radio" name="options" id="option6" class="button-radio hide" onChange="radiobutton('access-radio-9');">Ultimate</label></li>
+          </ul>
         </div>
-    </main>
-    <footer> </footer>
+        <hr>
+        <div id="form-accounts">
+          <strong>Online Accounts</strong>
+          <p class="text-justify">Please provide all of your online accounts so that we can provide you a better experience. If you don't have some of them, go and sign up. They are all great.</p>
+          <div class="row collapse">
+            <div class="small-2 columns"><span class="prefix"><i class="fa fa-google"></i></span></div>
+            <div class="small-10 columns"><input type="email" placeholder="Google Account">
+          </div>
+          <div class="row collapse">
+            <div class="small-2 columns"><span class="prefix"><i class="fa fa-facebook"></i></span></div>
+            <div class="small-10 columns"><input type="email" placeholder="Facebook Account">
+          </div>
+          <div class="row collapse">
+            <div class="small-2 columns"><span class="prefix"><i class="fa fa-github"></i></span></div>
+            <div class="small-10 columns"><input type="email" placeholder="GitHub Account">
+          </div>
+          <div class="row collapse">
+            <div class="small-2 columns"><span class="prefix"><i class="fa fa-stack-overflow"></i></span></div>
+            <div class="small-10 columns"><input type="email" placeholder="StackOverflow Account">
+          </div>
+          <div class="row collapse">
+            <div class="small-2 columns"><span class="prefix"><i class="fa fa-windows"></i></span></div>
+            <div class="small-10 columns"><input type="email" placeholder="Microsoft Account">
+          </div>
+        </div>
+      </form>
+    </div>
+    <div>
+      <div id="modal-details" class="reveal-modal" data-reveal>
+        <h2>Awesome. I have it.</h2>
+        <p class="lead">Your couch.  It is mine.</p>
+        <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+        <a class="close-reveal-modal">&#215;</a>
+      </div>
+      <div id="modal-intro" class="reveal-modal" data-reveal>
+        <h2>Introduce Youself</h2>
+        <p class="lead">Introduce yourself via a video message and a textual description and let preople know exactly who you are.</p>
+        <p>Before you write up your introduction, go ahead and make a short video introducing yourself, and upload in on youtube. It would be really fun if all our profiles had videos rather than plain old texts.</p><br/>
+        <div class="row collapse large-6 small-12 columns">
+       	  <div class="small-2 large-2 columns"><span class="prefix"><i class="fa fa-youtube-play"></i></span></div>
+          <div class="small-9 large-9 columns"><input type="url" name="youtube" autofocus placeholder="Embed code of your Youtube Video."/></div>
+          <div class="small-1 large-1 columns"><span data-tooltip aria-haspopup="true" class="has-tip postfix" title="Right clik on the video and choose the view embed code option. Copy and paste the code."><i class="fa fa-info-circle"></i></span></div>
+          <div class="small-12"><textarea cols="50" rows="5" maxlength="512" placeholder="Enter a short description of you, in less than 512 letters."></textarea></div>
+        </div>
+        <div class="large-6 small-12">
+        </div>
+        <a class="close-reveal-modal">&#215;</a>
+      </div>
+      <div id="modal-school" class="reveal-modal" data-reveal>
+        <h2>Awesome. I have it.</h2>
+        <p class="lead">Your couch.  It is mine.</p>
+        <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+        <a class="close-reveal-modal">&#215;</a>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
