@@ -45,7 +45,7 @@
                 </form>
               </div>
               <div class="large-10 small-12 large-offset-1 columns">
-                <a href="#" class="button alert center" id="sign-up-button">Not a part of Edunet? Sign Up Here.</a>
+                <a href="register.php" class="button alert center" id="sign-up-button">Not a part of Edunet? Sign Up Here.</a>
                 <a href="#" class="button success center" id="tour-go-button">See what Edunet is all about. Take the tour.</a>
               </div>
             </div>

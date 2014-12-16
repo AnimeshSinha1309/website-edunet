@@ -18,14 +18,54 @@
     <!-- Advertisement of the website here, with a link to the tour -->
     <div class="text-center">
       <h2>Sign up for Edunet</h2>
+      <hr class="divider" style="border-color:#999;"/>
     </div>
-	<div>
-      <h2 class="text-center"><small>What and Why is Edunet</small></h2>
+    <div class="row" style="margin-top:20px;">
+      <div class="small-8 columns">
+        <img src="../images/register/siteview-pic-2.png" alt="Screen" class="th"/>
+      </div>
+      <div class="small-4 columns">
+        <div class="row">
+          <img src="../images/register/siteview-pic-1.png" alt="Screen" class="th"/>
+        </div>
+        <div class="row">
+          <img src="../images/register/siteview-pic-3.png" alt="Screen" style="margin-top:11px;" class="th"/>
+        </div>
+      </div>
+    </div>
+    <hr class="divider" style="border-color:#999;"/>
+    <div>
+      <h3>What is Edunet?</h3>
+      <p style="margin-bottom:5px;">Edunet is a network for schools, colleges and universities. It is a web application that ties in all of the components of a school network, and makes lives of students and teachers much easier. It is so user friendly, you can do just about anything here without being computer savvy. Here are some key features of the website.</p>
+      <ul style="margin-left:20px;">
+        <li>Web framework for all schools that need a great website.</li>
+        <li>Complete courseware from the best of teachers in the city.</li>
+        <li>Result maker, don't waste your time with percentages.</li>
+        <li>Event registeration, advertise and enroll, right here.</li>
+        <li>News Update. Never miss a thing from you school with our alerts.</li>
+        <li>We value and publish your code, projects, essay. So upload.</li>
+      </ul>
+    </div>
+    <hr class="divider" style="border-color:#999;"/>
+    <div>
+      <h3>Feel Edunet inside out?</h3>
+      <p>We enlisted a bunch of features right now, but would you like to know what exactly they mean, and what kind of screens would you be treated to when you use this website. Just view this short video and you would know why we are so confident about our website and the great experience you would have using it.</p>
+      <iframe width="477" height="280" src="//www.youtube.com/embed/tRg_eDfQ8fk" frameborder="0" allowfullscreen></iframe>
+      <p style="margin-top:20px;">Videos are great, but if you would like to look at each page in full screen, then take outr joyride. This express tour will take you through all the important pages, and let you play around a bit. If you want more then sign up, it is super easy and all free.</p>
+      <a href="../advertise/joyride/joyride.php?pos=start" class="button success">Take the Joyride</a>
+    </div>
+    <hr class="divider" style="border-color:#999;"/>
+    <div>
+      <h3>Take a deeper look.</h3>
+      <p>Still not satisfied. Want to dive a bit deeper and know about every single feature, every small bit about us. Would you like to know how we rate your projects and essays, user experience on different devices, about our future plans or mobile apps, or something of that sort. Then view this video to explore every bit of the website.</p>
+	  <a href="#" class="button">View the complete exploration video.</a>
     </div>
   </section>
   <section class="large-6 small-12 columns">
     <!-- Signup Form -->
+    <div>
     <div class="signup-panel large-8 small-12">
+      <?php if(isset($error)) echo("<div class=\"alert-box alert\">".$error."</div>"); ?>
       <form action="../public/register.php" method="post">
         <div id="form-personal">
           <strong>Personal Details</strong>
@@ -40,10 +80,6 @@
             <div class="small-2 columns"><span class="prefix"><i class="fi-torso"></i></span></div>
             <div class="small-10 columns"><input type="text" placeholder="Last Name" name="lname" autocomplete="name" id="form-lname">
           </div>
-          </div>
-	      <div class="row collapse">
-            <label for="form-fname" class="hide">Details</label>
-            <div class="small-12 columns"><a href="#" class="button secondary" data-reveal-id="modal-details">Add Details about yourself</a></div>
           </div>
 	      <div class="row collapse">
             <label for="form-fname" class="hide">Introduction</label>
@@ -116,6 +152,10 @@
             <div class="small-10 columns"><input type="email" placeholder="Microsoft Account">
           </div>
         </div>
+        <hr>
+        <div>
+          <input type="submit" class="button" value="Submit form and Sign up"/>
+        </div>
       </form>
     </div>
     <div>
@@ -130,12 +170,46 @@
         <p class="lead">Introduce yourself via a video message and a textual description and let preople know exactly who you are.</p>
         <p>Before you write up your introduction, go ahead and make a short video introducing yourself, and upload in on youtube. It would be really fun if all our profiles had videos rather than plain old texts.</p><br/>
         <div class="row collapse large-6 small-12 columns">
+          <label class="hide" for="form-youtube">Youtube introduction video embed code</label>
        	  <div class="small-2 large-2 columns"><span class="prefix"><i class="fa fa-youtube-play"></i></span></div>
-          <div class="small-9 large-9 columns"><input type="url" name="youtube" autofocus placeholder="Embed code of your Youtube Video."/></div>
+          <div class="small-9 large-9 columns"><input type="url" name="youtube" autofocus placeholder="Embed code of your Youtube Video." id="form-youtube"/></div>
           <div class="small-1 large-1 columns"><span data-tooltip aria-haspopup="true" class="has-tip postfix" title="Right clik on the video and choose the view embed code option. Copy and paste the code."><i class="fa fa-info-circle"></i></span></div>
-          <div class="small-12"><textarea cols="50" rows="5" maxlength="512" placeholder="Enter a short description of you, in less than 512 letters."></textarea></div>
+         <label class="hide" for="form-description">Description</label>
+         <div class="small-12"><textarea cols="50" rows="5" maxlength="512" placeholder="Enter a short description of you, in less than 512 letters." name="description" id="form-description"></textarea></div>
+          <label for="form-interests"><strong>Enter your inerests separated by semicolons.</strong></label>
+          <div class="small-12 columns"><input type="text" name="interests" autofocus placeholder="eg. Physics; JavaScript; Football; Relativity" id="form-youtube"/></div>
+          <label class="hide" for="form-interests">Interests</label>
+          <div><strong>Select your primary field of interest.</strong> If your have not thought of it, just scroll to the bottom and select fields like education, sports or the like.</div>
+          <div class="small-12 columns">
+            <select>
+              <option>Physics</option>
+              <option>Physics - Astrophysics</option>
+              <option>Engineering</option>
+              <option>Engineering - Electrical</option>
+              <option>Engineering - Mechanical</option>
+              <option>Computers</option>
+              <option>Computers - Web Frontend</option>
+              <option>Computers - Web Backend</option>
+              <option>Computers - Mobile Devices</option>
+              <option>Computers - Native Programs</option>
+              <option><strong>Mathematics</strong></option>
+              <option>Mathematics - Calculus</option>
+              <option>Mathematics - Coordinate</option>
+              <option>Mathematics - Algebra</option>
+              <option>Mathematics - Number Theory</option>
+            </select>
+          </div>
         </div>
-        <div class="large-6 small-12">
+        <div class="row collapse large-6 small-12 columns">
+          <h4>Upload your photograph</h4>
+          <p class="text-justify">Please upload a clear one person photograph of you, not somebody or something else. We will use it on your profile only if you permit us to, but this will be your default photograph in form autofills. View our <a href="#">requirements for photographs</a> before uploading yours.</p>
+          <div class="large-6 small-12 columns">
+          	<img src="../images/avatar-blank.png" alt="Your Photo" height="175" width="175" class="th"/>
+          </div>
+          <div class="large-6 small-12 columns">
+            <a class="button">Upload from your computer</a>
+            <a class="button">Link an online image by pasting the URL</a>
+          </div>
         </div>
         <a class="close-reveal-modal">&#215;</a>
       </div>

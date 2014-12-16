@@ -1,4 +1,4 @@
-<?php render("header_foundation.php", ["title" => "Home", "navpos" => "home"]) ?>
+<?php render("header_foundation.php", ["title" => "Events", "navpos" => "events"]) ?>
 <link href="../stylesheets/events.css" rel="stylesheet" type="text/css"/>
 <main>
   <div id="all-content-wrapper" class="row">

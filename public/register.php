@@ -6,7 +6,8 @@
     // if form was submitted
     if ($_SERVER["REQUEST_METHOD"] == "POST")
     {
-        // validate submission
+        render("register_form.php", ["error" => "Staff Debug #003: Raised not implemented error"]);
+		/* // validate submission
         if ($_POST["Password"] == $_POST["Conformation"] && !empty($_POST["FirstName"]) && !empty($_POST["LastName"])
          && !empty($_POST["Password"]) && !empty($_POST["Conformation"]) && !empty($_POST["Username"])
          && !empty($_POST["BirthDate"]) && ($_POST["BirthMonth"] != "") && !empty($_POST["BirthYear"])
@@ -50,12 +51,12 @@
         else
         {
             render("register_form.php", ["title" => "Register", "apology" => "Please fill in the whole of the form. "]);
-        }
+        }*/
     }
     else
     {
         // if no POST is recieved, render form
-        render("register_form.php", ["title" => "Register"]);
+        render("register_form.php");
     }
 
 ?>

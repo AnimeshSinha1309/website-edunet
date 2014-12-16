@@ -75,7 +75,7 @@
                 </li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
-                <li <?php if($navpos === "dashboard") echo("class=\"active\""); ?>><a href="/public/" class="navbar-dashboard">Dashboard</a></li>
+                <li><a href="/public/" class="navbar-dashboard">Edunet</a></li>
               </ul>
             </div>
           </div>

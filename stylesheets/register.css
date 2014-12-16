@@ -45,21 +45,33 @@ section{
 	background-color:#005085;
 }
 
-ul {
-	margin-left:0px;
+.access-radio {
+	padding-left:0px;
+	padding-right:0px;
+	text-align:center;
+	margin-bottom:1px;
 }
 
-.access-radio {
-	margin-bottom:1px;
+ul {
+	margin-left:0px;
 }
 
 label {
 	font-size: 15px;
 	line-height: 50px;
 }
+@media only screen 
+{
+	.button-group li {
+		width:100%;
+	}
+}
 
-.button-group li {
-	width:33%;
+@media only screen and (min-width: 40.063em)
+{
+	.button-group li {
+		width:33%;
+	}
 }
 
 .access-radio {
