@@ -45,6 +45,10 @@ section{
 	background-color:#005085;
 }
 
+.active-radio:hover {
+	background-color:#005085;
+}
+
 .access-radio {
 	padding-left:0px;
 	padding-right:0px;

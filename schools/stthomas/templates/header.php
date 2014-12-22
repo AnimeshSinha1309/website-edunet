@@ -8,11 +8,11 @@
     <meta name="author" content="">
     <link rel="icon" href="../../../images/favicon.ico">
     <title>St. Thomas</title>
-    <link href="../../../bootstrap/css/bootstrap.css" rel="stylesheet"> <!-- Bootstrap core CSS -->
-    <link href="../../../bootstrap/themes/home.css" rel="stylesheet"> <!-- Custom styles for this template -->
+    <link href="../../../libraries/bootstrap/css/bootstrap.css" rel="stylesheet"> <!-- Bootstrap core CSS -->
+    <link href="../../../libraries/bootstrap/themes/home.css" rel="stylesheet"> <!-- Custom styles for this template -->
     <link href="../stylesheets/styles.css" rel="stylesheet"> <!-- Custom styles for this template -->
-    <script src="../../../foundation/js/vendor/jquery.js"></script>
-    <script src="../../../bootstrap/js/bootstrap.js"></script>
+    <script src="../../../libraries/foundation/js/vendor/jquery.js"></script>
+    <script src="../../../libraries/bootstrap/js/bootstrap.js"></script>
   </head>
   <body>
 	 <!-- NAVBAR

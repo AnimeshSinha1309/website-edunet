@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <head>
   <title> Log in </title>
-  <link href="../foundation/css/foundation.css" rel="stylesheet" type="text/css"/>
-  <link href="../foundation/css/normalize.css" rel="stylesheet" type="text/css"/>
+  <link href="../libraries/foundation/css/foundation.css" rel="stylesheet" type="text/css"/>
+  <link href="../libraries/foundation/css/normalize.css" rel="stylesheet" type="text/css"/>
   <link href="../stylesheets/login.css" rel="stylesheet" type="text/css"/>
-  <link href="../foundation/icons/foundation-icons/foundation-icons.css" rel="stylesheet" type="text/css"/>
+  <link href="../libraries/foundation/icons/foundation-icons/foundation-icons.css" rel="stylesheet" type="text/css"/>
   <link href="../images/favicon.ico" rel="icon"/>
-  <script src="../foundation/js/foundation.min.js" type="text/javascript" language="javascript"></script>
+  <script src="../libraries/foundation/js/foundation.min.js" type="text/javascript" language="javascript"></script>
 </head>
 <body class="lightgrey-body">
   <div class="center row">

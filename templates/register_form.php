@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <head>
   <title> Register </title>
-  <link href="../foundation/css/foundation.css" rel="stylesheet" type="text/css"/>
+  <link href="../libraries/foundation/css/foundation.css" rel="stylesheet" type="text/css"/>
   <link href="../stylesheets/register.css" rel="stylesheet" type="text/css"/>
-  <link href="../foundation/icons/foundation-icons/foundation-icons.css" rel="stylesheet" type="text/css"/>
-  <link href="../bootstrap/vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+  <link href="../libraries/foundation/icons/foundation-icons/foundation-icons.css" rel="stylesheet" type="text/css"/>
+  <link href="../libraries/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
   <link href="../images/favicon.ico" rel="icon"/>
-  <script src="../foundation/js/vendor/modernizr.js"></script>
-  <script src="../javascript/function.js" type="text/javascript"></script>
-  <script src="../foundation/js/vendor/jquery.js" type="text/javascript"></script>
-  <script src="../foundation/js/vendor/fastclick.js"></script>
-  <script src="../foundation/js/foundation.min.js" type="text/javascript"></script>
+  <script src="../libraries/foundation/js/vendor/modernizr.js"></script>
+  <script src="../javascript/elements.js" type="text/javascript"></script>
+  <script src="../libraries/foundation/js/vendor/jquery.js" type="text/javascript"></script>
+  <script src="../libraries/foundation/js/vendor/fastclick.js"></script>
+  <script src="../libraries/foundation/js/foundation.min.js" type="text/javascript"></script>
   <script> $(document).ready(function(e) { $(document).foundation(); }); </script>
+  <script> $(document).ready(function(e){uploadbutton();}); </script>
 </head>
 <body class="lightgrey-body">
   <section class="large-5 large-offset-1 hide-for-small-down columns">
@@ -202,13 +203,13 @@
         </div>
         <div class="row collapse large-6 small-12 columns">
           <h4>Upload your photograph</h4>
-          <p class="text-justify">Please upload a clear one person photograph of you, not somebody or something else. We will use it on your profile only if you permit us to, but this will be your default photograph in form autofills. View our <a href="#">requirements for photographs</a> before uploading yours.</p>
+          <p class="text-justify">Please upload a clear one person photograph of you, not somebody or something else. We will use it on your profile only if you permit us to, but this will be your default photograph in form autofills. View our <a target="_blank" href="#">requirements for photographs</a> before uploading yours.</p>
           <div class="large-6 small-12 columns">
-          	<img src="../images/avatar-blank.png" alt="Your Photo" height="175" width="175" class="th"/>
+          	<img src="../images/avatar-blank.png" id="profile-picture-display" alt="Your Photo" height="175" width="175" class="th"/>
           </div>
           <div class="large-6 small-12 columns">
-            <a class="button">Upload from your computer</a>
-            <a class="button">Link an online image by pasting the URL</a>
+            <input type="file" id="fileElem" multiple="" name="profilepic" class="hide" onchange="handleFiles(this.files)">
+			<button id="fileSelect" class="button secondary">Upload your Image</button>
           </div>
         </div>
         <a class="close-reveal-modal">&#215;</a>

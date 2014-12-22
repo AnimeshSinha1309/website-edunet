@@ -5,15 +5,15 @@
   <head>
     <title> <?php if(isset($title)) echo($title); else echo("Edunet"); ?> </title>
     <link href="../images/favicon.ico" rel="icon"/>
-    <link href="../foundation/css/foundation.css" rel="stylesheet" type="text/css"/>
+    <link href="../libraries/foundation/css/foundation.css" rel="stylesheet" type="text/css"/>
     <link href="../stylesheets/styles.css" rel="stylesheet" type="text/css"/>
-	<link href="../bootstrap/vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
-    <link href="../foundation/icons/foundation-icons/foundation-icons.css" rel="stylesheet" type="text/css"/>
-  	<script src="../foundation/js/vendor/modernizr.js"></script>
+	<link href="../libraries/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+    <link href="../libraries/foundation/icons/foundation-icons/foundation-icons.css" rel="stylesheet" type="text/css"/>
+  	<script src="../libraries/foundation/js/vendor/modernizr.js"></script>
   	<script src="../foundation/js/vendor/jquery.js" type="text/javascript"></script>
-  	<script src="../foundation/js/vendor/fastclick.js"></script>
-  	<script src="../javascript/function.js" type="text/javascript"></script>
-  	<script src="../foundation/js/foundation.min.js" type="text/javascript"></script>
+  	<script src="../libraries/foundation/js/vendor/fastclick.js"></script>
+  	<script src="../javascript/elements.js" type="text/javascript"></script>
+  	<script src="../libraries/foundation/js/foundation.min.js" type="text/javascript"></script>
   	<script> $(document).ready(function(e) { $(document).foundation(); }); </script>
     <meta name="author" content="Animesh Sinha"/>
     <meta name="title" content="Edunet - The network for schools"/>
@@ -35,7 +35,7 @@
                 </div>
               </li>
               <li> </li>
-              <li <?php if($navpos === "home")echo("class=\"active\""); ?>><a href="developers/home.php">Home</a></li>
+              <li <?php if($navpos === "home")echo("class=\"active\""); ?>><a href="index.php">Home</a></li>
               <li class="has-dropdown not-click">
                 <a><?php if(isset($_SESSION["name"])) echo($_SESSION["name"]); else echo("Username"); ?></a>
                 <ul class="dropdown">
@@ -47,7 +47,7 @@
             </ul>
             <ul class="left">
               <li <?php if($navpos === "courseware")echo("class=\"active\""); ?>><a href="courseware.php">Courseware</a></li>
-              <li <?php if($navpos === "developers")echo("class=\"active\""); ?>><a href="developers/home.php">Developers</a></li>
+              <li <?php if($navpos === "developers")echo("class=\"active\""); ?>><a href="developers.php">Developers</a></li>
               <li <?php if($navpos === "discuss")echo("class=\"active\""); ?>><a href="#">Discuss</a></li>
               <li class="has-dropdown not-click">
                 <a href="#">More Features</a>
