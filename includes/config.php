@@ -21,12 +21,16 @@
     session_start();
 
     // require authentication for most pages
-    if (!preg_match("{(?:login|logout|register)\.php$}", $_SERVER["PHP_SELF"]))
+    if (!preg_match("{(?:login|logout|register|notimplemented|501|404|403)\.php$}", $_SERVER["PHP_SELF"]))
     {
         if (empty($_SESSION["id"]))
         {
             redirect(CONTROLLER."/login.php");
         }
+		else if ($_SESSION["access"] != "Developer")
+		{
+			if (!preg_match("{(?:schools/index|schools|events)\.php$}", $_SERVER["PHP_SELF"]))
+			redirect(CONTROLLER."/notimplemented.php");
+		}
     }
-
 ?>

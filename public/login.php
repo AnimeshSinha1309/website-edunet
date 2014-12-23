@@ -19,7 +19,7 @@
         }
 
         // query database for user
-        $rows = query("SELECT * FROM users WHERE googleacc = ?", $_POST["email"]);
+        $rows = query("SELECT * FROM users WHERE `google-acc` = ?", $_POST["email"]);
 
         // if we found user, check Password
         if (count($rows) == 1)
@@ -34,7 +34,7 @@
                 $_SESSION["id"] = $row["id"];
                 
                 // store quick access data for display on webpages
-                $_SESSION["name"] = $row["firstname"] . " " . $row["lastname"]; 
+                $_SESSION["name"] = $row["fname"] . " " . $row["lname"]; 
                 $_SESSION["access"] = $row["access"];
 
                 // redirect to portfolio

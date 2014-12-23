@@ -2,6 +2,7 @@
 <html lang="en">
   <?php require_once("../includes/config.php"); ?>
   <?php if(!isset($navpos)) $navpos = "none"; ?>
+  <?php $dev = $_SESSION["access"] === "Developer" ?>
   <head>
     <title> <?php if(isset($title)) echo($title); else echo("Edunet"); ?> </title>
     <link href="../images/favicon.ico" rel="icon"/>
@@ -39,16 +40,15 @@
               <li class="has-dropdown not-click">
                 <a><?php if(isset($_SESSION["name"])) echo($_SESSION["name"]); else echo("Username"); ?></a>
                 <ul class="dropdown">
-                  <li <?php if($navpos === "dashboard")echo("class=\"active\""); ?>><a href="#">Dashboard</a></li>
-                  <li <?php if($navpos === "profile")echo("class=\"active\""); ?>><a href="#">Profile</a></li>
+                  <li <?php if($navpos === "dashboard" && $dev)echo("class=\"active\""); ?>><a href="#">Dashboard</a></li>
+                  <li <?php if($navpos === "profile" && $dev)echo("class=\"active\""); ?>><a href="#">Profile</a></li>
                   <li><a href="logout.php">Log Out</a></li>
                 </ul>
               </li>
             </ul>
             <ul class="left">
-              <li <?php if($navpos === "courseware")echo("class=\"active\""); ?>><a href="courseware.php">Courseware</a></li>
-              <li <?php if($navpos === "developers")echo("class=\"active\""); ?>><a href="developers.php">Developers</a></li>
-              <li <?php if($navpos === "discuss")echo("class=\"active\""); ?>><a href="#">Discuss</a></li>
+              <li <?php if($navpos === "courseware" && $dev)echo("class=\"active\""); ?>><a href="courseware.php">Courseware</a></li>
+              <li <?php if($navpos === "developers" && $dev)echo("class=\"active\""); ?>><a href="developers.php">Developers</a></li>
               <li class="has-dropdown not-click">
                 <a href="#">More Features</a>
                 <ul class="dropdown">
