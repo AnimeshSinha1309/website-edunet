@@ -11,7 +11,7 @@
     <link href="../../../libraries/bootstrap/css/bootstrap.css" rel="stylesheet"> <!-- Bootstrap core CSS -->
     <link href="../../../libraries/bootstrap/themes/home.css" rel="stylesheet"> <!-- Custom styles for this template -->
     <link href="../stylesheets/styles.css" rel="stylesheet"> <!-- Custom styles for this template -->
-    <script src="../../../libraries/foundation/js/vendor/jquery.js"></script>
+    <script src="../../../libraries/jquery/jquery-2.1.3.min.js"></script>
     <script src="../../../libraries/bootstrap/js/bootstrap.js"></script>
   </head>
   <body>

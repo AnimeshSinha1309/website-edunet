@@ -5,16 +5,16 @@
   <?php $dev = $_SESSION["access"] === "Developer" ?>
   <head>
     <title> <?php if(isset($title)) echo($title); else echo("Edunet"); ?> </title>
-    <link href="../images/favicon.ico" rel="icon"/>
-    <link href="../libraries/foundation/css/foundation.css" rel="stylesheet" type="text/css"/>
+    <link href="/images/favicon.ico" rel="icon"/>
+    <link href="/libraries/foundation/css/foundation.css" rel="stylesheet" type="text/css"/>
     <link href="../stylesheets/styles.css" rel="stylesheet" type="text/css"/>
-	<link href="../libraries/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
-    <link href="../libraries/foundation/icons/foundation-icons/foundation-icons.css" rel="stylesheet" type="text/css"/>
-  	<script src="../libraries/foundation/js/vendor/modernizr.js"></script>
-  	<script src="../foundation/js/vendor/jquery.js" type="text/javascript"></script>
-  	<script src="../libraries/foundation/js/vendor/fastclick.js"></script>
-  	<script src="../javascript/elements.js" type="text/javascript"></script>
-  	<script src="../libraries/foundation/js/foundation.min.js" type="text/javascript"></script>
+	<link href="/libraries/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+    <link href="/libraries/foundation/icons/foundation-icons/foundation-icons.css" rel="stylesheet" type="text/css"/>
+  	<script src="/libraries/foundation/js/vendor/modernizr.js"></script>
+  	<script src="/libraries/jquery/jquery-2.1.3.min.js" type="text/javascript"></script>
+  	<script src="/libraries/foundation/js/vendor/fastclick.js"></script>
+  	<script src="/javascript/elements.js" type="text/javascript"></script>
+  	<script src="/libraries/foundation/js/foundation.min.js" type="text/javascript"></script>
   	<script> $(document).ready(function(e) { $(document).foundation(); }); </script>
     <meta name="author" content="Animesh Sinha"/>
     <meta name="title" content="Edunet - The network for schools"/>

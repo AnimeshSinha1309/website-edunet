@@ -8,7 +8,7 @@
   <link href="../images/favicon.ico" rel="icon"/>
   <script src="../libraries/foundation/js/vendor/modernizr.js"></script>
   <script src="../javascript/elements.js" type="text/javascript"></script>
-  <script src="../libraries/foundation/js/vendor/jquery.js" type="text/javascript"></script>
+  <script src="../libraries/jquery/jquery-2.1.3.min.js" type="text/javascript"></script>
   <script src="../libraries/foundation/js/vendor/fastclick.js"></script>
   <script src="../libraries/foundation/js/foundation.min.js" type="text/javascript"></script>
   <script> $(document).ready(function(e) { $(document).foundation(); }); </script>
@@ -208,7 +208,7 @@
           	<img src="../images/avatar-blank.png" id="profile-picture-display" alt="Your Photo" height="175" width="175" class="th"/>
           </div>
           <div class="large-6 small-12 columns">
-            <input type="file" id="fileElem" multiple="" name="profilepic" class="hide" onchange="handleFiles(this.files)">
+            <input type="file" id="fileElem" multiple name="profilepic" class="hide" onchange="handleFiles(this.files)">
 			<button id="fileSelect" class="button secondary">Upload your Image</button>
           </div>
         </div>

@@ -7,7 +7,7 @@
 <p id="demo"></p>
 
 <script src="../../datafiles/noabbreviate.json" type="application/json"></script>
-<script src="../../libraries/foundation/js/vendor/jquery.js" type="text/javascript"></script>
+<script src="../../libraries/jquery/jquery-2.1.3.min.js" type="text/javascript"></script>
 <script>
 var text = '{"r":{"fullform":"are","shortform":"r","usage":80,"alternative":"none","block-when":{"word":"whole", "check":"strict"}},"u":{"fullform":"you","shortform":"u","usage":80,"alternative":"none","block-when":{"word":"whole", "check":"strict"}},"ol9":{"fullform":"online","shortform":"ol9","usage":60,"alternative":"none","block-when":{"word":"whole", "check":"general"}},"didnt":{"fullform":"didn\'t","shortform":"didnt","usage":90,"alternative":"none","block-when":{"word":"whole", "check":"extreme"}}}'
 

@@ -44,19 +44,27 @@
       <div class="large-9 columns main-window" id="new-income">
       	<h2>Add New Income</h2>
         <br/>
-        <form>
-          <label for="new-income--name" class="large-11"> <strong>Name of the Income</strong>
-            <input type="text" id="new-income--name" placeholder="Name or Heading">
-          </label>
-          <label for="new-income--amount" class="large-5 columns"> <strong>Total Value</strong>
-            <input type="text" id="new-income--amount" placeholder="Total Amount in Rupees">
-          </label>
-          <div class="large-6 columns">
-            <label><strong>Type of Income</strong></label>
-            <input type="radio" name="recurrence" value="recur" id="new-income--type-recur">
+        <form method="post" action="expense-monitor.php">
+          <div class="row">
+            <label for="new-income--name" class="large-11"> <strong>Name of the Income</strong>
+              <input type="text" id="new-income--name" placeholder="Name or Heading">
+            </label>
+          </div>
+          <div class="row">
+            <label for="new-income--amount" class="large-5 columns"> <strong>Total Value</strong>
+              <input type="text" id="new-income--amount" placeholder="Total Amount in Rupees">
+            </label>
+            <div class="large-6 columns">
+              <label><strong>Type of Income</strong></label>
+              <input type="radio" name="recurrence" value="recur" id="new-income--type-recur">
               <label for="new-income--type-recur">Recurring</label>
-            <input type="radio" name="recurrence" value="once" id="new-income--type-once">
+              <input type="radio" name="recurrence" value="once" id="new-income--type-once">
               <label for="new-income--type-once">One Time</label>
+            </div>
+          </div>
+          <div class="row">
+            <br/>
+            <input type="submit" value="Add the Income" class="button" />
           </div>
         </form>
       </div>

@@ -30,7 +30,7 @@
       <div class="large-4 columns">
         <div class="item-wrapper">
           <div class="img-wrapper">
-            <a href="../public/events/eventforms-control.php?f=event_1" class="button expand add-to-cart">View Form</a>
+            <a href="../public/events.php?f=eventform-1" class="button expand add-to-cart">View Form</a>
             <a href="#"><img src="../images/events/events-juniorscience-2014.jpg"></a>
           </div>  
           <a href="#"><h3>NSEJS</h3></a>
