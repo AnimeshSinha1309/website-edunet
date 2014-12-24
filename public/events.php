@@ -1,7 +1,7 @@
 <?php
 
     // configuration
-    require("../includes/config.php"); 
+    require("includes/config.php"); 
 	render("events.php");
 ?>
 
