@@ -9,21 +9,21 @@
   <title>Edunet - Adminitrators</title>
   <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
   <link href="css/sb-admin.css" rel="stylesheet" type="text/css"/>
-  <link href="css/morris.css" rel="stylesheet" type="text/css"/>
+  <link href="../../graphing-plugins/morris/morris.css" rel="stylesheet" type="text/css"/>
   <link href="../../../images/favicon.ico" rel="icon"/>
   <link href="../../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
   <?php if(isset($_SESSION["name"])) $user = $_SESSION["name"]; else $user = "Administrator"; ?>
   <script src="../../jquery/jquery-2.1.3.min.js"></script>
   <script src="../../bootstrap/js/bootstrap.min.js"></script>
   <script src="js/raphael.min.js"></script>
-  <script src="js/morris.min.js"></script>
-  <script src="js/morris-data.js"></script>
+  <script src="../../graphing-plugins/morris/morris.min.js"></script>
+  <script src="../../graphing-plugins/morris/morris-data.js"></script>
   <?php if(isset($special) && $special == "flot") { ?>
-  <script src="js/jquery.flot.js"></script>
-  <script src="js/jquery.flot.tooltip.min.js"></script>
-  <script src="js/jquery.flot.resize.js"></script>
-  <script src="js/jquery.flot.pie.js"></script>
-  <script src="js/flot-data.js"></script>
+  <script src="../../graphing-plugins/flot/jquery.flot.js"></script>
+  <script src="../../graphing-plugins/flot/jquery.flot.tooltip.min.js"></script>
+  <script src="../../graphing-plugins/flot/jquery.flot.resize.js"></script>
+  <script src="../../graphing-plugins/flot/jquery.flot.pie.js"></script>
+  <script src="../../graphing-plugins/flot/flot-data.js"></script>
   <?php } ?>
 </head>
 <body>
