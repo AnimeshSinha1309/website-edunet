@@ -7,10 +7,10 @@
   <meta name="description" content="Buy products from Hiya Perfumes and Chemicals"/>
   <meta name="author" content="Animesh Sinha"/>
   <title>Hiya - Products</title>
-  <script src="js/jquery.js"></script>
-  <link href="css/bootstrap.min.css" rel="stylesheet"/>
+  <script src="/libraries/jquery/jquery-2.1.3.js"></script>
+  <link href="/libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
   <link href="css/landing-page.css" rel="stylesheet"/>
-  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+  <link href="/libraries/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
   <link href="google/fonts/fontscss.css" rel="stylesheet" type="text/css"/>
   <link href="css/products.css" rel="stylesheet" type="text/css"/>
   <link href="../../images/favicon.ico" rel="icon">

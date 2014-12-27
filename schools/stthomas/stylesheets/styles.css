@@ -22,25 +22,6 @@ a:hover
 	margin-bottom:5px;
 }
 
-/* Styles for templates/managements.html */
-
-.btn-justify
-{
-	width:100%;
-	text-align:center;
-} .btn-justify a {width:60%;}
-
-.wrap-image-1
-{
-	width:20%;
-	text-align:center;
-}
-.wrap-image-2
-{
-	width:13%;
-	text-align:center;
-}
-
 /* Styles for templates/news.html */
 
 .news-box

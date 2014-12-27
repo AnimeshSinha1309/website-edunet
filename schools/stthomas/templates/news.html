@@ -1,132 +1,211 @@
+<style>
+.news-main{
+	padding-left:20px;
+}
+@media (max-width: 768px)
+{
+	.container{	padding-left:10px; padding-right:10px;}
+	.btn{ margin-left:30px; }
+	h2{ margin-left:10px; }
+}
+.resource-card{
+	-webkit-background-clip: border-box;
+	-webkit-background-origin: padding-box;
+	-webkit-background-size: auto;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.117647) 1px 2px 5px 0px;
+	-webkit-font-smoothing: antialiased;
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: rgb(254, 254, 254);
+	background-image: none;
+	background-origin: padding-box;
+	background-size: auto;
+	border-bottom-left-radius: 1px;
+	border-bottom-right-radius: 1px;
+	border-top-left-radius: 1px;
+	border-top-right-radius: 1px;
+	box-shadow: rgba(0, 0, 0, 0.217647) 1px 2px 5px 0px;
+	color: rgb(37, 138, 175);
+	cursor: auto;
+	display: block;
+	float: left;
+	font-family: Roboto, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	height: 95px;
+	line-height: 19px;
+	margin-bottom: 20px;
+	margin-left: 0px;
+	margin-right: 14px;
+	margin-top: 0px;
+	position: relative;
+	text-decoration: none;
+	width: 360px;
+}
+.card-bg
+{
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: rgb(37, 138, 175);
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	height: 95px;
+	left: 0px;
+	line-height: 19px;
+	position: absolute;
+	top: 0px;
+	vertical-align: top;
+	width: 110px;
+}
+.card-info
+{
+	bottom: 0px;
+	box-sizing: border-box;
+	color: rgb(37, 138, 175);
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	height: 80px;
+	left: 110px;
+	line-height: 19px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	padding-bottom: 4px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 4px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 250px;
+}
+.title
+{
+	-webkit-font-smoothing: antialiased;
+	color: rgb(54, 54, 54);
+	cursor: auto;
+	display: block;
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	height: 38px;
+	line-height: 19px;
+	margin-bottom: -2px;
+	overflow-x: visible;
+	overflow-y: visible;
+	padding-bottom: 5px;
+	text-overflow: ellipsis;
+	white-space: normal;
+	width: 190px;
+}
+.description
+{
+	-webkit-font-smoothing: antialiased;
+	color: rgb(70, 70, 70);
+	cursor: auto;
+	display: block;
+	float: right;
+	font-family: Roboto, sans-serif;
+	font-size: 13px;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	height: 30px;
+	line-height: 15px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	left: 0px;
+	width: 190px;
+}
+</style>
   <!-- ANNOUNCEMENTS
 	 ================================================== -->
   	<br class="featurette-divider"/>
     <div class="container featurette">
 	  <h2 class="featurette-heading">News and Announcements <small>The School Newsletter</small></h2>
-      <div class="row">
-		<div class="col-lg-3 news-container">
-          <div class="news-box">
-            <table class="table table-bordered table-responsive table-striped">
-              <tbody class="text-center">
-                <tr style="background-color:#F8612A; color:#FFF"><td>
-                  <b>School closed on 23 and 24 November</b>
-                </td></tr>
-                <tr><td>
-                  The School will remain closed on the 23rd and 24th of November on account of Ranchi Bandh. School will be open on the Saturday 27th to compensate for this.
-                </td></tr>
-              </tbody>
-            </table> 
-  	      </div>
-        </div>
-		<div class="col-lg-3 news-container">
-          <div class="news-box">
-            <table class="table table-bordered table-responsive table-striped">
-              <tbody class="text-center">
-                <tr style="background-color:#3A3A3A; color:#FFF"><td>
-                  <b>School closed on 23 and 24 November</b>
-                </td></tr>
-                <tr><td>
-                  The School will remain closed on the 23rd and 24th of November on account of Ranchi Bandh. School will be open on the Saturday 27th to compensate for this.
-                </td></tr>
-                <tr><td>
-                  <a class="btn btn-primary">Read full story</a>
-                </td></tr>
-              </tbody>
-            </table> 
-  	      </div>
-        </div>
-		<div class="col-lg-3 news-container">
-          <div class="news-box">
-            <table class="table table-bordered table-responsive table-striped">
-              <tbody class="text-center">
-                <tr style="background-color:#4A993E; color:#FFF"><td>
-                  <b>School closed on 23 and 24 November</b>
-                </td></tr>
-                <tr><td>
-                  The School will remain closed on the 23rd and 24th of November on account of Ranchi Bandh. School will be open on the Saturday 27th to compensate for this.
-                </td></tr>
-              </tbody>
-            </table> 
-  	      </div>
-        </div>
-		<div class="col-lg-3 news-container">
-          <div class="news-box">
-            <table class="table table-bordered table-responsive table-striped">
-              <tbody class="text-center">
-                <tr style="background-color:#8811AA; color:#FFF"><td>
-                  <b>School closed on 23 and 24 November</b>
-                </td></tr>
-                <tr><td>
-                  The School will remain closed on the 23rd and 24th of November on account of Ranchi Bandh. School will be open on the Saturday 27th to compensate for this.
-                </td></tr>
-              </tbody>
-            </table> 
-  	      </div>
-        </div>
-      </div>
-      <div class="row">
-		<div class="col-lg-3 news-container">
-          <div class="news-box">
-            <table class="table table-bordered table-responsive table-striped">
-              <tbody class="text-center">
-                <tr style="background-color:#F8612A; color:#FFF"><td>
-                  <b>School closed on 23 and 24 November</b>
-                </td></tr>
-                <tr><td>
-                  The School will remain closed on the 23rd and 24th of November on account of Ranchi Bandh. School will be open on the Saturday 27th to compensate for this.
-                </td></tr>
-              </tbody>
-            </table> 
-  	      </div>
-        </div>
-		<div class="col-lg-3 news-container">
-          <div class="news-box">
-            <table class="table table-bordered table-responsive table-striped">
-              <tbody class="text-center">
-                <tr style="background-color:#3A3A3A; color:#FFF"><td>
-                  <b>School closed on 23 and 24 November</b>
-                </td></tr>
-                <tr><td>
-                  The School will remain closed on the 23rd and 24th of November on account of Ranchi Bandh. School will be open on the Saturday 27th to compensate for this.
-                </td></tr>
-              </tbody>
-            </table> 
-  	      </div>
-        </div>
-		<div class="col-lg-3 news-container">
-          <div class="news-box">
-            <table class="table table-bordered table-responsive table-striped">
-              <tbody class="text-center">
-                <tr style="background-color:#4A993E; color:#FFF"><td>
-                  <b>School closed on 23 and 24 November</b>
-                </td></tr>
-                <tr><td>
-                  The School will remain closed on the 23rd and 24th of November on account of Ranchi Bandh. School will be open on the Saturday 27th to compensate for this.
-                </td></tr>
-              </tbody>
-            </table> 
-  	      </div>
-        </div>
-		<div class="col-lg-3 news-container">
-          <div class="news-box">
-            <table class="table table-bordered table-responsive table-striped">
-              <tbody class="text-center">
-                <tr style="background-color:#8811AA; color:#FFF"><td>
-                  <b>School closed on 23 and 24 November</b>
-                </td></tr>
-                <tr><td>
-                  The School will remain closed on the 23rd and 24th of November on account of Ranchi Bandh. School will be open on the Saturday 27th to compensate for this.
-                </td></tr>
-              </tbody>
-            </table> 
-  	      </div>
-        </div>
+      <br class="featurette-divider"/>
+      <div class="row news-main">
+		<a class="resource-card" href="/training/building-wearables.html">
+		  <div class="card-bg" style="background-image: url(http://developer.android.com/wear/images/notifications.png);"></div>
+		  <div class="card-info">
+            <div class="title"><strong>Building Apps for Wearables</strong></div>
+            <div class="description">
+              <div>
+                Learn how to build notifications, send and sync data, and use voice actions.
+              </div>
+            </div>
+          </div>
+		</a>
+		<a class="resource-card" href="/training/building-wearables.html">
+		  <div class="card-bg" style="background-image: url(http://developer.android.com/images/material.png);"></div>
+		  <div class="card-info">
+            <div class="title"><strong>Building Apps for Wearables</strong></div>
+            <div class="description ellipsis" style="height: 30px;">
+              <div class="text" style="height: auto;">
+                Learn how to build notifications, send and sync data, and use voice actions.
+              </div>
+            </div>
+          </div>
+		</a>
+		<a class="resource-card" href="/training/building-wearables.html">
+		  <div class="card-bg" style="background-image: url(http://developer.android.com/images/tools/studio-hero.png);"></div>
+		  <div class="card-info">
+            <div class="title"><strong>Building Apps for Wearables</strong></div>
+            <div class="description ellipsis" style="height: 30px;">
+              <div class="text" style="height: auto;">
+                Learn how to build notifications, send and sync data, and use voice actions.
+              </div>
+            </div>
+          </div>
+		</a>
+		<a class="resource-card" href="/training/building-wearables.html">
+		  <div class="card-bg" style="background-image: url(http://developer.android.com/wear/images/notifications.png);"></div>
+		  <div class="card-info">
+            <div class="title"><strong>Building Apps for Wearables</strong></div>
+            <div class="description">
+              <div>
+                Learn how to build notifications, send and sync data, and use voice actions.
+              </div>
+            </div>
+          </div>
+		</a>
+		<a class="resource-card" href="/training/building-wearables.html">
+		  <div class="card-bg" style="background-image: url(http://developer.android.com/images/material.png);"></div>
+		  <div class="card-info">
+            <div class="title"><strong>Building Apps for Wearables</strong></div>
+            <div class="description ellipsis" style="height: 30px;">
+              <div class="text" style="height: auto;">
+                Learn how to build notifications, send and sync data, and use voice actions.
+              </div>
+            </div>
+          </div>
+		</a>
+		<a class="resource-card" href="/training/building-wearables.html">
+		  <div class="card-bg" style="background-image: url(http://developer.android.com/images/tools/studio-hero.png);"></div>
+		  <div class="card-info">
+            <div class="title"><strong>Building Apps for Wearables</strong></div>
+            <div class="description ellipsis" style="height: 30px;">
+              <div class="text" style="height: auto;">
+                Learn how to build notifications, send and sync data, and use voice actions.
+              </div>
+            </div>
+          </div>
+		</a>
       </div>
       <hr class="featurette-divider"/>
       <div id="school-newsletter" class="row featurette">
       	<h2 class="featurette-heading">Subscribe to the Newsletter</h2><br/>
         <p class="lead col-lg-10">Get an email subscription to all of the activities in school. You may also select specific items of your interest from our news feed.</p>
-        <a class="btn btn-success col-lg-2" style="padding:20px;">Sign up for the <br/> St. Thomas Newsletter</a>
+        <a class="btn btn-success col-lg-2" style="padding:20px;">Sign up for the<br/>St. Thomas Newsletter</a>
       </div>
       <div id="school-message" class="row featurette">
       	<h2 class="featurette-heading">Get the Message alert</h2><br/>

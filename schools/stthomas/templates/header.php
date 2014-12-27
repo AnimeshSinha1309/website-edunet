@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="The Official website of St. Thomas School, dhurwa, ranchi. Hosted on Edunet.">
+    <meta name="author" content="Animesh Sinha">
     <link rel="icon" href="../../../images/favicon.ico">
     <title>St. Thomas</title>
     <link href="../../../libraries/bootstrap/css/bootstrap.css" rel="stylesheet"> <!-- Bootstrap core CSS -->
