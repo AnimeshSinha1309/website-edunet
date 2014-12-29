@@ -24,6 +24,6 @@
 	$title = $file_to_title[$file];
 	$navpos = $file_to_navpos[$file];
 	if($file != "courseware")
-		render("header.php", ["title" => $title, "navpos" => $navpos]);
+		render("header_bootstrap.php", ["title" => $title, "navpos" => $navpos]);
 	render($file.".html");
 ?>

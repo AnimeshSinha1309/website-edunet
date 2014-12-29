@@ -8,11 +8,12 @@
     <meta name="author" content="Animesh Sinha">
     <link rel="icon" href="../../../images/favicon.ico">
     <title>St. Thomas</title>
-    <link href="../../../libraries/bootstrap/css/bootstrap.css" rel="stylesheet"> <!-- Bootstrap core CSS -->
-    <link href="../../../libraries/bootstrap/themes/home.css" rel="stylesheet"> <!-- Custom styles for this template -->
+    <link href="../../../dependencies/bootstrap/css/bootstrap.css" rel="stylesheet"> <!-- Bootstrap core CSS -->
+    <link href="../../../dependencies/bootstrap/themes/home.css" rel="stylesheet"> <!-- Custom styles for this template -->
     <link href="../stylesheets/styles.css" rel="stylesheet"> <!-- Custom styles for this template -->
-    <script src="../../../libraries/jquery/jquery-2.1.3.min.js"></script>
-    <script src="../../../libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="../../../dependencies/jquery/jquery-2.1.3.min.js"></script>
+    <script src="../../../dependencies/bootstrap/js/bootstrap.js"></script>
+	<script src="../../../dependencies/angular/angular.js"></script>
   </head>
   <body>
 	 <!-- NAVBAR

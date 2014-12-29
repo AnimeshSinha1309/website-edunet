@@ -7,23 +7,23 @@
   <meta name="description" content=""/>
   <meta name="author" content=""/>
   <title>Edunet - Adminitrators</title>
-  <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+  <link href="/dependencies/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
   <link href="css/sb-admin.css" rel="stylesheet" type="text/css"/>
-  <link href="../../graphing-plugins/morris/morris.css" rel="stylesheet" type="text/css"/>
-  <link href="../../../images/favicon.ico" rel="icon"/>
-  <link href="../../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+  <link href="/dependencies/graphing-plugins/morris/morris.css" rel="stylesheet" type="text/css"/>
+  <link href="/images/favicon.ico" rel="icon"/>
+  <link href="/dependencies/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
   <?php if(isset($_SESSION["name"])) $user = $_SESSION["name"]; else $user = "Administrator"; ?>
-  <script src="../../jquery/jquery-2.1.3.min.js"></script>
-  <script src="../../bootstrap/js/bootstrap.min.js"></script>
+  <script src="/dependencies/jquery/jquery-2.1.3.min.js"></script>
+  <script src="/dependencies/bootstrap/js/bootstrap.min.js"></script>
   <script src="js/raphael.min.js"></script>
-  <script src="../../graphing-plugins/morris/morris.min.js"></script>
-  <script src="../../graphing-plugins/morris/morris-data.js"></script>
+  <script src="/dependencies/graphing-plugins/morris/morris.min.js"></script>
+  <script src="/dependencies/graphing-plugins/morris/morris-data.js"></script>
   <?php if(isset($special) && $special == "flot") { ?>
-  <script src="../../graphing-plugins/flot/jquery.flot.js"></script>
-  <script src="../../graphing-plugins/flot/jquery.flot.tooltip.min.js"></script>
-  <script src="../../graphing-plugins/flot/jquery.flot.resize.js"></script>
-  <script src="../../graphing-plugins/flot/jquery.flot.pie.js"></script>
-  <script src="../../graphing-plugins/flot/flot-data.js"></script>
+  <script src="/dependencies/graphing-plugins/flot/jquery.flot.js"></script>
+  <script src="/dependencies/graphing-plugins/flot/jquery.flot.tooltip.min.js"></script>
+  <script src="/dependencies/graphing-plugins/flot/jquery.flot.resize.js"></script>
+  <script src="/dependencies/graphing-plugins/flot/jquery.flot.pie.js"></script>
+  <script src="/dependencies/graphing-plugins/flot/flot-data.js"></script>
   <?php } ?>
 </head>
 <body>
@@ -36,7 +36,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.php">Edunet Administrators</a>
+        <a class="navbar-brand" href="/index.php">Edunet Administrators</a>
       </div>
       <!-- Top Menu Items -->
       <ul class="nav navbar-right top-nav">

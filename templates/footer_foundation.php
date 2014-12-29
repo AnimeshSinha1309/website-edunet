@@ -1,5 +1,2 @@
-    <footer>
-    
-    </footer>
   </body>
 </html>

@@ -1,5 +1,4 @@
-<?php render("header_foundation.php", ["title" => "Events", "navpos" => "events"]) ?>
-<link href="../stylesheets/events.css" rel="stylesheet" type="text/css"/>
+<?php render("header_foundation.php", ["title" => "Events", "navpos" => "events", "stylesheet" => "events"]) ?>
 <main>
   <div id="all-content-wrapper" class="row">
     <div id="container-sidebar" class="large-3 medium-4 columns">

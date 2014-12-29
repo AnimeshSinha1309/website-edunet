@@ -1,12 +1,12 @@
 <?php
 
-/************************************************** Define Register Constants **************************************************/
+/************************************************* Define Register Constants *************************************************/
 /* $fields = ["fname", "lname", "username", "password", "mobile", "access", "google-acc", "facebook-acc", "github-acc",
  * "stackoverflow-acc", "microsoft-acc", "intro-youtube", "intro-text", "interest-tags", "interest-primary", "profile-pic",
  * "school", "class", "cpassword"];
  * $compulsary = ["fname", "username", "google-acc", "password", "cpassword"];
  */
-/*******************************************************************************************************************************/
+/*****************************************************************************************************************************/
 
     // configuration
     require("../includes/config.php");
@@ -21,7 +21,7 @@
             $register_flag = query("INSERT INTO users (fname, lname, username, password, mobile, access, google-acc, facebook-acc, github-acc, stackoverflow-acc, microsoft-acc, intro-youtube, intro-text, interest-tags, interest-primary, profile-pic, school, class) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", $_POST["fname"], $_POST["lname"], $_POST["username"], crypt($_POST["password"]), $_POST["mobile"], $_POST["access"], $_POST["google-acc"], $_POST["facebook-acc"], $_POST["github-acc"], $_POST["stackoverflow-acc"], $_POST["microsoft-acc"], $_POST["intro-youtube"], $_POST["intro-text"], $_POST["interest-tags"], $_POST["interest-primary"], $_POST["profile-pic"], $_POST["school"], $_POST["class"]);
 
             // handle exception if query could not be completed
-            if ($register_flag === false){render("register_form.php", ["apology" => "Failed to completer signup. Database Error."]);}
+            if ($register_flag === false){render("register-form.php", ["apology" => "Failed to completer signup. Database Error."]);}
             // if registered, then log the user in
             else
             {
@@ -39,13 +39,13 @@
         // if all required fields are not filled
         else
         {
-            render("register_form.php", ["title" => "Register", "apology" => "Please fill in the whole of the form. "]);
+            render("register-form.php", ["title" => "Register", "apology" => "Please fill in the whole of the form. "]);
         }
     }
     // if no POST is recieved, render form
     else
     {
-        render("register_form.php");
+        render("register-form.php");
     }
 
 ?>

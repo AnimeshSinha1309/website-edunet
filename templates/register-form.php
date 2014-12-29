@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <head>
   <title> Register </title>
-  <link href="../libraries/foundation/css/foundation.css" rel="stylesheet" type="text/css"/>
+  <link href="../dependencies/foundation/css/foundation.css" rel="stylesheet" type="text/css"/>
   <link href="../stylesheets/register.css" rel="stylesheet" type="text/css"/>
-  <link href="../libraries/foundation/icons/foundation-icons/foundation-icons.css" rel="stylesheet" type="text/css"/>
-  <link href="../libraries/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+  <link href="../dependencies/foundation/icons/foundation-icons/foundation-icons.css" rel="stylesheet" type="text/css"/>
+  <link href="../dependencies/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
   <link href="../images/favicon.ico" rel="icon"/>
-  <script src="../libraries/foundation/js/vendor/modernizr.js"></script>
+  <script src="../dependencies/foundation/js/vendor/modernizr.js"></script>
   <script src="../javascript/elements.js" type="text/javascript"></script>
-  <script src="../libraries/jquery/jquery-2.1.3.min.js" type="text/javascript"></script>
-  <script src="../libraries/foundation/js/vendor/fastclick.js"></script>
-  <script src="../libraries/foundation/js/foundation.min.js" type="text/javascript"></script>
+  <script src="../dependencies/jquery/jquery-2.1.3.min.js" type="text/javascript"></script>
+  <script src="../dependencies/foundation/js/vendor/fastclick.js"></script>
+  <script src="../dependencies/foundation/js/foundation.min.js" type="text/javascript"></script>
   <script> $(document).ready(function(e) { $(document).foundation(); }); </script>
   <script> $(document).ready(function(e){uploadbutton();}); </script>
 </head>

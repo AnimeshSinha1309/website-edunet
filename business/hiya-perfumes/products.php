@@ -7,10 +7,10 @@
   <meta name="description" content="Buy products from Hiya Perfumes and Chemicals"/>
   <meta name="author" content="Animesh Sinha"/>
   <title>Hiya - Products</title>
-  <script src="/libraries/jquery/jquery-2.1.3.js"></script>
-  <link href="/libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <script src="/dependencies/jquery/jquery-2.1.3.js"></script>
+  <link href="/dependencies/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
   <link href="css/landing-page.css" rel="stylesheet"/>
-  <link href="/libraries/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+  <link href="/dependencies/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
   <link href="google/fonts/fontscss.css" rel="stylesheet" type="text/css"/>
   <link href="css/products.css" rel="stylesheet" type="text/css"/>
   <link href="../../images/favicon.ico" rel="icon">
@@ -25,12 +25,12 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Hiya Perfumes</a>
+        <a class="navbar-brand" href="#">Hiya International</a>
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="index.php">Home</a></li>
-          <li><a href="preoducts.html">Products</a></li>
+          <li><a href="products.php">Products</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </div>
@@ -106,6 +106,7 @@
             <li><a href="#about">About</a></li>
             <li class="footer-menu-divider">&sdot;</li>
             <li><a href="#contact">Contact</a></li>
+            <span class="list-inline navbar-right"><li><a href="/">Edunet</a></li></span>
           </ul>
           <p class="copyright text-muted small">Copyright &copy; Hiya 2014. All Rights Reserved</p>
         </div>

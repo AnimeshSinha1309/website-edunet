@@ -8,8 +8,8 @@
   <meta name="author" content="Animesh Sinha">
   <title>Hiya - Home</title>
   <link href="../../images/favicon.ico" rel="icon">
-  <link href="../../libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../../libraries/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="../../dependencies/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../dependencies/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="css/landing-page.css" rel="stylesheet">
   <link href="google/fonts/fontscss.css" rel="stylesheet" type="text/css">
 </head>
@@ -23,7 +23,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Hiya Perfumes</a>
+        <a class="navbar-brand" href="#">Hiya International</a>
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
@@ -39,7 +39,7 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="intro-message">
-            <h1>Hiya Perfumes</h1>
+            <h1>Hiya International</h1>
             <h3>An Edunet Business Advertising Page</h3>
             <hr class="intro-divider">
             <ul class="list-inline intro-social-buttons">
@@ -123,6 +123,7 @@
             <li><a href="#about">About</a></li>
             <li class="footer-menu-divider">&sdot;</li>
             <li><a href="#contact">Contact</a></li>
+            <span class="list-inline navbar-right"><li><a href="/">Edunet</a></li></span>
           </ul>
           <p class="copyright text-muted small">Copyright &copy; Hiya 2014. All Rights Reserved</p>
         </div>

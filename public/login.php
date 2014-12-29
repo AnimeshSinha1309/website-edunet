@@ -9,12 +9,12 @@
         // validate submission
         if (empty($_POST["email"]))
         {
-            render("login_form.php", ["error" => "Please provide your Email ID"]);
+            render("login-form.php", ["error" => "Please provide your Email ID"]);
             exit(1);
         }
         else if (empty($_POST["password"]))
         {
-            render("login_form.php", ["error" => "Please type in you password"]);
+            render("login-form.php", ["error" => "Please type in you password"]);
             exit(2);
         }
 
@@ -43,13 +43,13 @@
         }
 
         // else apologize
-        render("login_form.php", ["error" => "Invalid Email and/or Password."]);
+        render("login-form.php", ["error" => "Invalid Email and/or Password."]);
         exit(3);
     }
     else
     {
         // else render form
-        render("login_form.php");
+        render("login-form.php");
     }
 
 ?>
