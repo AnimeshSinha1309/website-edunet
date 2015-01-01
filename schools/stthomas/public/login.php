@@ -14,11 +14,11 @@
 			render("login.php", ["error" => $error]);
 			exit(2);
 		}
-		$users = query("SELECT (`id`, `password`) FROM `stthomas_users` WHERE `username` = ?", $_POST['username']);
+		$users = query("SELECT `id`, `password` FROM `users` WHERE `edunet` = ?", $_POST['username']);
         if (count($users) == 1)
         {
             $user = $users[0];
-            if ($user["password"] == $_POST["password"])
+            if ($user["password"] === $_POST["password"])
             {
                 $_SESSION["sts-id"] = $user["id"];
                 redirect("index.php");
@@ -28,7 +28,11 @@
 				$error = 'Invalid username and/or password.';
 			}
         }
-		else $error = 'Invalid username and/or password.';
+		else if (count($users) == 0)
+		{
+			$error = 'Invalid username and/or password.';
+		}
+		else $error = 'Error executing SQL qurey.';
 		render("login.php", ["error" => $error]);
 		
         exit(3);

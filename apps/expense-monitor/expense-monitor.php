@@ -3,8 +3,8 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Expense Manager</title>
-    <link href="../libraries/foundation/css/foundation.css" rel="stylesheet" type="text/css" />
-    <link href="../images/favicon.ico" rel="icon" />
+    <link href="../../../dependencies/foundation/css/foundation.css" rel="stylesheet" type="text/css" />
+    <link href="../../../images/favicon.ico" rel="icon" />
 </head>
 <style>
 	body{background-color:#DDD;}
@@ -22,18 +22,18 @@
     </ul>
     <section class="top-bar-section">
       <ul class="right">
-        <li><a href="#">Edunet</a></li>
+        <li><a href="/">Edunet</a></li>
       </ul>
     </section>
   </nav>
   <div>
     <div class="large-10 columns">
       <div class="icon-bar five-up">
-        <a class="item"><img src="../images/assets-general/fi-home.svg" ><label>Home</label></a>
-        <a class="item"><img src="../images/assets-general/fi-bookmark.svg" ><label>Bookmark</label></a>
-        <a class="item"><img src="../images/assets-general/fi-info.svg" ><label>Info</label></a>
-        <a class="item"><img src="../images/assets-general/fi-mail.svg" ><label>Mail</label></a>
-        <a class="item"><img src="../images/assets-general/fi-like.svg" ><label>Like</label></a>
+        <a class="item"><img src="../../../images/assets-general/fi-home.svg" ><label>Home</label></a>
+        <a class="item"><img src="../../../images/assets-general/fi-bookmark.svg" ><label>Bookmark</label></a>
+        <a class="item"><img src="../../../images/assets-general/fi-info.svg" ><label>Info</label></a>
+        <a class="item"><img src="../../../images/assets-general/fi-mail.svg" ><label>Mail</label></a>
+        <a class="item"><img src="../../../images/assets-general/fi-like.svg" ><label>Like</label></a>
       </div>
 	  <div class="large-3 columns">
     	<a href="#" class="button disabled success large">Present Balance</a>

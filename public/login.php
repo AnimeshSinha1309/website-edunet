@@ -19,7 +19,7 @@
         }
 
         // query database for user
-        $rows = query("SELECT * FROM users WHERE `google-acc` = ?", $_POST["email"]);
+        $rows = query("SELECT * FROM users WHERE `googleAcc` = ?", $_POST["email"]);
 
         // if we found user, check Password
         if (count($rows) == 1)
@@ -38,7 +38,10 @@
                 $_SESSION["access"] = $row["access"];
 
                 // redirect to portfolio
-                redirect(CONTROLLER."/");
+				if($_SESSION["access"] == "Developer")
+					redirect(CONTROLLER."/index.php");
+				else
+					redirect(CONTROLLER."/schools.php");
             }
         }
 

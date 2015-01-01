@@ -5,8 +5,8 @@
       <div class="hide-for-small">
         <div class="sidebar">
           <ul class="side-nav">
-            <li class="heading"><a>First</a></li>
-            <li class="active"><a href="#">Link 1</a></li>
+            <li class="heading"><a>Headlines</a></li>
+            <li class="active"><a href="#">NSEJS Reults Announced</a></li>
             <li><a href="#">Link 2</a></li>
             <li class="divider"></li>
             <li class="heading"><a>Updates</a></li>
@@ -15,9 +15,9 @@
             <li><a href="#">Events</a></li>
             <li><a href="#">Friends</a></li>
             <li><a href="schools.php">School</a></li>
-            <li class="heading"><a>Going on</a></li>
-            <li><a href="#">Link 5</a></li>
-            <li><a href="#">Link 6</a></li>
+            <li class="heading"><a>Projects</a></li>
+            <li><a href="#">Website Edunet</a></li>
+            <li><a href="#">Picnic Planner</a></li>
           </ul>
         </div>
       </div>
@@ -28,7 +28,7 @@
     <h1> Links you can follow </h1>
     <h2> <small>Under Development</small> </h2>
     <a href="schools.php" class="button">Schools</a>
-    <a href="courseware.php" class="button alert">Dashboard</a>
+    <a href="applications.php" class="button alert">Applications</a>
     <a href="courseware.php" class="button success">Courseware</a>
     <a href="events.php" class="button secondary">Events</a>
     <h2> <small>Development Complete</small> </h2>

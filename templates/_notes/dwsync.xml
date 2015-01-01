@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="home.php" server="F:/XAMPP - Web Package/installed/htdocs/" local="130625306170493518" remote="130625306170000000" Dst="1" />
-<file name="header_foundation.php" server="F:/XAMPP - Web Package/installed/htdocs/" local="130643358725845830" remote="130643358720000000" Dst="1" />
+<file name="home.php" server="F:/XAMPP - Web Package/installed/htdocs/" local="130645732978947328" remote="130645732970000000" Dst="1" />
+<file name="header_foundation.php" server="F:/XAMPP - Web Package/installed/htdocs/" local="130645741053409161" remote="130645741050000000" Dst="1" />
 <file name="footer_foundation.php" server="F:/XAMPP - Web Package/installed/htdocs/" local="130643304251450073" remote="130643304250000000" Dst="1" />
 <file name="events.php" server="F:/XAMPP - Web Package/installed/htdocs/" local="130642492595130834" remote="130642492590000000" Dst="1" />
 <file name="team.php" server="F:/XAMPP - Web Package/installed/htdocs/" local="130640070826039576" remote="130640070820000000" Dst="1" />
-<file name="schools.php" server="F:/XAMPP - Web Package/installed/htdocs/" local="130643370965705910" remote="130643370960000000" Dst="1" />
-<file name="businesses.php" server="F:/XAMPP - Web Package/installed/htdocs/" local="130643327169360902" remote="130643327160000000" Dst="1" />
+<file name="schools.php" server="F:/XAMPP - Web Package/installed/htdocs/" local="130645681023375639" remote="130645681020000000" Dst="1" />
+<file name="businesses.php" server="F:/XAMPP - Web Package/installed/htdocs/" local="130645671173022231" remote="130645671170000000" Dst="1" />
+<file name="login-form.php" server="F:/XAMPP - Web Package/installed/htdocs/" local="130643364219270036" remote="130643364210000000" Dst="1" />
+<file name="register-form.php" server="F:/XAMPP - Web Package/installed/htdocs/" local="130645286927068057" remote="130645286920000000" Dst="1" />
+<file name="applications.php" server="F:/XAMPP - Web Package/installed/htdocs/" local="130645721225765084" remote="130645721220000000" Dst="1" />
 </dwsync>

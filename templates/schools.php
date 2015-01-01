@@ -2,7 +2,7 @@
 <main>
   <?php if($_SESSION["access"] !== "Student") { ?>
     <div class="side-tab">
-      <a href="/schools/admin/index.php" rel="leanModal" role="button">Administrator</a>
+      <a href="/schools/admin/index.php" role="button">Administrator</a>
     </div>
   <?php } ?>
   <div class="row" style="margin-top:50px;">

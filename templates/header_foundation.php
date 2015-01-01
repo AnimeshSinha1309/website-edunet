@@ -17,6 +17,8 @@
   	<script src="/dependencies/foundation/js/foundation.min.js" type="text/javascript"></script>
   	<script> $(document).ready(function(e) { $(document).foundation(); }); </script>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Animesh Sinha"/>
     <meta name="title" content="Edunet - The network for schools"/>
     <meta name="description" content="Edunet is a specialized website that makes schools really work. Easy to use, yet super powerful. Helps schools, teachers and, most of all, students"/>
@@ -41,7 +43,7 @@
               <li> </li>
               <?php if($dev){ ?><li <?php if($navpos === "home")echo("class=\"active\""); ?>><a href="/public/index.php">Home</a></li><?php } ?>
               <li class="has-dropdown not-click">
-                <a><?php if(isset($_SESSION["name"])) echo($_SESSION["name"]); else echo("Username"); ?></a>
+                <a><?php if(isset($_SESSION["name"]) && $_SESSION["name"] != " ") echo($_SESSION["name"]); else echo($_SESSION["access"].' '."Username".' '.$_SESSION["id"]); ?></a>
                 <ul class="dropdown">
                   <?php if($dev){ ?><li <?php if($navpos === "dashboard" && $dev)echo("class=\"active\""); ?>><a href="#">Dashboard</a></li><?php } ?>
                   <?php if($dev){ ?><li <?php if($navpos === "profile" && $dev)echo("class=\"active\""); ?>><a href="#">Profile</a></li><?php } ?>
@@ -52,6 +54,7 @@
             <ul class="left">
               <?php if($dev){ ?><li <?php if($navpos === "courseware")echo("class=\"active\""); ?>><a href="/public/courseware.php">Courseware</a></li><?php } ?>
               <?php if($dev){ ?><li <?php if($navpos === "developers")echo("class=\"active\""); ?>><a href="/public/developers.php">Developers</a></li><?php } ?>
+              <?php if($dev){ ?><li <?php if($navpos === "applications")echo("class=\"active\""); ?>><a href="/public/applications.php">Applications</a></li><?php } ?>
               <?php if($dev){ ?><li class="has-dropdown not-click">
                 <a href="#">More Features</a>
                 <ul class="dropdown"><?php } ?>

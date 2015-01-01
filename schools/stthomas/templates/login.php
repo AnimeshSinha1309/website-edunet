@@ -16,15 +16,13 @@
       <form role="form" id="login-validate" action="../public/login.php" method="post">
         <h2 class="form-signin-heading">Sign in to St. Thomas</h2> <br/>
         <label for="login-validate-googleacc" class="sr-only">Google Account</label>
-        <input type="email" id="login-validate-googleacc" name="username" class="form-control" placeholder="Google Account" autofocus>
+        <input type="email" id="login-validate-googleacc" name="username" class="form-control" placeholder="Edunet Username" autofocus>
         <label for="login-validate-password" class="sr-only">Password</label>
         <input type="password" id="login-validate-password" name="password" class="form-control" placeholder="Password">
         <div class="checkbox"><label><input type="checkbox" name="remember" value="remember">Remember me</label></div>
         <div class="checkbox"><label><input type="checkbox" name="nopass" value="nosignin">Login without password (unregistered)</label></div>
         <?php if(isset($error)) echo("<div class=\"alert alert-danger\">".$error."</div><br/>"); ?>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button> <br/>
-        <small><a href="">Forgot username or password?</a></small> <br/>
-        <small><a href="">Register as a new user.</a></small> <br/><br/>
         <strong>Don't have an account? <a href="">Sign up now.</a></strong>
       </form>
     </div>

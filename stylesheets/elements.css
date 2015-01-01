@@ -3,17 +3,37 @@
 	margin-bottom: 20px;
 }
 
-.condensed-heading {
+h1.condensed, h2.condensed {
 	line-height:50px;
 }
 
-/* Use this on a div with class columns which has a parent with class row */
+/*
+ * Use this on a div with class columns which has a parent with class row.
+ */
 .border-box {
 	border: 2px solid #efefef;
 	padding: 15px;
 	padding-top: 25px;
 }
+.border-box.fluid {
+	padding: 0px;
+}
+.border-box div.container {
+	padding: 15px;
+	color:#666;
+}
+.border-box div.heading h1 {
+	color:#FFF
+}
+.border-box hr {
+	margin:0px;
+}
 
+/* 
+ * Have an anchor tag nested in a div with class side-tab.
+ * If your text doesn't fit in the fixed sized tab, adjust width and top properties in your stylesheet.
+ * This element uses -webkit properties, to check for browser compatability issues.
+ */
 .side-tab {
 	-webkit-transform: matrix(6.12323399573677e-17, -1, 1, 6.12323399573677e-17, 0, 0);
 	-webkit-transform-origin: 0px 0px;
@@ -26,7 +46,6 @@
 	left: 0px;
 	width: 83px;
 }
-
 .side-tab a {
 	border-color: rgb(204, 204, 204);
 	border-style: solid;
@@ -45,7 +64,6 @@
 	width: 170px;
 	height: 35px;
 }
-
 .side-tab a:link:hover, .side-tab a:link:focus, .side-tab a:visited:hover, .side-tab a:visited:focus {
 	color:#fff !important;
 	background:#1d9dd9
