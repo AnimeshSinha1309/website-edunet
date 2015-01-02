@@ -6,20 +6,7 @@
         <div class="sidebar">
           <ul class="side-nav">
             <li class="heading"><a>Olympiads</a></li>
-            <li class="active"><a href="#">Junior Science (NSEJS)</a></li>
-            <li><a href="#">Physics (NSEP)</a></li>
-            <li><a href="#">Chemistry (NSEC)</a></li>
-            <li><a href="#">Biology (NSEB)</a></li>
-            <li><a href="#">Astronomy (NSEA)</a></li>
-            <li class="heading"><a>Quizzes</a></li>
-            <li><a href="#">Tata Steel Quiz</a></li>
-            <li><a href="#">Vodafone Quiz</a></li>
-            <li><a href="#">BournVita Quiz</a></li>
-            <li class="heading"><a>Sports</a></li>
-            <li><a href="#">Zonal Atheletics Meet</a></li>
-            <li><a href="#">Sports Day</a></li>
-            <li class="heading"><a>School</a></li>
-            <li><a href="#">Mid Term Exams</a></li>
+            <li class="active"><a href="../public/events.php?f=eventform-1">Junior Science (NSEJS)</a></li>
           </ul>
         </div>
       </div>

@@ -5,7 +5,7 @@
     <section id="event_form" class="small-6 columns">
         <div><h2>Event Registration Form for NSEJS</h2></div>
         <hr/>
-        <form method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>">
+        <form method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>?f=eventform-1">
 		  <!-- Personal Details -->
           <div><h4>About You</h4></div>
 		  <div class="row collapse">
