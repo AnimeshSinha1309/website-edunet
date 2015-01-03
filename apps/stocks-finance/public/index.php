@@ -4,7 +4,7 @@
     require("../includes/config.php"); 
 
     // get the values to display
-    $rows = query("SELECT * FROM shares WHERE id = ?", $_SESSION["id"]);
+    $rows = query("SELECT * FROM shares WHERE id = ?", $_SESSION["fin-id"]);
 
     $positions = [];
     foreach ($rows as $row)
@@ -20,7 +20,7 @@
             ];
         }
     }
-    $cash = query("SELECT cash FROM users WHERE id = ?", $_SESSION["id"]);
+    $cash = query("SELECT cash FROM users WHERE id = ?", $_SESSION["fin-id"]);
     
     // render portfolio
     render("portfolio.php", ["title" => "Portfolio", "positions" => $positions, "cash" => $cash[0]["cash"]]);

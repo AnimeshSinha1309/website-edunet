@@ -15,9 +15,9 @@
         else
         {
             if ($_POST["type"] == "subtract")
-                query("UPDATE users SET cash = cash - ? WHERE id = ?", $_POST["money"], $_SESSION["id"]);
+                query("UPDATE users SET cash = cash - ? WHERE id = ?", $_POST["money"], $_SESSION["fin-id"]);
             if ($_POST["type"] == "add")
-                query("UPDATE users SET cash = cash + ? WHERE id = ?", $_POST["money"], $_SESSION["id"]);
+                query("UPDATE users SET cash = cash + ? WHERE id = ?", $_POST["money"], $_SESSION["fin-id"]);
         }
         redirect("/");
     }

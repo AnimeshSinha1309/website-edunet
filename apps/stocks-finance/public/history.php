@@ -4,7 +4,7 @@
     require("../includes/config.php"); 
 
     // get the values to display
-    $rows = query("SELECT * FROM history WHERE id = ?", $_SESSION["id"]);
+    $rows = query("SELECT * FROM history WHERE id = ?", $_SESSION["fin-id"]);
 
     $positions = [];
     foreach ($rows as $row)
@@ -17,7 +17,7 @@
                 "price" => $row["price"],
             ];
     }
-    $cash = query("SELECT cash FROM users WHERE id = ?", $_SESSION["id"]);
+    $cash = query("SELECT cash FROM users WHERE id = ?", $_SESSION["fin-id"]);
     
     // render portfolio
     render("history_show.php", ["title" => "History", "positions" => $positions]);

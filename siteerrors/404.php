@@ -16,7 +16,7 @@
       </p>
       <p class="apology">
         <strong>
-          To quickly find content you need, use the search box above.
+          To quickly find content you need, use the navigation panel.
         </strong>
       </p>
 	</div>

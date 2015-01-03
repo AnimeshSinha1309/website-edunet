@@ -1,6 +1,6 @@
 <?php render("header_foundation.php", ["title" => "Schools", "navpos" => "schools"]) ?>
 <main>
-  <?php if($_SESSION["access"] !== "Student") { ?>
+  <?php if($_SESSION["access"] === "Coach" || $_SESSION["access"] === "Developer" || $_SESSION["access"] === "Special") { ?>
     <div class="side-tab">
       <a href="/schools/admin/index.php" role="button">Administrator</a>
     </div>

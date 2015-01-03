@@ -29,10 +29,10 @@
             if (crypt($_POST["password"], $row["hash"]) == $row["hash"])
             {
                 // remember that user's now logged in by storing user's ID in session
-                $_SESSION["id"] = $row["id"];
+                $_SESSION["fin-id"] = $row["id"];
 
                 // redirect to portfolio
-                redirect("../public/");
+				redirect("../public/");
             }
         }
 

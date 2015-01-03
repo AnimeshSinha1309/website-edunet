@@ -30,8 +30,8 @@
             else
             {
                 $rows = query("SELECT LAST_INSERT_ID() AS id");
-                $id = $rows[0]["id"];
-                $_SESSION["id"] = $id;
+                $id = $rows[0]["fin-id"];
+                $_SESSION["fin-id"] = $id;
                 redirect("./index.php");
             }
         }

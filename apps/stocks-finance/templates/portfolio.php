@@ -6,6 +6,7 @@
     <li><a href="cash.php">Cash</a></li>
     <li><a href="logout.php"><strong>Log Out</strong></a></li>
 </ul>
+
 <div>
     <table class="table table-striped">
         <thead>
@@ -18,6 +19,7 @@
             </tr>
         </thead>
         <?php
+
             foreach ($positions as $position)
             {
                 print("<tr>");

@@ -71,7 +71,7 @@
         if ($handle === false)
         {
             // trigger (big, orange) error
-            apologize("Could not connect to Yahoo!", E_USER_ERROR);
+            trigger_error("Could not connect to Yahoo!", E_USER_ERROR);
             exit;
         }
 

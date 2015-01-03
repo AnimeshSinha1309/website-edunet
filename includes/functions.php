@@ -1,23 +1,19 @@
+<!-- ************************* PHP Controller Functions- ************************* -->
+
 <?php
 
     require_once("constants.php");
 
     /**
-     * Logs out current user, if any.  Based on Example #1 at
-     * http://us.php.net/manual/en/function.session-destroy.php.
+     * Logs out current user, if any.
      */
     function logout()
     {
-        // unset any session variables
         $_SESSION = [];
-
-        // expire cookie
         if (!empty($_COOKIE[session_name()]))
         {
             setcookie(session_name(), "", time() - 42000);
         }
-
-        // destroy session
         session_destroy();
     }
 
@@ -28,45 +24,29 @@
      */
     function query(/* $sql [, ... ] */)
     {
-        // SQL statement
         $sql = func_get_arg(0);
-
-        // parameters, if any
         $parameters = array_slice(func_get_args(), 1);
-
-        // try to connect to database
         static $handle;
         if (!isset($handle))
         {
             try
             {
-                // connect to database
                 $handle = new PDO("mysql:dbname=" . DATABASE . ";host=" . SERVER, USERNAME, PASSWORD);
-
-                // ensure that PDO::prepare returns false when passed invalid SQL
                 $handle->setAttribute(PDO::ATTR_EMULATE_PREPARES, false); 
             }
             catch (Exception $e)
             {
-                // trigger (big, orange) error
                 trigger_error($e->getMessage(), E_USER_ERROR);
                 exit;
             }
         }
-
-        // prepare SQL statement
         $statement = $handle->prepare($sql);
         if ($statement === false)
         {
-            // trigger (big, orange) error
             trigger_error($handle->errorInfo()[2], E_USER_ERROR);
             exit;
         }
-
-        // execute SQL statement
         $results = $statement->execute($parameters);
-
-        // return result set's rows, if any
         if ($results !== false)
         {
             return $statement->fetchAll(PDO::FETCH_ASSOC);
@@ -80,7 +60,6 @@
     /**
      * Redirects user to destination, which can be
      * a URL or a relative path on the local host.
-     *
      * Because this function outputs an HTTP header, it
      * must be called before caller outputs any HTML.
      */
@@ -119,29 +98,34 @@
      */
     function render($template, $values = [])
     {
-        // if template exists, render it
         if (file_exists("../templates/$template"))
         {
-            // extract variables into local scope
             extract($values);
-
-            // render template
             require("../templates/$template");
         }
         else if (file_exists("../../templates/$template"))
         {
-            // extract variables into local scope
             extract($values);
-
-            // render template
             require("../../templates/$template");
         }
-
-        // else err
         else
         {
             trigger_error("Invalid template: $template", E_USER_ERROR);
         }
     }
 
+?>
+
+<!-- ************************* PHP Template Functions- ************************* -->
+
+<?php
+
+	function arrayToObject($data = array(), $name = "")
+    {
+		echo("{ ");
+		$keys = array_keys($data);
+		foreach($keys as $key)
+			echo(" '".$key."':'".$data[$key]."', ");
+		echo(" }");
+    }
 ?>

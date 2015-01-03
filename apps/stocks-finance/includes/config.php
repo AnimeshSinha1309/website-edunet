@@ -23,7 +23,7 @@
     // require authentication for most pages
     if (!preg_match("{(?:login|logout|register)\.php$}", $_SERVER["PHP_SELF"]))
     {
-        if (empty($_SESSION["id"]))
+        if (empty($_SESSION["fin-id"]))
         {
             redirect("login.php");
         }

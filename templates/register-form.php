@@ -5,6 +5,7 @@
   <link href="../stylesheets/register.css" rel="stylesheet" type="text/css"/>
   <link href="../dependencies/foundation/icons/foundation-icons/foundation-icons.css" rel="stylesheet" type="text/css"/>
   <link href="../dependencies/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+  <link href="../stylesheets/elements.css" rel="stylesheet" type="text/css"/>
   <link href="../images/favicon.ico" rel="icon"/>
   <script src="../dependencies/foundation/js/vendor/modernizr.js"></script>
   <script src="../javascript/elements.js" type="text/javascript"></script>
@@ -12,9 +13,12 @@
   <script src="../dependencies/foundation/js/vendor/fastclick.js"></script>
   <script src="../dependencies/foundation/js/foundation.min.js" type="text/javascript"></script>
   <script> $(document).ready(function(e) { $(document).foundation(); }); </script>
-  <script> $(document).ready(function(e){uploadbutton();}); </script>
+  <script> $(document).ready(function(e) { uploadbutton(); }); </script>
+  <?php if(isset($repopulate)){ ?>
+    <script> $(document).ready(function(e) { repopulate(<?php arrayToObject($repopulate) ?>, 'form-') }); </script>
+  <?php } ?>
 </head>
-<body class="lightgrey-body">
+<body>
   <section class="large-5 large-offset-1 hide-for-small-down columns">
     <!-- Advertisement of the website here, with a link to the tour -->
     <div class="text-center">
@@ -72,86 +76,86 @@
       <?php } ?>
       <form action="../public/register.php" method="post">
         <div id="form-personal">
-        <strong>Personal Details</strong>
-        <p class="text-justify">Details about you go to your profile and also help us customize content for you. It is also used to autofill your forms.</p>
-	    <div class="row collapse">
+          <strong>Personal Details</strong>
+          <p class="text-justify">Details about you go to your profile and also help us customize content for you. It is also used to autofill your forms.</p>
+	      <div class="row collapse">
           <label for="form-fname" class="hide"></label>
           <div class="small-2 columns"><span class="prefix"><i class="fi-torso"></i></span></div>
           <div class="small-10 columns"><input type="text" placeholder="First Name" name="fname" autofocus autocomplete="name" id="form-fname"></div>
         </div>
-	    <div class="row collapse">
+	      <div class="row collapse">
           <label for="form-lname" class="hide"></label>
           <div class="small-2 columns"><span class="prefix"><i class="fi-torso"></i></span></div>
           <div class="small-10 columns"><input type="text" placeholder="Last Name" name="lname" autocomplete="name" id="form-lname"></div>
         </div>
-	    <div class="row collapse">
+	      <div class="row collapse">
           <label for="form-fname" class="hide">Introduction</label>
           <div class="small-12 columns">
             <a href="#" class="button secondary" data-reveal-id="modal-intro">Introduce yourself on Edunet</a>
           </div>
         </div>
-      </div>
+        </div>
         <hr>
         <div id="form-account">
-        <strong>Your Account</strong>
-        <p class="text-justify">These are the setting are crucial to your account. They can be changed later if need be.</p>
-	    <div class="row collapse">
-          <label for="form-fname" class="hide">School</label>
+          <strong>Your Account</strong>
+          <p class="text-justify">These are the setting are crucial to your account. They can be changed later if need be.</p>
+	      <div class="row collapse">
+          <label for="form-school" class="hide">School</label>
           <div class="small-12 columns"><a href="#" class="button" data-reveal-id="modal-school">Select School or University</a></div>
         </div>
-	    <div class="row collapse">
-          <label for="form-fname" class="hide"></label>
+	      <div class="row collapse">
+          <label for="form-username" class="hide"></label>
           <div class="small-2 columns"><span class="prefix"><i class="fa fa-user"></i></span></div>
-          <div class="small-10 columns"><input type="text" placeholder="Your Edunet Username" name="username" autocomplete="off" id="form-password"></div>
+          <div class="small-10 columns"><input id="form-username" type="text" placeholder="Your Edunet Username" name="username" autocomplete="off"></div>
         </div>
-	    <div class="row collapse">
-          <label for="form-fname" class="hide"></label>
+	      <div class="row collapse">
+          <label for="form-password" class="hide"></label>
           <div class="small-2 columns"><span class="prefix"><i class="fi-lock"></i></span></div>
-          <div class="small-10 columns"><input type="password" placeholder="Type Password" name="password" autocomplete="name" id="form-password"></div>
+          <div class="small-10 columns"><input id="form-password" type="password" placeholder="Type Password" name="password" autocomplete="name"></div>
         </div>
-        <div class="row collapse">
-            <label for="form-fname" class="hide"></label>
+          <div class="row collapse">
+            <label for="form-cpassword" class="hide"></label>
             <div class="small-2 columns"><span class="prefix"><i class="fi-lock"></i></span></div>
-            <div class="small-10 columns"><input type="password" placeholder="Confirm Password" name="cpassword" id="form-confirm"></div>
+            <div class="small-10 columns"><input id="form-cpassword" type="password" placeholder="Confirm Password" name="cpassword"></div>
           </div>
-        <div class="row collapse">
+          <div class="row collapse">
             <label for="form-birth-date" class="hide"></label>
             <div class="small-2 columns"><span class="prefix"><i class="fi-mobile"></i></span></div>
-            <div class="small-10 columns"><input type="tel" name="mobile" maxlength="20" placeholder="Mobile Number"/></div>
+            <div class="small-10 columns"><input id="form-mobile" type="tel" name="mobile" maxlength="20" placeholder="Mobile Number"/></div>
           </div>
-        <ul class="button-group">
           <label>Account Access Type</label>
-            <li><label class="button access-radio text-center" id="access-radio-1"><input type="radio" name="access" id="Student" class="button-radio hide" onChange="radiobutton('access-radio-1');" value="Student">Student</label></li>
-            <li><label class="button access-radio text-center" id="access-radio-2"><input type="radio" name="access" id=  "Coach" class="button-radio hide" onChange="radiobutton('access-radio-2');" value="Coach">Coach</label></li>
-            <li><label class="button access-radio text-center" id="access-radio-3"><input type="radio" name="access" id="General" class="button-radio hide" onChange="radiobutton('access-radio-3');" value="General">General</label></li>
-            <li><label class="button access-radio text-center" id="access-radio-4"><input type="radio" name="access" id="Premium" class="button-radio hide" onChange="radiobutton('access-radio-4');" value="Premium">Premium</label></li>
-            <li><label class="button access-radio text-center" id="access-radio-5"><input type="radio" name="access" id="Special" class="button-radio hide" onChange="radiobutton('access-radio-5');" value="Special">Special</label></li>
-            <li><label class="button access-radio text-center" id="access-radio-6"><input type="radio" name="access" id="option6" class="button-radio hide" onChange="radiobutton('access-radio-6');" value="Developer">Developer</label></li>
+          <ul class="button-group el-radio" id="form-access">
+            <li><label class="button text-center"><input type="radio" name="access" id="el-radio-1" onChange="radiobutton('#el-radio-1');" value="Student">Student</label></li>
+            <li><label class="button text-center"><input type="radio" name="access" id="el-radio-2" onChange="radiobutton('#el-radio-2');" value="Coach">Coach</label></li>
+            <li><label class="button text-center"><input type="radio" name="access" id="el-radio-3" onChange="radiobutton('#el-radio-3');" value="General">General</label></li>
+            <li><label class="button text-center"><input type="radio" name="access" id="el-radio-4" onChange="radiobutton('#el-radio-4');" value="Premium">Premium</label></li>
+            <li><label class="button text-center"><input type="radio" name="access" id="el-radio-5" onChange="radiobutton('#el-radio-5');" value="Special">Special</label></li>
+            <li><label class="button text-center"><input type="radio" name="access" id="el-radio-6" onChange="radiobutton('#el-radio-6');" value="Developer">Developer</label></li>
           </ul>
-      </div>
+        </div>
         <hr>
         <div id="form-accounts">
           <strong>Online Accounts</strong>
           <p class="text-justify">Please provide all of your online accounts so that we can provide you a better experience. If you don't have some of them, go and sign up. They are all great.</p>
           <div class="row collapse">
             <div class="small-2 columns"><span class="prefix"><i class="fa fa-google"></i></span></div>
-            <div class="small-10 columns"><input type="email" placeholder="Google Account" name="google-acc">
+            <div class="small-10 columns"><input type="email" id="form-google-acc" placeholder="Google Account" name="google-acc">
           </div>
           <div class="row collapse">
             <div class="small-2 columns"><span class="prefix"><i class="fa fa-facebook"></i></span></div>
-            <div class="small-10 columns"><input type="email" placeholder="Facebook Account" name="facebook-acc">
+            <div class="small-10 columns"><input type="email" id="form-facebook-acc" placeholder="Facebook Account" name="facebook-acc">
           </div>
           <div class="row collapse">
             <div class="small-2 columns"><span class="prefix"><i class="fa fa-github"></i></span></div>
-            <div class="small-10 columns"><input type="email" placeholder="GitHub Account" name="github-acc">
+            <div class="small-10 columns"><input type="email" id="form-github-acc" placeholder="GitHub Account" name="github-acc">
           </div>
           <div class="row collapse">
             <div class="small-2 columns"><span class="prefix"><i class="fa fa-stack-overflow"></i></span></div>
-            <div class="small-10 columns"><input type="email" placeholder="StackOverflow Account" name="stackoverflow-acc">
+            <div class="small-10 columns"><input type="email" id="form-stackoverflow-acc" placeholder="StackOverflow Account" name="stackoverflow-acc">
           </div>
           <div class="row collapse">
             <div class="small-2 columns"><span class="prefix"><i class="fa fa-windows"></i></span></div>
-            <div class="small-10 columns"><input type="email" placeholder="Microsoft Account" name="microsoft-acc">
+            <div class="small-10 columns"><input type="email" id="form-microsoft-acc" placeholder="Microsoft Account" name="microsoft-acc">
           </div>
         </div>
         <hr>
@@ -183,43 +187,51 @@
           <textarea cols="50" rows="5" maxlength="512" placeholder="Enter a short description of you, in less than 512 letters." name="description" id="form-description"></textarea>
         </div>
               <label for="form-interest-tags"><strong>Enter your inerests separated by semicolons.</strong></label>
-          <div class="small-12 columns"><input type="text" name="interest-tags" autofocus placeholder="eg. Physics; JavaScript; Football; Relativity" id="form-interest-tags"/></div>
+          	  <div class="small-12 columns">
+                <input type="text" name="interest-tags" autofocus placeholder="eg. Physics; JavaScript; Football; Relativity" id="form-interest-tags"/>
+              </div>
               <label class="hide" for="form-interest-primary">Interests</label>
-          <div><strong>Select your primary field of interest.</strong> If your have not thought of it, just scroll to the bottom and select fields like education, sports or the like.</div>
-          <div class="small-12 columns">
-            <select name="interest-primary" id="form-interest-primary">
-              <option value="Physics">Physics</option>
-              <option value="Engineering">Engineering</option>
-              <option value="Computers">Computers</option>
-              <option value="Mathematics">Mathematics</option>
-            </select>
-          </div>
+		      <div><strong>Select your primary field of interest.</strong> If your have not thought of it, just scroll to the bottom and select fields like education, sports or the like.</div>
+          	  <div class="small-12 columns">
+            	<select name="interest-primary" id="form-interest-primary">
+             	  <option>+ [Select from this list]</option>
+            	  <option value="Physics">Physics</option>
+            	  <option value="Engineering">Engineering</option>
+            	  <option value="Computers">Computers</option>
+            	  <option value="Mathematics">Mathematics</option>
+                </select>
+        	 </div>
             </div>
             <div class="row collapse large-6 small-12 columns">
               <h4>Upload your photograph</h4>
-          <p class="text-justify">
-            Please upload a clear one person photograph of you, not somebody or something else. We will use it on your profile only if you permit us to, but this will be your default photograph in form autofills. View our <a target="_blank" href="#">requirements for photographs</a> before uploading yours.
-          </p>
-          <div class="large-6 small-12 columns">
-          	<img src="../images/avatar-blank.png" id="profile-picture-display" alt="Your Photograph" height="175" width="175" class="th"/>
-          </div>
-          <div class="large-6 small-12 columns">
-            <input type="file" name="profile-pic" id="fileElem" multiple name="profilepic" class="hide" onchange="handleFiles(this.files)">
-			<button id="fileSelect" class="button secondary">Upload your Image</button>
-          </div>
+              <p class="text-justify">
+                Please upload a clear one person photograph of you, not somebody or something else. We will use it on your profile only if you permit us to, but this will be your default photograph in form autofills. View our <a target="_blank" href="#">requirements for photographs</a> before uploading yours.
+              </p>
+              <div class="large-6 small-12 columns">
+                <img src="../images/avatar-blank.png" id="profile-picture-display" alt="Your Photograph" height="175" width="175" class="th"/>
+              </div>
+              <div class="large-6 small-12 columns">
+                <input type="file" name="profile-pic" id="profile-picture-fileinput" multiple name="profilepic" class="hide" onchange="uploadButtonHandle(this.files)" accept="image/*">
+                <button id="profile-picture-button" class="button secondary">Upload your Image</button>
+              </div>
             </div>
             <a class="close-reveal-modal">&#215;</a>
           </div>
           <div id="modal-school" class="reveal-modal" data-reveal>
-        <h2>Awesome. I have it.</h2>
-        <p class="lead">Your couch.  It is mine.</p>
-        <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
-        <a class="close-reveal-modal">&#215;</a>
-      </div>
+        	<h2>No Need Right Now</h2>
+        	<p class="lead">We will get all the information we need here from your schools for now, and ask you for more later.</p>
+        	<p>We are limited to only a few schools right now, and we are still in initial phases of our development, so for now we are not asking for a lot of details. If your school is registered with us, they will give us all the data we need. If we need to ask you anything more, we will do that later. If your school is not registered, do not worry. We will get all the information as we need it. If you can get your school to register with us, then that's great.
+            <br/>If you are a programmer, you can help us by forking our <a href="www.github.com/AnimeshSinha1309/Website-Edunet">GitHub repository</a> and sending us a pull request.</p>
+        	<a class="close-reveal-modal">&#215;</a>
+      	  </div>
         </div>
       </form>
       <strong>Already a member? <a href="login.php">Log in</a>.</strong>
     </div>
   </section>
+  <?php if(isset($repopulate)): ?>
+    <script>
+	</script>
+  <?php endif ?>
 </body>
 </html>

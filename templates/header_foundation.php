@@ -2,7 +2,7 @@
 <html lang="en">
   <?php require_once("../includes/config.php"); ?>
   <?php if(!isset($navpos)) $navpos = "none"; ?>
-  <?php $dev = $_SESSION["access"] === "Developer" ?>
+  <?php if(isset($_SESSION["access"])) $dev = $_SESSION["access"] === "Developer"; else $dev = false; ?>
   <head>
     <title> <?php if(isset($title)) echo($title); else echo("Edunet"); ?> </title>
     <link href="/images/favicon.ico" rel="icon"/>
@@ -43,10 +43,10 @@
               <li> </li>
               <?php if($dev){ ?><li <?php if($navpos === "home")echo("class=\"active\""); ?>><a href="/public/index.php">Home</a></li><?php } ?>
               <li class="has-dropdown not-click">
-                <a><?php if(isset($_SESSION["name"]) && $_SESSION["name"] != " ") echo($_SESSION["name"]); else echo($_SESSION["access"].' '."Username".' '.$_SESSION["id"]); ?></a>
+                <a><?php if(isset($_SESSION["name"]) && $_SESSION["name"] != " ") echo($_SESSION["name"]); else echo("Username"); ?></a>
                 <ul class="dropdown">
-                  <?php if($dev){ ?><li <?php if($navpos === "dashboard" && $dev)echo("class=\"active\""); ?>><a href="#">Dashboard</a></li><?php } ?>
-                  <?php if($dev){ ?><li <?php if($navpos === "profile" && $dev)echo("class=\"active\""); ?>><a href="#">Profile</a></li><?php } ?>
+                  <?php if($dev){ ?><li <?php if($navpos === "dashboard")echo("class=\"active\""); ?>><a href="#">Dashboard</a></li><?php } ?>
+                  <?php if($dev){ ?><li <?php if($navpos === "profile")echo("class=\"active\""); ?>><a href="#">Profile</a></li><?php } ?>
                   <li><a href="logout.php">Log Out</a></li>
                 </ul>
               </li>

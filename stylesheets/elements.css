@@ -68,3 +68,40 @@ h1.condensed, h2.condensed {
 	color:#fff !important;
 	background:#1d9dd9
 }
+
+/* 
+ * Add the class el-radio to a label which has a radio input element inside it.
+ * 
+ */
+.el-radio label input {
+	height:20px;
+}
+.el-radio label {
+	padding-left:0px;
+	padding-right:0px;
+	text-align:center;
+	margin-bottom:1px;
+	width:100%;
+}
+.el-radio label input {
+	display:none;
+}
+label.active {
+	background-color:#005085;
+}
+.el-radio label.active:hover {
+	background-color:#005085;
+}
+
+@media only screen 
+{
+	.button-group li {
+		width:100%;
+	}
+}
+@media only screen and (min-width: 40.063em)
+{
+	.button-group li {
+		width:33%;
+	}
+}
