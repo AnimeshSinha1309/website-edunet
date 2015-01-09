@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color:#DDD;
+}
+
+.row {
+	margin:0px;
+	padding-left:10px;
+}
+
+.button.large {
+	width:100%;
+	margin-bottom:0;
+	padding-top:50px;
+	padding-bottom:40px;
+}
+
+.columns {
+	padding:0;
+}
+
+.icon-bar.five-up i {
+	padding-top:7px;
+}
+
+.main-window {
+	padding-left:20px;
+	padding-right:40px;
+}
+
+.split-btn span {
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	border-left: solid 1px;
+	width: 3.09375rem;
+	padding:15px;
+}
+
+.split-btn {
+	position: relative;
+	padding-right: 5.0625rem;
+}

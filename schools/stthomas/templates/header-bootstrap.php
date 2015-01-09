@@ -76,6 +76,7 @@
                 </li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
+                <li><a href="login.php" class="navbar-dashboard">Login</a></li>
                 <li><a href="/public/" class="navbar-dashboard">Edunet</a></li>
               </ul>
             </div>

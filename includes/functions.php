@@ -1,5 +1,3 @@
-<!-- ************************* PHP Controller Functions- ************************* -->
-
 <?php
 
     require_once("constants.php");
@@ -24,10 +22,11 @@
      */
     function query(/* $sql [, ... ] */)
     {
-        $sql = func_get_arg(0);
+		$sql = func_get_arg(0);
+		$spl = func_get_arg(1);
         $parameters = array_slice(func_get_args(), 1);
-        static $handle;
-        if (!isset($handle))
+		static $handle;
+		if (!isset($handle))
         {
             try
             {
@@ -41,9 +40,10 @@
             }
         }
         $statement = $handle->prepare($sql);
-        if ($statement === false)
+		if ($statement === false)
         {
-            trigger_error($handle->errorInfo()[2], E_USER_ERROR);
+            echo('Error');
+			trigger_error($handle->errorInfo()[2], E_USER_ERROR);
             exit;
         }
         $results = $statement->execute($parameters);
@@ -115,8 +115,6 @@
     }
 
 ?>
-
-<!-- ************************* PHP Template Functions- ************************* -->
 
 <?php
 

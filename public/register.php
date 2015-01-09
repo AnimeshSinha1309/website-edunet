@@ -38,7 +38,7 @@
 					`introText`,									`interestTags`,
 					`interestPrimary`,								
 					`school`,										`class`
-				) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+				) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
 					htmlspecialchars($_POST["fname"]),				htmlspecialchars($_POST["lname"]),
 					htmlspecialchars($_POST["username"]),			crypt($_POST["password"]),
 					htmlspecialchars($_POST["mobile"]), 			htmlspecialchars($_POST["access"]),
@@ -49,7 +49,6 @@
 					htmlspecialchars($_POST["interest-primary"]),	/* Porfile Picture */
 					htmlspecialchars($_POST["school"]),				htmlspecialchars($_POST["class"])
 				);
-	
 				// handle exception if query could not be completed
 				if ($register_flag === false)
 				{
