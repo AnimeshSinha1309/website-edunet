@@ -3,6 +3,6 @@
     // configuration
     require("../includes/config.php"); 
     // render under development page
-    render("businesses.php");
+    render("represent.php");
 ?>
 

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Radio Button</title>
+    <link href="/images/favicon.ico" rel="icon"/>
+    <link href="/dependencies/foundation/css/foundation.css" rel="stylesheet" type="text/css"/>
+    <link href="/stylesheets/elements.css" rel="stylesheet" type="text/css"/>
+    <script src="/dependencies/jquery/jquery-2.1.3.min.js" type="text/javascript"></script>
+    <script src="/dependencies/foundation/js/foundation.min.js" type="text/javascript"></script>
+    <script src="/javascript/elements.js" type="text/javascript"></script>
+    <script> $(document).ready(function(e) { $(document).foundation(); }); </script>
+    <style>.row{max-width:72rem;}#container-sidebar{padding-right:30px;}</style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <nav class="top-bar" data-topbar role="navigation">
+          <ul class="title-area">
+            <li class="name"><h1><a href="#">Elements Library</a></h1></li>
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+          </ul>
+          <section class="top-bar-section">
+            <ul class="right">
+              <li class="has-form">
+                <div class="row collapse">
+                  <div class="large-8 small-9 columns"><input type="text" placeholder="Search Edunet"></div>
+                  <div class="large-4 small-3 columns"><a href="#" class="alert button expand">Search</a></div>
+                </div>
+              </li>
+              <li class="name"><h1><a href="/">Edunet</a></h1></li>
+            </ul>
+            <ul class="left">
+              <li><a href="/public/applications.php">Documentation</a></li>
+              <li><a href="/public/applications.php">Code Gallery</a></li>
+            </ul>
+          </section>
+        </nav>
+      </div>
+    </header>
+	<main class="row">
+      <div id="container-sidebar" class="large-3 medium-4 columns">
+        <div class="hide-for-small">
+          <div class="sidebar">
+            <ul class="side-nav">
+              <li class="heading"><a>Form Elements</a></li>
+              <li class="active"><a href="#">Radio Buttons</a></li>
+              <li><a href="#">Check Boxes</a></li>
+              <li><a href="#">Upload Button</a></li>
+              <li class="divider"></li>
+              <li class="heading"><a>Form JavaScript</a></li>
+              <li><a href="#">Autocomplete</a></li>
+              <li><a href="#">Repopulate</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+	  <div class="large-6 medium-8 columns" style="margin-top:20px;">
+		<script> radiobutton(); </script>
+        <label><h2>Choose your Path</h2></label>
+        <ul class="el-radio" data-name="test">
+          <li><label><input value="opt1"/>Option 1</label></li>
+          <li><label><input value="opt2"/>Option 2</label></li>
+          <li><label><input value="opt3"/>Option 3</label></li>
+        </ul>
+        <br/>
+        <label><h2>Select your Pokemon</h2></label>
+        <ul class="el-radio" data-name="pokemon">
+          <li><label class="success"><input value="bulbasaur" /><span>Bulbasaur</span></label></li>
+          <li><label class=""><input value="squirtle" /><span>Squirtle</span></label></li>
+          <li><label class="alert"><input value="charmander" /><span>Charmander</span></label></li>
+          <li><label class="warning"><input value="" /><span>Chimpchar</span></label></li>
+          <li><label class="secondary"><input value="chimchar" /><span>Piplup</span></label></li>
+          <li><label class="disabled"><input value="turtwig" /><span>Turtwig</span></label></li>
+        </ul>
+        <br/>
+      </div>
+      <div class="large-3">
+      </div>
+    </main>
+  </body>
+</html>

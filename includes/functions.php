@@ -115,15 +115,3 @@
     }
 
 ?>
-
-<?php
-
-	function arrayToObject($data = array(), $name = "")
-    {
-		echo("{ ");
-		$keys = array_keys($data);
-		foreach($keys as $key)
-			echo(" '".$key."':'".$data[$key]."', ");
-		echo(" }");
-    }
-?>

@@ -43,7 +43,7 @@
         <div class="col-lg-3 columns">
           <div class="item-wrapper">
             <div class="img-wrapper">
-              <a href="../public/eventforms_cont.php?f=event_1" class="button expand add-to-cart text-center" style="width:100%; text-decoration:none;">
+              <a href="../../business/public/eventforms_cont.php?f=event_1" class="button expand add-to-cart text-center" style="width:100%; text-decoration:none;">
               	View Details and Add to Cart
               </a>
               <a href="#"><img src="img/products/perfume-1.jpg"></a>
@@ -56,7 +56,7 @@
         <div class="col-lg-3 columns">
           <div class="item-wrapper">
             <div class="img-wrapper">
-              <a href="../public/eventforms_cont.php?f=event_1" class="button expand add-to-cart text-center" style="width:100%; text-decoration:none;">
+              <a href="../../business/public/eventforms_cont.php?f=event_1" class="button expand add-to-cart text-center" style="width:100%; text-decoration:none;">
               	View Details and Add to Cart
               </a>
               <a href="#"><img src="img/products/perfume-1.jpg"></a>
@@ -69,7 +69,7 @@
         <div class="col-lg-3 columns">
           <div class="item-wrapper">
             <div class="img-wrapper">
-              <a href="../public/eventforms_cont.php?f=event_1" class="button expand add-to-cart text-center" style="width:100%; text-decoration:none;">
+              <a href="../../business/public/eventforms_cont.php?f=event_1" class="button expand add-to-cart text-center" style="width:100%; text-decoration:none;">
               	View Details and Add to Cart
               </a>
               <a href="#"><img src="img/products/perfume-1.jpg"></a>
@@ -82,7 +82,7 @@
         <div class="col-lg-3 columns">
           <div class="item-wrapper">
             <div class="img-wrapper">
-              <a href="../public/eventforms_cont.php?f=event_1" class="button expand add-to-cart text-center" style="width:100%; text-decoration:none;">
+              <a href="../../business/public/eventforms_cont.php?f=event_1" class="button expand add-to-cart text-center" style="width:100%; text-decoration:none;">
               	View Details and Add to Cart
               </a>
               <a href="#"><img src="img/products/perfume-1.jpg"></a>

@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <head>
   <title> Register </title>
-  <link href="../dependencies/foundation/css/foundation.css" rel="stylesheet" type="text/css"/>
-  <link href="../stylesheets/register.css" rel="stylesheet" type="text/css"/>
-  <link href="../dependencies/foundation/icons/foundation-icons/foundation-icons.css" rel="stylesheet" type="text/css"/>
-  <link href="../dependencies/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
-  <link href="../stylesheets/elements.css" rel="stylesheet" type="text/css"/>
-  <link href="../images/favicon.ico" rel="icon"/>
-  <script src="../dependencies/foundation/js/vendor/modernizr.js"></script>
-  <script src="../javascript/elements.js" type="text/javascript"></script>
-  <script src="../dependencies/jquery/jquery-2.1.3.min.js" type="text/javascript"></script>
-  <script src="../dependencies/foundation/js/vendor/fastclick.js"></script>
-  <script src="../dependencies/foundation/js/foundation.min.js" type="text/javascript"></script>
+  <link href="/dependencies/foundation/css/foundation.css" rel="stylesheet" type="text/css"/>
+  <link href="/stylesheets/elements.css" rel="stylesheet" type="text/css"/>
+  <link href="/stylesheets/register.css" rel="stylesheet" type="text/css"/>
+  <link href="/dependencies/foundation/icons/foundation-icons/foundation-icons.css" rel="stylesheet" type="text/css"/>
+  <link href="/dependencies/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+  <link href="/images/favicon.ico" rel="icon"/>
+  <script src="/dependencies/foundation/js/vendor/modernizr.js"></script>
+  <script src="/dependencies/foundation/js/vendor/fastclick.js"></script>
+  <script src="/dependencies/jquery/jquery-2.1.3.min.js" type="text/javascript"></script>
+  <script src="/dependencies/foundation/js/foundation.min.js" type="text/javascript"></script>
+  <script src="/javascript/elements.js" type="text/javascript"></script>
   <script> $(document).ready(function(e) { $(document).foundation(); }); </script>
-  <script> $(document).ready(function(e) { uploadbutton(); }); </script>
-  <?php if(isset($repopulate)){ ?>
-    <script> $(document).ready(function(e) { repopulate(<?php arrayToObject($repopulate) ?>, 'form-') }); </script>
-  <?php } ?>
+  <script> radioButton(); </script>
+  <script> uploadButton('#profile-picture-button', '#profile-picture-fileinput'); </script>
+  <script> repopulate(<?php echo(json_encode($repopulate)); ?>); </script>
 </head>
 <body>
   <section class="large-5 large-offset-1 hide-for-small-down columns">
@@ -111,7 +110,7 @@
 	      <div class="row collapse">
           <label for="form-password" class="hide"></label>
           <div class="small-2 columns"><span class="prefix"><i class="fi-lock"></i></span></div>
-          <div class="small-10 columns"><input id="form-password" type="password" placeholder="Type Password" name="password" autocomplete="name"></div>
+          <div class="small-10 columns"><input id="form-password" type="password" placeholder="Type Password" name="password"></div>
         </div>
           <div class="row collapse">
             <label for="form-cpassword" class="hide"></label>
@@ -124,13 +123,13 @@
             <div class="small-10 columns"><input id="form-mobile" type="tel" name="mobile" maxlength="20" placeholder="Mobile Number"/></div>
           </div>
           <label>Account Access Type</label>
-          <ul class="button-group el-radio" id="form-access">
-            <li><label class="button text-center"><input type="radio" name="access" id="el-radio-1" onChange="radiobutton('#el-radio-1');" value="Student">Student</label></li>
-            <li><label class="button text-center"><input type="radio" name="access" id="el-radio-2" onChange="radiobutton('#el-radio-2');" value="Coach">Coach</label></li>
-            <li><label class="button text-center"><input type="radio" name="access" id="el-radio-3" onChange="radiobutton('#el-radio-3');" value="General">General</label></li>
-            <li><label class="button text-center"><input type="radio" name="access" id="el-radio-4" onChange="radiobutton('#el-radio-4');" value="Premium">Premium</label></li>
-            <li><label class="button text-center"><input type="radio" name="access" id="el-radio-5" onChange="radiobutton('#el-radio-5');" value="Special">Special</label></li>
-            <li><label class="button text-center"><input type="radio" name="access" id="el-radio-6" onChange="radiobutton('#el-radio-6');" value="Developer">Developer</label></li>
+          <ul class="el-radio" id="form-access">
+            <li><label><input type="radio" name="access" value="Student" /><span>Student</span></label></li>
+            <li><label><input type="radio" name="access" value="Coach" /><span>Coach</span></label></li>
+            <li><label><input type="radio" name="access" value="General" /><span>General</span></label></li>
+            <li><label><input type="radio" name="access" value="Premium" /><span>Premium</span></label></li>
+            <li><label><input type="radio" name="access" value="Special" /><span>Special</span></label></li>
+            <li><label><input type="radio" name="access" value="Developer" /><span>Developer</span></label></li>
           </ul>
         </div>
         <hr>
@@ -194,7 +193,7 @@
 		      <div><strong>Select your primary field of interest.</strong> If your have not thought of it, just scroll to the bottom and select fields like education, sports or the like.</div>
           	  <div class="small-12 columns">
             	<select name="interest-primary" id="form-interest-primary">
-             	  <option>+ [Select from this list]</option>
+             	  <option value="">+ [Select from this list]</option>
             	  <option value="Physics">Physics</option>
             	  <option value="Engineering">Engineering</option>
             	  <option value="Computers">Computers</option>
@@ -211,7 +210,7 @@
                 <img src="../images/avatar-blank.png" id="profile-picture-display" alt="Your Photograph" height="175" width="175" class="th"/>
               </div>
               <div class="large-6 small-12 columns">
-                <input type="file" name="profile-pic" id="profile-picture-fileinput" multiple name="profilepic" class="hide" onchange="uploadButtonHandle(this.files)" accept="image/*">
+                <input type="file" name="profile-pic" id="profile-picture-fileinput" multiple class="hide" accept="image/*">
                 <button id="profile-picture-button" class="button secondary">Upload your Image</button>
               </div>
             </div>
@@ -229,9 +228,5 @@
       <strong>Already a member? <a href="login.php">Log in</a>.</strong>
     </div>
   </section>
-  <?php if(isset($repopulate)): ?>
-    <script>
-	</script>
-  <?php endif ?>
 </body>
 </html>

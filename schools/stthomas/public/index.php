@@ -26,4 +26,4 @@
 	if($file != "courseware")
 		render("header-bootstrap.php", ["title" => $title, "navpos" => $navpos]);
 	render($file.".html");
-?>
+    render("footer-bootstrap.php", ["title" => $title, "navpos" => $navpos]);

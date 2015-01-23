@@ -1,7 +1,7 @@
 <?php
 
     // configuration
-    require("../includes/config.php"); 
+    require_once("../includes/config.php"); 
 
     // get the values to display
     $rows = query("SELECT * FROM history WHERE id = ?", $_SESSION["fin-id"]);
