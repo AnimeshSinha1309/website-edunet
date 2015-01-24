@@ -7,7 +7,7 @@
      */
     function logout()
     {
-        $_SESSION = [];
+        $_SESSION = array();
         if (!empty($_COOKIE[session_name()]))
         {
             setcookie(session_name(), "", time() - 42000);
@@ -96,7 +96,7 @@
     /**
      * Renders template, passing in values.
      */
-    function render($template, $values = [])
+    function render($template, $values = array())
     {
         if (file_exists("../templates/$template"))
         {

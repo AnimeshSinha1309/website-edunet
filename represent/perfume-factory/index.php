@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="The offical business page for Hiya Perfumes">
+  <meta name="description" content="Sample Edunet pages for representing student businesses and endeavours">
   <meta name="author" content="Animesh Sinha">
-  <title>Hiya - Home</title>
+  <title>Perfume Factory</title>
   <link href="../../images/favicon.ico" rel="icon">
   <link href="../../dependencies/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="../../dependencies/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -23,7 +23,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Hiya International</a>
+        <a class="navbar-brand" href="#">Perfume Factory</a>
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
@@ -39,7 +39,7 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="intro-message">
-            <h1>Hiya International</h1>
+            <h1>Perfume Factory</h1>
             <h3>An Edunet Business Advertising Page</h3>
             <hr class="intro-divider">
             <ul class="list-inline intro-social-buttons">
@@ -101,7 +101,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
-          <h2>Connect to Hiya Perfumes:</h2>
+          <h2>Connect to Perfume Factory:</h2>
         </div>
         <div class="col-lg-6">
           <ul class="list-inline banner-social-buttons">
@@ -125,7 +125,7 @@
             <li><a href="#contact">Contact</a></li>
             <span class="list-inline navbar-right"><li><a href="/">Edunet</a></li></span>
           </ul>
-          <p class="copyright text-muted small">Copyright &copy; Hiya 2014. All Rights Reserved</p>
+          <p class="copyright text-muted small">Copyright &copy; Edunet 2014. All Rights Reserved</p>
         </div>
       </div>
     </div>

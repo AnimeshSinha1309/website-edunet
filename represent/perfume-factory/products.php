@@ -4,9 +4,9 @@
   <meta charset="utf-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="description" content="Buy products from Hiya Perfumes and Chemicals"/>
-  <meta name="author" content="Animesh Sinha"/>
-  <title>Hiya - Products</title>
+  <meta name="description" content="Sample Edunet pages for representing student businesses and endeavours">
+  <meta name="author" content="Animesh Sinha">
+  <title>Perfume Factory</title>
   <script src="/dependencies/jquery/jquery-2.1.3.js"></script>
   <link href="/dependencies/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
   <link href="css/landing-page.css" rel="stylesheet"/>
@@ -25,7 +25,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Hiya International</a>
+        <a class="navbar-brand" href="#">Perfume Factory</a>
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
@@ -108,7 +108,7 @@
             <li><a href="#contact">Contact</a></li>
             <span class="list-inline navbar-right"><li><a href="/">Edunet</a></li></span>
           </ul>
-          <p class="copyright text-muted small">Copyright &copy; Hiya 2014. All Rights Reserved</p>
+          <p class="copyright text-muted small">Copyright &copy; Edunet 2014. All Rights Reserved</p>
         </div>
       </div>
     </div>

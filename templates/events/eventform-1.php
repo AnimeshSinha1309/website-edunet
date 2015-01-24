@@ -17,24 +17,24 @@
                 <div class="row collapse">
                     <label class="hide"> Your School </label>
                     <div class="small-2 columns"><span class="prefix"><i class="fa fa-graduation-cap"></i></span></div>
-                    <div class="small-10 columns"><input name="name" type="text" placeholder="Your School" spellcheck="false"> </input></div>
+                    <div class="small-10 columns"><input name="school" type="text" placeholder="Your School" spellcheck="false"> </input></div>
                 </div>
                 <div class="row collapse">
                     <label class="hide"> Your Class </label>
                     <div class="small-2 columns"><span class="prefix"><i class="fa fa-gear"></i></span></div>
-                    <div class="small-10 columns"><input name="name" type="text" placeholder="Your class and section (eg. Std. 9 'A')" spellcheck="false"> </input></div>
+                    <div class="small-10 columns"><input name="section" type="text" placeholder="Your class and section (eg. Std. 9 'A')" spellcheck="false"> </input></div>
                 </div>
                 <!-- Personal Details -->
                 <div><h4>Contact Details</h4></div>
                 <div class="row collapse">
                     <label class="hide"> Mobile Phone </label>
                     <div class="small-2 columns"><span class="prefix"><i class="fa fa-mobile"></i></span></div>
-                    <div class="small-10 columns"><input name="name" type="tel" placeholder="Mobile Number" spellcheck="false"> </input></div>
+                    <div class="small-10 columns"><input name="mobile" type="tel" placeholder="Mobile Number" spellcheck="false"> </input></div>
                 </div>
                 <div class="row collapse">
                     <label class="hide"> Your Email </label>
                     <div class="small-2 columns"><span class="prefix"><i class="fi-mail"></i></span></div>
-                    <div class="small-10 columns"><input name="name" type="email" placeholder="Your Email ID" spellcheck="false"> </input></div>
+                    <div class="small-10 columns"><input name="email" type="email" placeholder="Your Email ID" spellcheck="false"> </input></div>
                 </div>
                 <!-- Examination Criteria -->
                 <div><h4>Meeting the Criteria</h4></div>
@@ -44,9 +44,9 @@
                 </div>
                 <div>Class you belong to</div>
                 <ul class="button-group el-radio" data-name="class">
-                    <li><label class="secondary"><input value="cl8">Class 8</label></li>
-                    <li><label class="secondary"><input value="cl9">Class 9</label></li>
-                    <li><label class="secondary"><input value="cl10">Class 10</label></li>
+                    <li><label class="secondary"><input value="Class-8">Class 8</label></li>
+                    <li><label class="secondary"><input value="Class-9">Class 9</label></li>
+                    <li><label class="secondary"><input value="Class-10">Class 10</label></li>
                 </ul>
                 <!-- Examination Criteria -->
                 <div><h4>Tell us a little More</h4></div>
@@ -60,10 +60,10 @@
                 <div class="row collapse">
                     <div>What was your percentage last year</div>
                     <ul style="list-style-type:none;">
-                        <li><input name="std" type="radio" value="std7"><span class="text"> Less than 60%</span></input><br/></li>
-                        <li><input name="std" type="radio" value="std8"><span class="text"> 61% to 75%</span></input><br/></li>
-                        <li><input name="std" type="radio" value="std9"><span class="text"> 76% to 85%</span></input><br/></li>
-                        <li><input name="std" type="radio" value="std10"><span class="text"> 86% to 100%</span></input><br/></li>
+                        <li><input name="marks" type="radio" value="Less than 60%"><span class="text">Less than 60%</span></input><br/></li>
+                        <li><input name="marks" type="radio" value="61% to 75%"><span class="text">61% to 75%</span></input><br/></li>
+                        <li><input name="marks" type="radio" value="76% to 85%"><span class="text">76% to 85%</span></input><br/></li>
+                        <li><input name="marks" type="radio" value="86% to 100%"><span class="text">86% to 100%</span></input><br/></li>
                     </ul>
                 </div>
                 <hr/>

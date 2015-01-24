@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <?php require("../includes/config.php"); ?>
+    <?php require_once("../includes/config.php"); ?>
     <link href="../../../dependencies/foundation/css/foundation.min.css" rel="stylesheet" type="text/css"/>
     <link href="../assets/css/styles.css" rel="stylesheet" type="text/css"/>
     <link href="../favicon.ico" rel="icon"/>
@@ -25,32 +25,34 @@
           </ul>
         </section>
       </nav>
-      <dl class="tabs" data-tab>
-        <dd class="active"><a href="#portfolio">Portfolio</a></dd>
-        <dd><a href="#quote">Quote</a></dd>
-        <dd><a href="#buy">Buy</a></dd>
-        <dd><a href="#sell">Sell</a></dd>
-        <dd><a href="#history">History</a></dd>
-        <dd><a href="#cash">Cash</a></dd>
-      </dl>
-      <div class="tabs-content">
-        <div class="content active" id="portfolio">
-          <?php require_once("portfolio.php") ?>
+      <?php if (!preg_match("{(?:login|logout|register)\.php$}", $_SERVER["PHP_SELF"])): ?>
+        <dl class="tabs" data-tab>
+          <dd class="active"><a href="#portfolio">Portfolio</a></dd>
+          <dd><a href="#quote">Quote</a></dd>
+          <dd><a href="#buy">Buy</a></dd>
+          <dd><a href="#sell">Sell</a></dd>
+          <dd><a href="#history">History</a></dd>
+          <dd><a href="#cash">Cash</a></dd>
+        </dl>
+        <div class="tabs-content">
+          <div class="content active" id="portfolio">
+            <?php require_once("portfolio.php") ?>
+          </div>
+          <div class="content" id="quote">
+            <p>This is the second panel of the basic tab example. This is the second panel of the basic tab example.</p>
+          </div>
+          <div class="content" id="buy">
+            <p>This is the third panel of the basic tab example. This is the third panel of the basic tab example.</p>
+          </div>
+          <div class="content" id="sell">
+            <p>This is the fourth panel of the basic tab example. This is the fourth panel of the basic tab example.</p>
+          </div>
+          <div class="content" id="history">
+            <p>This is the fifth panel of the basic tab example. This is the fourth panel of the basic tab example.</p>
+          </div>
+          <div class="content" id="cash">
+            <p>This is the sixth panel of the basic tab example. This is the fourth panel of the basic tab example.</p>
+          </div>
         </div>
-        <div class="content" id="quote">
-          <p>This is the second panel of the basic tab example. This is the second panel of the basic tab example.</p>
-        </div>
-        <div class="content" id="buy">
-          <p>This is the third panel of the basic tab example. This is the third panel of the basic tab example.</p>
-        </div>
-        <div class="content" id="sell">
-          <p>This is the fourth panel of the basic tab example. This is the fourth panel of the basic tab example.</p>
-        </div>
-        <div class="content" id="history">
-          <p>This is the fifth panel of the basic tab example. This is the fourth panel of the basic tab example.</p>
-        </div>
-        <div class="content" id="cash">
-          <p>This is the sixth panel of the basic tab example. This is the fourth panel of the basic tab example.</p>
-        </div>
-      </div>
+      <?php endif ?>
       <div class="row">
