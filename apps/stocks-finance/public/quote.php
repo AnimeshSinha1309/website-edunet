@@ -1,7 +1,7 @@
 <?php
 
     // configuration
-    require("../includes/config.php");
+    require_once("../includes/config.php");
 
     // if form was submitted
     if ($_SERVER["REQUEST_METHOD"] == "POST")
@@ -14,12 +14,12 @@
         else
         {
             // render the stock values
-            render("quote.php", ["title" => "Quote", "stock" => $stock]);
+            render("quote.php", ["stock" => $stock]);
         }
     }
     else
     {
         // else render form
-        render("quote_form.php", ["title" => "Quote"]);
+        render("quote_form.php");
     }
 ?>

@@ -79,7 +79,7 @@
         // if all required fields are not filled
         else
         {
-            render("register-form.php", ["title" => "Register", "apology" => "Please fill in the whole of the form.", "repopulate"=>$_POST]);
+            render("register-form.php", ["apology" => "Please fill in the whole of the form.", "repopulate"=>array_filter($_POST)]);
         }
     }
     // if no POST is recieved, render form

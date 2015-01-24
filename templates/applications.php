@@ -1,7 +1,7 @@
 <?php render("header_foundation.php", ["title" => "Applications", "navpos" => "applications"]) ?>
 <main>
   <div class="row" style="margin-top:50px;">
-	<a href="/apps/expense-monitor/index.php" class="large-5 columns text-center border-box fluid">
+	<a href="/apps/expense-manager/index.php" class="large-5 columns text-center border-box fluid">
 	  <img src="../images/applications/expense-monitor.png" />
       <div class="container">
         <h1 class="condensed">Expense Monitor</h1>

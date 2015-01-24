@@ -8,12 +8,41 @@ h1.condensed, h2.condensed {
 }
 
 /*
+ * Use the hoverlight class to usually with small white divs, to make them 
+ * go blue when hovered on, and the text white, and give an appearance of being selected
+ */
+div.hoverlight div
+{
+	transition-delay: 0s;
+	transition-duration: 0.2s;
+	transition-property: all;
+	transition-timing-function: linear;
+}
+div.hoverlight div:hover {
+	background-color:#008cba;
+	color:#FFF;
+}
+div.hoverlight div:hover h1,
+div.hoverlight div:hover h2,
+div.hoverlight div:hover h3,
+div.hoverlight div:hover h4,
+div.hoverlight div:hover h5,
+div.hoverlight div:hover h6,
+div.hoverlight div:hover small,
+div.hoverlight div:hover div,
+div.hoverlight div:hover span,
+div.hoverlight div:hover p {
+	color:#FFF;
+}
+
+/*
  * Use this on a div with class columns which has a parent with class row.
  */
 .border-box {
 	border: 2px solid #efefef;
 	padding: 15px;
 	padding-top: 25px;
+	margin-bottom:20px;
 }
 .border-box.fluid {
 	padding: 0px;
@@ -31,7 +60,6 @@ h1.condensed, h2.condensed {
 
 /* 
  * Have an anchor tag nested in a div with class side-tab.
- * If your text doesn't fit in the fixed sized tab, adjust width and top properties in your stylesheet.
  * This element uses -webkit properties, to check for browser compatability issues.
  */
 .side-tab {
@@ -44,7 +72,6 @@ h1.condensed, h2.condensed {
 	position: fixed;
 	top: 350px;
 	left: 0px;
-	width: 83px;
 }
 .side-tab a {
 	border-color: rgb(204, 204, 204);
@@ -61,7 +88,6 @@ h1.condensed, h2.condensed {
 	transition-duration: 0.1s;
 	transition-property: all;
 	transition-timing-function: linear;
-	width: 170px;
 	height: 35px;
 }
 .side-tab a:link:hover, .side-tab a:link:focus, .side-tab a:visited:hover, .side-tab a:visited:focus {
@@ -71,10 +97,10 @@ h1.condensed, h2.condensed {
 
 /* 
  * Add the class el-radio to a label which has a radio input element inside it.
- * 
  */
-.el-radio label input {
+.el-radio li label input {
 	height:20px;
+	display:none;
 }
 .el-radio label {
 	padding-left:0px;
@@ -83,16 +109,26 @@ h1.condensed, h2.condensed {
 	margin-bottom:1px;
 	width:100%;
 }
-.el-radio label input {
-	display:none;
-}
-label.active {
+.el-radio li label.button.active,
+.el-radio li label.button.active:hover {
 	background-color:#005085;
 }
-.el-radio label.active:hover {
-	background-color:#005085;
+.el-radio li label.button.alert.active,
+.el-radio li label.button.alert.active:hover {
+	background-color:#A00000;
 }
-
+.el-radio li label.button.secondary.active,
+.el-radio li label.button.secondary.active:hover {
+	background-color:#AAAAAA;
+}
+.el-radio li label.button.success.active,
+.el-radio li label.button.success.active:hover {
+	background-color:#226f44;
+}
+.el-radio li label.button.warning.active,
+.el-radio li label.button.warning.active:hover {
+	background-color:#af4e03;
+}
 @media only screen 
 {
 	.button-group li {

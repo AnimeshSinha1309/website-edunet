@@ -60,7 +60,7 @@
                 <ul class="dropdown"><?php } ?>
                   <li <?php if($navpos === "schools")echo("class=\"active\""); ?>><a href="/public/schools.php">Schools</a></li>
                   <li <?php if($navpos === "events")echo("class=\"active\""); ?>><a href="/public/events.php">Events</a></li>
-                  <?php if($dev){ ?><li <?php if($navpos === "businesses")echo("class=\"active\""); ?>><a href="/public/businesses.php">Businesses</a></li><?php } ?>
+                  <?php if($dev){ ?><li <?php if($navpos === "represent")echo("class=\"active\""); ?>><a href="/public/represent.php">Represent</a></li><?php } ?>
                 <?php if($dev){ ?></ul>
               </li><?php } ?>
             </ul>

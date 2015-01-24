@@ -16,7 +16,7 @@
      */
     function apologize($message)
     {
-        render("apology.php", ["message" => $message]);
+        render("apology.php", array("message" => $message));
         exit;
     }
 
@@ -37,7 +37,7 @@
     function logout()
     {
         // unset any session variables
-        $_SESSION = [];
+        $_SESSION = array();
 
         // expire cookie
         if (!empty($_COOKIE[session_name()]))
@@ -92,11 +92,11 @@
         }
 
         // return stock as an associative array
-        return [
+        return array(
             "symbol" => $data[0],
             "name" => $data[1],
             "price" => $data[2],
-        ];
+        );
     }
 
     /**
@@ -202,14 +202,8 @@
             // extract variables into local scope
             extract($values);
 
-            // render header
-            require("../templates/header.php");
-
             // render template
             require("../templates/$template");
-
-            // render footer
-            require("../templates/footer.php");
         }
 
         // else err

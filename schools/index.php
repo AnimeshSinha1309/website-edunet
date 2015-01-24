@@ -1,4 +1,4 @@
 <?php
 	require("../includes/config.php");
-	redirect("stthomas/");
+	redirect("/public/schools.php");
 ?>

@@ -1,16 +1,14 @@
 <?php
 
-    /**
-     * constants.php
-     *
-     * Computer Science 50
-     * Problem Set 7
-     *
-     * Global constants.
-     */
-
     // your database's name
-    define("DATABASE", "edunet");
+	if (preg_match("/schools\//", $_SERVER["PHP_SELF"]))
+		define("DATABASE", "schools");
+	else if (preg_match("/apps\/expense-manager\//", $_SERVER["PHP_SELF"]))
+		define("DATABASE", "applications-expensemanager");
+	else if (preg_match("/apps\/expense-monitor\//", $_SERVER["PHP_SELF"]))
+		define("DATABASE", "applications-stocksfinance");
+	else
+    	define("DATABASE", "edunet");
 
     // your database's password
     define("PASSWORD", "crimson");

@@ -10,7 +10,7 @@
      */
 
     // your database's name
-    define("DATABASE", "finance");
+    define("DATABASE", "applications-stocksfinance");
 
     // your database's password
     define("PASSWORD", "crimson");
