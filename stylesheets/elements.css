@@ -3,8 +3,11 @@
 	margin-bottom: 20px;
 }
 
-h1.condensed, h2.condensed {
+h1.condensed {
 	line-height:50px;
+}
+h2.condensed {
+	line-height:30px;
 }
 
 /*

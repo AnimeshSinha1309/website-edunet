@@ -17,14 +17,8 @@
   <script src="/dependencies/bootstrap/js/bootstrap.min.js"></script>
   <script src="/dependencies/graphing-plugins/raphael.min.js"></script>
   <script src="/dependencies/graphing-plugins/morris/morris.min.js"></script>
-  <script src="/dependencies/graphing-plugins/morris/morris-data.js"></script>
-  <?php if(isset($special) && $special == "flot") { ?>
-  <script src="/dependencies/graphing-plugins/flot/jquery.flot.js"></script>
-  <script src="/dependencies/graphing-plugins/flot/jquery.flot.tooltip.min.js"></script>
-  <script src="/dependencies/graphing-plugins/flot/jquery.flot.resize.js"></script>
-  <script src="/dependencies/graphing-plugins/flot/jquery.flot.pie.js"></script>
-  <script src="/dependencies/graphing-plugins/flot/flot-data.js"></script>
-  <?php } ?>
+  <script src="../js/helper.js"></script>
+  <script src="../../../dependencies/angular/angular.min.js"></script>
 </head>
 <body>
   <div id="wrapper">

@@ -34,35 +34,43 @@
           </ul>
           <section class="top-bar-section">
             <ul class="right">
-              <?php if($dev){ ?><li class="has-form">
-                <div class="row collapse">
-                  <div class="large-8 small-9 columns"><input type="text" placeholder="Search Edunet"></div>
-                  <div class="large-4 small-3 columns"><a href="#" class="alert button expand">Search</a></div>
-                </div>
-              </li><?php } ?>
-              <li> </li>
-              <?php if($dev){ ?><li <?php if($navpos === "home")echo("class=\"active\""); ?>><a href="/public/index.php">Home</a></li><?php } ?>
+              <?php if($dev){ ?>
+                <li class="has-form">
+                  <div class="row collapse">
+                    <div class="large-8 small-9 columns"><input type="text" placeholder="Search Edunet"></div>
+                    <div class="large-4 small-3 columns"><a href="#" class="alert button expand">Search</a></div>
+                  </div>
+                </li>
+                <li> </li>
+                <li <?php if($navpos === "home")echo("class=\"active\""); ?>><a href="/public/index.php">Home</a></li>
+			  <?php } ?>
               <li class="has-dropdown not-click">
                 <a><?php if(isset($_SESSION["name"]) && $_SESSION["name"] != " ") echo($_SESSION["name"]); else echo("Username"); ?></a>
                 <ul class="dropdown">
-                  <?php if($dev){ ?><li <?php if($navpos === "dashboard")echo("class=\"active\""); ?>><a href="#">Dashboard</a></li><?php } ?>
-                  <?php if($dev){ ?><li <?php if($navpos === "profile")echo("class=\"active\""); ?>><a href="#">Profile</a></li><?php } ?>
+                  <?php if($dev){ ?>
+                  <li <?php if($navpos === "dashboard")echo("class=\"active\""); ?>><a href="#">Dashboard</a></li>
+                  <li <?php if($navpos === "profile")echo("class=\"active\""); ?>><a href="#">Profile</a></li>
+				  <?php } ?>
                   <li><a href="logout.php">Log Out</a></li>
                 </ul>
               </li>
             </ul>
             <ul class="left">
-              <?php if($dev){ ?><li <?php if($navpos === "courseware")echo("class=\"active\""); ?>><a href="/public/courseware.php">Courseware</a></li><?php } ?>
-              <?php if($dev){ ?><li <?php if($navpos === "developers")echo("class=\"active\""); ?>><a href="/public/developers.php">Developers</a></li><?php } ?>
-              <?php if($dev){ ?><li <?php if($navpos === "applications")echo("class=\"active\""); ?>><a href="/public/applications.php">Applications</a></li><?php } ?>
-              <?php if($dev){ ?><li class="has-dropdown not-click">
-                <a href="#">More Features</a>
-                <ul class="dropdown"><?php } ?>
-                  <li <?php if($navpos === "schools")echo("class=\"active\""); ?>><a href="/public/schools.php">Schools</a></li>
-                  <li <?php if($navpos === "events")echo("class=\"active\""); ?>><a href="/public/events.php">Events</a></li>
-                  <?php if($dev){ ?><li <?php if($navpos === "represent")echo("class=\"active\""); ?>><a href="/public/represent.php">Represent</a></li><?php } ?>
-                <?php if($dev){ ?></ul>
-              </li><?php } ?>
+              <?php if($dev){ ?>
+                <li <?php if($navpos === "courseware")echo("class=\"active\""); ?>><a href="/public/courseware.php">Courseware</a></li>
+                <li <?php if($navpos === "postbook")echo("class=\"active\""); ?>><a href="/public/postbook.php">Postbook</a></li>
+                <li <?php if($navpos === "applications")echo("class=\"active\""); ?>><a href="/public/applications.php">Applications</a></li>
+                <li class="has-dropdown not-click">
+                  <a href="#">More Features</a>
+                  <ul class="dropdown"><?php } ?>
+                    <li <?php if($navpos === "schools")echo("class=\"active\""); ?>><a href="/public/schools.php">Schools</a></li>
+                    <li <?php if($navpos === "events")echo("class=\"active\""); ?>><a href="/public/events.php">Events</a></li>
+                    <li <?php if($navpos === "developers")echo("class=\"active\""); ?>><a href="/public/developers.php">Developers</a></li>
+                    <?php if($dev){ ?><li <?php if($navpos === "represent")echo("class=\"active\""); ?>><a href="/public/represent.php">Represent</a></li><?php } ?>
+                  <?php if($dev){ ?>
+                  </ul>
+                </li>
+			  <?php } ?>
             </ul>
           </section>
         </nav>
