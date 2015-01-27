@@ -1,42 +1,42 @@
 body {
-	background-color:#ddd;
-	max-height:500px;
-	padding:25px;
+    background-color:#ddd;
+    max-height:500px;
+    padding:25px;
 }
 
 section{
-	padding-left:50px;
-	padding-right:50px;
+    padding-left:50px;
+    padding-right:50px;
 }
 
 ul {
-	margin-left:0px;
+    margin-left:0;
 }
 
 label {
-	font-size: 15px;
-	line-height: 50px;
+    font-size: 15px;
+    line-height: 50px;
 }
 
-.signup-panel {
-  padding: 15px;
+.signUp-panel {
+    padding: 15px;
 }
-.signup-panel i {
-  font-size: 30px;
-  line-height: 50px;
-  color: #555;
+.signUp-panel i {
+    font-size: 30px;
+    line-height: 50px;
+    color: #555;
 }
-.signup-panel form input, .signup-panel form span {
-  height: 50px;
+.signUp-panel form input, .signup-panel form span {
+    height: 50px;
 }
-.signup-panel .welcome {
-  font-size: 26px;
-  text-align: center;
-  margin-left: 0;
+.signUp-panel .welcome {
+    font-size: 26px;
+    text-align: center;
+    margin-left: 0;
 }
-.signup-panel .prefix {
-	height: 3.1290rem;
+.signUp-panel .prefix {
+    height: 3.1290rem;
 }
-.signup-panel a {
-	width:100%;
+.signUp-panel a {
+    width:100%;
 }

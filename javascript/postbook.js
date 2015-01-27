@@ -1,12 +1,12 @@
 function renderPostbook(data)
 {
-	$(document).ready(function(e) {
-		for(entry = 0; entry < data.length; entry ++)
+	$(document).ready(function() {
+        for(var entry = data.length - 1; entry >= 0; entry--)
 		{
 			 if ($('#post-col-1').height() <= $('#post-col-2').height()) {
-				 postColumn = '#post-col-1';
+				 var postColumn = '#post-col-1';
 			 }
-			 else if($('#post-col-2').height() < $('#post-col-1').height()) {
+			 else {
 				 postColumn = '#post-col-2';
 			 }
 			 $(postColumn).append(''+

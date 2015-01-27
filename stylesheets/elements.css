@@ -1,105 +1,7 @@
-.img-circle {
-	border-radius: 50%;
-	margin-bottom: 20px;
-}
-
-h1.condensed {
-	line-height:50px;
-}
-h2.condensed {
-	line-height:30px;
-}
-
-/*
- * Use the hoverlight class to usually with small white divs, to make them 
- * go blue when hovered on, and the text white, and give an appearance of being selected
- */
-div.hoverlight div
-{
-	transition-delay: 0s;
-	transition-duration: 0.2s;
-	transition-property: all;
-	transition-timing-function: linear;
-}
-div.hoverlight div:hover {
-	background-color:#008cba;
-	color:#FFF;
-}
-div.hoverlight div:hover h1,
-div.hoverlight div:hover h2,
-div.hoverlight div:hover h3,
-div.hoverlight div:hover h4,
-div.hoverlight div:hover h5,
-div.hoverlight div:hover h6,
-div.hoverlight div:hover small,
-div.hoverlight div:hover div,
-div.hoverlight div:hover span,
-div.hoverlight div:hover p {
-	color:#FFF;
-}
-
-/*
- * Use this on a div with class columns which has a parent with class row.
- */
-.border-box {
-	border: 2px solid #efefef;
-	padding: 15px;
-	padding-top: 25px;
-	margin-bottom:20px;
-}
-.border-box.fluid {
-	padding: 0px;
-}
-.border-box div.container {
-	padding: 15px;
-	color:#666;
-}
-.border-box div.heading h1 {
-	color:#FFF
-}
-.border-box hr {
-	margin:0px;
-}
-
-/* 
- * Have an anchor tag nested in a div with class side-tab.
- * This element uses -webkit properties, to check for browser compatability issues.
- */
-.side-tab {
-	-webkit-transform: matrix(6.12323399573677e-17, -1, 1, 6.12323399573677e-17, 0, 0);
-	-webkit-transform-origin: 0px 0px;
-	font-family: 'Open Sans', Verdana, Geneva, sans-serif, sans-serif;
-	font-size: 18px;
-	font-style: normal;
-	height: 34px;
-	position: fixed;
-	top: 350px;
-	left: 0px;
-}
-.side-tab a {
-	border-color: rgb(204, 204, 204);
-	border-style: solid;
-	border-width: 1px;
-	border-top-style: none;
-	color: rgba(51, 51, 51, 0.74902);
-	display: inline-block;
-	height: 16px;
-	line-height: 16px;
-	padding: 6px 22px 11px 22px;
-	text-decoration: none;
-	transition-delay: 0s;
-	transition-duration: 0.1s;
-	transition-property: all;
-	transition-timing-function: linear;
-	height: 35px;
-}
-.side-tab a:link:hover, .side-tab a:link:focus, .side-tab a:visited:hover, .side-tab a:visited:focus {
-	color:#fff !important;
-	background:#1d9dd9
-}
-
-/* 
+ /* 
  * Add the class el-radio to a label which has a radio input element inside it.
+ * Make sure to also enable the javascript library and call the radiobutton() 
+ * function, before you use this class.
  */
 .el-radio li label input {
 	height:20px;
@@ -143,4 +45,216 @@ div.hoverlight div:hover p {
 	.button-group li {
 		width:33%;
 	}
+}
+
+/*
+ * Use the hoverlight class to usually with small block-like divs, to make them go from 
+ * white to blue when hovered on, and the text from black or grey to white, tand give an 
+ * appearance of being selected. Color goes back to white when not hovering on it.
+ */
+div.hoverlight div
+{
+	transition-delay: 0s;
+	transition-duration: 0.2s;
+	transition-property: all;
+	transition-timing-function: linear;
+	cursor:pointer;
+}
+div.hoverlight div:hover {
+	background-color:#008cba;
+	color:#FFF;
+}
+div.hoverlight div:hover h1,
+div.hoverlight div:hover h2,
+div.hoverlight div:hover h3,
+div.hoverlight div:hover h4,
+div.hoverlight div:hover h5,
+div.hoverlight div:hover h6,
+div.hoverlight div:hover small,
+div.hoverlight div:hover div,
+div.hoverlight div:hover span,
+div.hoverlight div:hover p {
+	color:#FFF;
+}
+
+/*
+ * Use this on a div with class columns which has a parent with class row. The 
+ * border-box class adds a border around the div element, light grey in color by
+ * default. Use this class in combination with black to have black borders and
+ * matching style for hr elements, so they can be used as separators.
+ */
+.border-box {
+	border: 2px solid #efefef;
+	padding: 15px;
+	padding-top: 25px;
+	margin-bottom:20px;
+	color:#666;
+}
+.border-box img {
+	margin-bottom:10px;
+}
+.border-box.black {
+	border:3px solid #000000;
+}
+.border-box.black hr {
+	border:1px solid #000000;
+}
+
+/* 
+ * Have an anchor tag nested in a div with class side-tab.
+ * This element uses -webkit properties, to check for browser compatability issues.
+ */
+.side-tab {
+	-webkit-transform: matrix(6.12323399573677e-17, -1, 1, 6.12323399573677e-17, 0, 0);
+	-webkit-transform-origin: 0px 0px;
+	font-family: 'Open Sans', Verdana, Geneva, sans-serif, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	height: 34px;
+	position: fixed;
+	top: 350px;
+	left: 0px;
+}
+.side-tab a {
+	border-color: rgb(204, 204, 204);
+	border-style: solid;
+	border-width: 1px;
+	border-top-style: none;
+	color: rgba(51, 51, 51, 0.74902);
+	display: inline-block;
+	height: 16px;
+	line-height: 16px;
+	padding: 6px 22px 11px 22px;
+	text-decoration: none;
+	transition-delay: 0s;
+	transition-duration: 0.1s;
+	transition-property: all;
+	transition-timing-function: linear;
+	height: 35px;
+}
+.side-tab a:link:hover, .side-tab a:link:focus, .side-tab a:visited:hover, .side-tab a:visited:focus {
+	color:#fff !important;
+	background:#1d9dd9
+}
+
+/*
+ * Add these classes to body or main elements to set their background color, and the 
+ * text color appropriate to that context. To apply these colors to elements other than
+ * main or body, add the colors class to that element.
+ */
+body.grey,
+main.grey,
+.colors.grey {
+	background-color:#DDD;
+	color:#000;
+}
+body.white,
+main.white,
+.colors.white {
+	background-color:#FFF;
+	color:#000;
+}
+body.black,
+main.black,
+.colors.black {
+	background-color:#000;
+	color:#FFF;
+}
+
+/*
+ * Branding colors, you can add classes like social-github or social-googleplus to set
+ * your button color to the brand color of the said service. To use it on an element to
+ * which you have not applie the button class, add the class colors and use classes like
+ * black-github or red-googleplus or blue-facebook.
+ */
+.colors.black-github,
+.button.social-github {
+	color:#FFF;
+	background-color:#000000;
+}
+.colors.red-googleplus,
+.button.social-googleplus {
+	color:#FFF;
+	background-color:#dd4b39;
+}
+.colors.blue-facebook,
+.button.social-facebook {
+	color:#FFF;
+	background-color:#3b5998;
+}
+.colors.blue-linkedin,
+.button.social-linkedin {
+	color:#FFF;
+	background-color:#007bb6;
+}
+.colors.red-youtube,
+.button.social-youtube {
+	color:#FFF;
+	background-color:#bb0000;
+}
+.colors.blue-instagram,
+.button.social-instagram {
+	color:#FFF;
+	background-color:#517fa4;
+}
+.colors.blue-twitter,
+.button.social-twitter {
+	color:#FFF;
+	background-color:#00aced;
+}
+.colors.green-vimeo,
+.button.social-vimeo {
+	color:#FFF;
+	background-color:#aad450;
+}
+.colors.orange-stackoverflow,
+.button.social-stackoverflow {
+	color:#FFF;
+	background-color:#FFA011;
+}
+.button.social-github:hover,
+.button.social-googleplus:hover,
+.button.social-facebook:hover,
+.button.social-linkedin:hover,
+.button.social-youtube:hover,
+.button.social-instagram:hover,
+.button.social-stackoverflow:hover,
+.button.social-twitter:hover,
+.button.social-vimeo:hover {
+	opacity:0.85;
+}
+
+/*
+ * Margin, padding and size controlling utility classes, let you edit some of foundation's
+ * default behaviour without having to write in-line CSS styling. Add these classes to the
+ * element you desire the behaviour from.
+ */
+.nomargin {
+	margin:0;
+}
+.nopadding {
+	padding:0;
+}
+.full-width {
+	width:100%;
+}
+
+/*
+ * Image styling - add this class to any image to get a circular form, the edges will be cut out.
+ * Please use only on images, circular buttons and form fields have a different class for them.
+ */
+img.img-circle {
+	border-radius: 50%;
+	margin-bottom: 20px;
+}
+
+/*
+ * Text Styling - if yout header texts extend out into more than one line, use these classes to
+ * decrease the line height and make it look coherent.
+ */
+h1.condensed {
+	line-height:50px;
+}
+h2.condensed {
+	line-height:30px;
 }

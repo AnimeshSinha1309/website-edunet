@@ -11,3 +11,4 @@
 		$data[$user["type"]] += 1;
 	}
 	render("dashboard.php", array("userTypeSplit" => $data));
+    render("footer-admin.php");
