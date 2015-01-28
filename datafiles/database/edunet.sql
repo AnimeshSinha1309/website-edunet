@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 24, 2015 at 02:25 PM
+-- Generation Time: Jan 25, 2015 at 02:18 PM
 -- Server version: 5.6.20
 -- PHP Version: 5.5.15
 
@@ -74,6 +74,33 @@ INSERT INTO `events` (`title`, `id`, `formId`, `infoId`, `dataId`, `comptetition
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `postbook`
+--
+
+CREATE TABLE IF NOT EXISTS `postbook` (
+`id` int(11) NOT NULL,
+  `sender` varchar(64) NOT NULL,
+  `post` varchar(1024) NOT NULL,
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `title` varchar(32) DEFAULT NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+
+--
+-- Dumping data for table `postbook`
+--
+
+INSERT INTO `postbook` (`id`, `sender`, `post`, `date`, `title`) VALUES
+(1, 'Animesh Sinha', 'Hello, lets see if we can insert our posts here into our database. Even if it works one way, this is the first step.', '2015-01-25 09:42:39', 'First Post'),
+(2, 'Animesh Sinha', 'Posting here to check if we are out of the woods and in the clear, or have we got a good deal of work to do, even now. Of course, the column balancing is still left, and then the implementation of groups. But still, this would be a big step forward, and then its no turning back from here.', '2015-01-25 10:30:02', 'Out of the Woods'),
+(3, 'Animesh Sinha', 'For the sake of rendering the posts and balancing the columns, we have to do few more posts. Just so that we can analyse the actual behaviour and solve this problem of columns height balancing.', '2015-01-25 10:48:29', 'Render''s Sake'),
+(4, 'Animesh Sinha', 'Looks like the column balancer is working, so lets just try it out. Small post.', '2015-01-25 10:55:13', 'Looks like it.'),
+(5, 'Manish Sinha', 'Study before you think always doesn''t work well; think and think deep before you read or study works better. Look at your surroundings meticulously and try identifying a problem, then investigate and study in depth and resolve issues; certainly such an algo would lead to something really out of the box -- innovation -- our country needs it ---- make it in INDIA.', '2015-01-25 11:19:36', 'Out of the box'),
+(6, 'Animesh Sinha', 'So small, two could fit in one.', '2015-01-25 12:17:20', 'So small'),
+(7, 'Animesh Sinha', 'Just see.', '2015-01-25 12:17:41', 'And see the balancing');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `users`
 --
 
@@ -127,6 +154,12 @@ ALTER TABLE `events`
  ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `postbook`
+--
+ALTER TABLE `postbook`
+ ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -141,6 +174,11 @@ ALTER TABLE `users`
 --
 ALTER TABLE `courses`
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT for table `postbook`
+--
+ALTER TABLE `postbook`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT for table `users`
 --

@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+body {
+	background-color:#DDD !important;
+}
+
+div.post {
+	padding:5px;
+}
+
+div.post div {
+	background-color:#FFF;
+	padding:12px;
+}

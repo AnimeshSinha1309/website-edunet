@@ -1,4 +1,4 @@
-.lightgrey-body
+body
 {
 	background-color:#ddd;
 	max-height:500px;
@@ -11,27 +11,24 @@
 	max-width: 500px;
 }
 
-.signin-panel {
+.signIn-panel {
   padding: 15px;
 }
-
-.signin-panel i {
+.signIn-panel i {
   font-size: 30px;
   line-height: 50px;
   color: #999;
 }
-
-.signin-panel form input, .signup-panel form span {
+.signIn-panel form input, .signup-panel form span {
   height: 50px;
 }
-
-.signin-panel .welcome {
+.signIn-panel .welcome {
   font-size: 26px;
   text-align: center;
   margin-left: 0;
 }
 
-.signin-panel .prefix
+.signIn-panel .prefix
 {
 	height: 3.1290rem;
 }

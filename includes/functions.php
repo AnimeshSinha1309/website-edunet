@@ -23,7 +23,6 @@
     function query(/* $sql [, ... ] */)
     {
 		$sql = func_get_arg(0);
-		$spl = func_get_arg(1);
         $parameters = array_slice(func_get_args(), 1);
 		static $handle;
 		if (!isset($handle))

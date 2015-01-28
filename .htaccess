@@ -1,3 +1,26 @@
+# Disabling Dirctory Listing
+Options -Indexes
+
+# Block access to certain files
+<Files *.txt>
+Order Deny,Allow
+Deny from All
+</Files>
+<Files *.xml>
+Order Deny,Allow
+Deny from All
+</Files>
+<Files *.md>
+Order Deny,Allow
+Deny from All
+</Files>
+
+# Force Redirect to follow url standards
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^example.com [NC]
+RewriteRule ^(.*)$ http://www.example.com/$1 [L,R=301,NC]
+
+# Set up Custom Error Pages
 ErrorDocument 400 /siteerrors/400.php
 ErrorDocument 401 /siteerrors/401.php
 ErrorDocument 402 /siteerrors/402.php
