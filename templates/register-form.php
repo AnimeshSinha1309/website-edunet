@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
     <title> Register </title>
     <link href="/dependencies/foundation/css/foundation.css" rel="stylesheet" type="text/css"/>
@@ -14,7 +15,7 @@
     <script src="/javascript/elements.js" type="text/javascript"></script>
     <script> $(document).ready(function() { $(document).foundation(); }); </script>
     <script> radioButton(); </script>
-    <script> uploadButton('#profile-picture-button', '#profile-picture-fileInput'); </script>
+    <script> uploadButton('#profile-picture-button', '#profile-picture-fileInput', function() {  alert('@debug:error'); }); </script>
     <?php if(isset($repopulate)): ?><script> repopulate(<?php echo(json_encode($repopulate)); ?>); </script><?php endif ?>
 </head>
 <body>
@@ -26,14 +27,14 @@
     </div>
     <div class="row" style="margin-top:20px;">
         <div class="small-8 columns">
-            <img src="/images/register/site-view-pic-2.png" alt="Screen" class="th"/>
+            <img src="/images/register/site-view-pic-2.PNG" alt="Screen" class="th"/>
         </div>
         <div class="small-4 columns">
             <div class="row">
                 <img src="/images/register/site-view-pic-1.PNG" alt="Screen" class="th"/>
             </div>
             <div class="row">
-                <img src="/images/register/site-view-pic-3.png" alt="Screen" style="margin-top:11px;" class="th"/>
+                <img src="/images/register/site-view-pic-3.PNG" alt="Screen" style="margin-top:11px;" class="th"/>
             </div>
         </div>
     </div>
@@ -225,7 +226,7 @@
                 </div>
             </div>
         </form>
-        <strong>Already a member? <a href="login.php">Log in</a>.</strong>
+        <strong>Already a member? <a href="/public/login.php">Log in</a>.</strong>
     </div>
 </section>
 </body>

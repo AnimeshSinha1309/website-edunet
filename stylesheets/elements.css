@@ -8,8 +8,8 @@
 	display:none;
 }
 .el-radio label {
-	padding-left:0px;
-	padding-right:0px;
+	padding-left:0;
+	padding-right:0;
 	text-align:center;
 	margin-bottom:1px;
 	width:100%;
@@ -85,9 +85,8 @@ div.hoverlight div:hover p {
  */
 .border-box {
 	border: 2px solid #efefef;
-	padding: 15px;
-	padding-top: 25px;
-	margin-bottom:20px;
+    padding: 25px 15px 15px;
+    margin-bottom:20px;
 	color:#666;
 }
 .border-box img {
@@ -113,16 +112,13 @@ div.hoverlight div:hover p {
 	height: 34px;
 	position: fixed;
 	top: 350px;
-	left: 0px;
+	left: 0;
 }
 .side-tab a {
-	border-color: rgb(204, 204, 204);
-	border-style: solid;
-	border-width: 1px;
-	border-top-style: none;
-	color: rgba(51, 51, 51, 0.74902);
+    border: 1px solid rgb(204, 204, 204);
+    border-top-style: none;
+    color: rgba(51, 51, 51, 0.74902);
 	display: inline-block;
-	height: 16px;
 	line-height: 16px;
 	padding: 6px 22px 11px 22px;
 	text-decoration: none;
@@ -202,10 +198,10 @@ main.black,
 	color:#FFF;
 	background-color:#00aced;
 }
-.colors.green-vimeo,
-.button.social-vimeo {
+.colors.green-edunet,
+.button.social-edunet {
 	color:#FFF;
-	background-color:#aad450;
+	background-color:#227010;
 }
 .colors.orange-stackoverflow,
 .button.social-stackoverflow {
@@ -229,10 +225,10 @@ main.black,
  * default behaviour without having to write in-line CSS styling. Add these classes to the
  * element you desire the behaviour from.
  */
-.nomargin {
+.no-margin {
 	margin:0;
 }
-.nopadding {
+.no-padding {
 	padding:0;
 }
 .full-width {

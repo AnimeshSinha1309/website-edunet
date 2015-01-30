@@ -16,7 +16,7 @@ if (!preg_match("{(?:login|logout|register|501|404|403)\.php$}", $_SERVER["PHP_S
 	}
 	else if ($_SESSION["access"] != "Developer")
 	{
-		if (!preg_match("{(?:schools/index|schools|events)\.php$}", $_SERVER["PHP_SELF"]))
-		redirect(CONTROLLER."/notimplemented.php");
+		if (preg_match("{(?:applications|courseware)\.php$}", $_SERVER["PHP_SELF"]))
+		redirect("/siteerrors/501.php");
 	}
 }

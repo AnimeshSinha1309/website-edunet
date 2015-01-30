@@ -2,6 +2,7 @@
   <profile version="1.0" is_locked="false">
     <option name="myName" value="Project Default" />
     <option name="myLocal" value="false" />
+    <inspection_tool class="CssInvalidPseudoSelector" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="CssUnknownProperty" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="myCustomPropertiesEnabled" value="true" />
       <option name="myIgnoreVendorSpecificProperties" value="false" />
@@ -14,7 +15,7 @@
       </option>
     </inspection_tool>
     <inspection_tool class="JSUnusedGlobalSymbols" enabled="true" level="INFO" enabled_by_default="true" />
-    <inspection_tool class="W3CssValidation" enabled="true" level="WARNING" enabled_by_default="true">
+    <inspection_tool class="W3CssValidation" enabled="false" level="WARNING" enabled_by_default="false">
       <option name="myCssVersion" value="css3" />
       <option name="myIgnoreVendorSpecificProperties" value="true" />
     </inspection_tool>

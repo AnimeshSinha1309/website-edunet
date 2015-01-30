@@ -60,8 +60,8 @@
                     <li <?php if($navpos === "schools")echo("class=\"active\""); ?>><a href="/public/schools.php">Schools</a></li>
                     <li <?php if($navpos === "events")echo("class=\"active\""); ?>><a href="/public/events.php">Events</a></li>
                     <li <?php if($navpos === "postbook")echo("class=\"active\""); ?>><a href="/public/postbook.php">Postbook</a></li>
-                    <li <?php if($navpos === "applications")echo("class=\"active\""); ?>><a href="/public/applications.php">Applications</a></li>
                     <?php if($dev){ ?>
+                    <li <?php if($navpos === "applications")echo("class=\"active\""); ?>><a href="/public/applications.php">Applications</a></li>
                     <li class="has-dropdown not-click">
                         <a href="#">More Features</a>
                         <ul class="dropdown">

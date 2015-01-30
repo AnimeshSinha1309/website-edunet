@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+#social {
+    position: absolute;
+    right: 0;
+    padding:0;
+    width: 8%;
+}
+.social-links {
+    transition-delay: 0s;
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-timing-function: linear;
+    -webkit-transition: all 0.5s ease;
+    right: 0;
+    width: 100%;
+    margin: 0;
+}
+.social-links:hover {
+    padding-right: 0;
+}
+.social-accounts {
+    transition-delay: 0s;
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-timing-function: linear;
+    -webkit-transition: all 0.5s ease;
+    z-index: 100;
+}
+.social-links:hover {
+    padding-right: 0;
+}
+
+#web-details, #web-account, #web-symbol {
+    transition-delay: 0s;
+    transition-duration: 2s;
+    transition-property: all;
+    transition-timing-function: linear;
+    -webkit-transition: all 2s ease;
+}

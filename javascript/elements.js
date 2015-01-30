@@ -1,7 +1,14 @@
-function initialize() {
-	radioButton()
-
-}
+/*
+ * Radio Button Styles
+ *      radioButton()       JavaScript function - scope global
+ *      el-radio            HTML class
+ *      Add class el-radio to ul containing all the radio input elements,
+ *      which gives it the complete behaviour of the elements-radio.
+ * Upload Button Styles
+ *      uploadButton()      JavaScript function - scope global
+ * Form Entry handlers
+ *      radioButton()       JavaScript function - scope global
+ */
 
 /*
  * radioButton()
@@ -96,5 +103,25 @@ function repopulate(data) {
 				$("[name = '" + datum + "']").val(data[datum]);
 			}
 		}
+    });
+}
+
+/*
+ * heightBalance(data)
+ * Pushes in DOM elements to other parent elements while trying to keep all parent elements
+ * equal in height. That is, it adds the said element to the parent with the least present height.
+ * Demo available at http://animeshsinha1309.github.io/Website-Edunet/libraries/js/heightBalance.html
+ * @parameters:
+ *	divisions: an array of all container elements the height of all of which is being balanced
+ *  push: a function which returns the HTML of the element to be pushed in as a string
+ */
+function heightBalance(divisions, push)
+{
+    $(document).ready(function() {
+        var postColumn = divisions[0];
+        for(var i = 0; i < divisions.length; i++)
+            if(divisions[i].length > postColumn.length)
+                postColumn = divisions[i];
+        $(postColumn).append(push());
     });
 }
