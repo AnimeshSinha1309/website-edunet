@@ -10,6 +10,12 @@
  *      radioButton()       JavaScript function - scope global
  */
 
+function elements() {
+    $(document).ready(function() {
+        radioButton();
+    });
+}
+
 /*
  * radioButton()
  * Associated class: el-radio, added to a ul or ol element

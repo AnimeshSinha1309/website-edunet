@@ -3,7 +3,9 @@
 	margin-top:100px;
 	padding-top:80px;
 	padding-bottom:100px;
-	border-left-color:#CCC;
-	border-left-style:solid;
-	border-left-width:medium;
+    border-left: medium solid #CCC;
+}
+
+dl.tabs {
+    background-color: #EEEEEE;
 }

@@ -18,25 +18,25 @@ label {
     line-height: 50px;
 }
 
-.signUp-panel {
+.form {
     padding: 15px;
 }
-.signUp-panel i {
+.form i {
     font-size: 30px;
     line-height: 50px;
     color: #555;
 }
-.signUp-panel form input, .signup-panel form span {
+.form form input, .form form span {
     height: 50px;
 }
-.signUp-panel .welcome {
+.form .welcome {
     font-size: 26px;
     text-align: center;
     margin-left: 0;
 }
-.signUp-panel .prefix {
+.form .prefix {
     height: 3.1290rem;
 }
-.signUp-panel a {
+.form a {
     width:100%;
 }

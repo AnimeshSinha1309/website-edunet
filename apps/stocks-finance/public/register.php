@@ -9,7 +9,7 @@
         // validate submission
         if ($_POST["password"] != $_POST["conformation"])
         {
-            apologize("Your pasword and conformation do not match.");
+            apologize("Your password and conformation do not match.");
         }
         else if (empty($_POST["username"]))
         {
@@ -39,7 +39,6 @@
     else
     {
         // else render form
+        render("header.php");
         render("register_form.php", ["title" => "Register"]);
     }
-
-?>

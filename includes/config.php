@@ -20,3 +20,8 @@ if (!preg_match("{(?:login|logout|register|501|404|403)\.php$}", $_SERVER["PHP_S
 		redirect("/siteerrors/501.php");
 	}
 }
+
+set_error_handler(function(int $errno , string $errstr) {
+        redirect("/siteerrors/501.php");
+    }
+);

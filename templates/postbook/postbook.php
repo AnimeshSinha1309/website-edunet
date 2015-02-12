@@ -20,7 +20,7 @@
                     <hr style="margin-bottom:20px; margin-top:0;"/>
                     <form action="<?php echo($_SERVER['PHP_SELF']); ?>" method="get">
                         <label for="postbook-group" class="hide">Select your group</label>
-                        <select name="#postbook-group">
+                        <select name="group" id="postbook-group">
                             <optgroup label="Developers">
                                 <option value="debug">Developers Debugging</option>
                                 <option value="dvcta">Developers Computers</option>

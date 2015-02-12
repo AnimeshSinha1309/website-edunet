@@ -2,7 +2,7 @@
 	require_once("../includes/config.php");
 	if(empty($_GET["group"]))
 	{
-		redirect($_SERVER['PHP_SELF'].'?group=dvphy');
+		redirect($_SERVER['PHP_SELF'].'?group=debug');
 	}
 	if($_SERVER['REQUEST_METHOD'] == 'POST')
 	{

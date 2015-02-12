@@ -2,25 +2,67 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2100d065-5202-43e1-818a-7742788e23d2" name="Default" comment="Profile Front-end&#10;&#10;A few front end implementations, both CSS and JavaScript of the profiles page. Dummy Back-end has been used. Preparing to simplify registeration by shifting complexity to profiles.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javascript/noabbreviate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/stylesheets/portfolio.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javascript/portfolio.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/siteerrors/501.php" afterPath="$PROJECT_DIR$/siteerrors/501.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/datafiles/database/_user-jharvard.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/licences/attributions.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
+      <change type="DELETED" beforePath="C:\Users\Animesh\Documents\Edunet\Website-Edunet\images\assets-general\_notes\dwsync.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Animesh\Documents\Edunet\Website-Edunet\images\assets-general\fi-bookmark.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Animesh\Documents\Edunet\Website-Edunet\images\assets-general\fi-home.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Animesh\Documents\Edunet\Website-Edunet\images\assets-general\fi-info.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Animesh\Documents\Edunet\Website-Edunet\images\assets-general\fi-like.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Animesh\Documents\Edunet\Website-Edunet\images\assets-general\fi-mail.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Animesh\Documents\Edunet\Website-Edunet\images\avatar-blank.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Animesh\Documents\Edunet\Website-Edunet\images\avatar-red.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Animesh\Documents\Edunet\Website-Edunet\images\favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Animesh\Documents\Edunet\Website-Edunet\images\logo-01.bmp" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Animesh\Documents\Edunet\Website-Edunet\images\register\_notes\dwsync.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Animesh\Documents\Edunet\Website-Edunet\images\register\site-view-pic-1.PNG" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Animesh\Documents\Edunet\Website-Edunet\images\register\site-view-pic-2.PNG" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Animesh\Documents\Edunet\Website-Edunet\images\register\site-view-pic-3.PNG" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Animesh\Documents\Edunet\Website-Edunet\images\res-logos\_notes\dwsync.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Animesh\Documents\Edunet\Website-Edunet\images\res-logos\identifier-microsoft.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Animesh\Documents\Edunet\Website-Edunet\images\res-logos\logo-edunet.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Animesh\Documents\Edunet\Website-Edunet\images\res-logos\logo-facebook.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Animesh\Documents\Edunet\Website-Edunet\images\res-logos\logo-google+.JPG" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Animesh\Documents\Edunet\Website-Edunet\images\res-logos\logo-linkedin.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Animesh\Documents\Edunet\Website-Edunet\images\res-logos\logo-microsoft.jpg" afterPath="" />
+      <change type="MOVED" beforePath="C:\Users\Animesh\Documents\Edunet\Website-Edunet\LICENSE.md" afterPath="$PROJECT_DIR$/licences/LICENSE.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitattributes" afterPath="$PROJECT_DIR$/.gitattributes" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/Animesh.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/Animesh.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LICENSE.md" afterPath="$PROJECT_DIR$/LICENSE.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/schools/stthomasschoolranchi/stylesheets/agency.css" afterPath="$PROJECT_DIR$/schools/stthomasschoolranchi/stylesheets/agency.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/config.php" afterPath="$PROJECT_DIR$/includes/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/constants.php" afterPath="$PROJECT_DIR$/includes/constants.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/.idea/_notes/dwsync.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/_notes/dwsync.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/_notes/dwsync.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datafiles/events/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/datafiles/events/_notes/dwsync.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dependencies/foundation/css/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/dependencies/foundation/css/_notes/dwsync.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/includes/_notes/dwsync.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/javascript/_notes/dwsync.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/represent/perfume-factory/css/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/represent/perfume-factory/css/_notes/dwsync.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/schools/admin/public/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/schools/admin/public/_notes/dwsync.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/schools/admin/templates/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/schools/admin/templates/_notes/dwsync.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/schools/stthomasschoolranchi/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/schools/stthomasschoolranchi/_notes/dwsync.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/schools/stthomasschoolranchi/stylesheets/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/schools/stthomasschoolranchi/stylesheets/_notes/dwsync.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/schools/stthomasschoolranchi/templates/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/schools/stthomasschoolranchi/templates/_notes/dwsync.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/siteerrors/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/siteerrors/_notes/dwsync.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/stylesheets/_notes/dwsync.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/templates/_notes/dwsync.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/portfolio/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/templates/portfolio/_notes/dwsync.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/postbook/_notes/dwsync.xml" afterPath="$PROJECT_DIR$/templates/postbook/_notes/dwsync.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/elements.css" afterPath="$PROJECT_DIR$/stylesheets/elements.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/elements.js" afterPath="$PROJECT_DIR$/javascript/elements.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dependencies/foundation/css/foundation.css" afterPath="$PROJECT_DIR$/dependencies/foundation/css/foundation.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/header_foundation.php" afterPath="$PROJECT_DIR$/templates/header_foundation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/postbook.css" afterPath="$PROJECT_DIR$/stylesheets/postbook.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/stocks-finance/includes/functions.php" afterPath="$PROJECT_DIR$/apps/stocks-finance/includes/functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/login.php" afterPath="$PROJECT_DIR$/public/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/postbook.php" afterPath="$PROJECT_DIR$/public/postbook.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/postbook/postbook.php" afterPath="$PROJECT_DIR$/templates/postbook/postbook.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/represent/perfume-factory/css/products.css" afterPath="$PROJECT_DIR$/represent/perfume-factory/css/products.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/portfolio/profile.php" afterPath="$PROJECT_DIR$/templates/portfolio/profile.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/pageexamples/radiobutton.html" afterPath="$PROJECT_DIR$/documentation/pageexamples/radiobutton.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/register-form.php" afterPath="$PROJECT_DIR$/templates/register-form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/register.css" afterPath="$PROJECT_DIR$/stylesheets/register.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/stocks-finance/public/register.php" afterPath="$PROJECT_DIR$/apps/stocks-finance/public/register.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/register.php" afterPath="$PROJECT_DIR$/public/register.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/stocks-finance/assets/css/styles.css" afterPath="$PROJECT_DIR$/apps/stocks-finance/assets/css/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Website-Edunet.iws" />
@@ -46,36 +88,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="postbook.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/postbook/postbook.php">
+      <file leaf-file-name="elements.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javascript/elements.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.423077" vertical-offset="208" max-vertical-offset="1156">
-              <caret line="19" column="63" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="2346">
+              <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
               <folding>
-                <element signature="e#342#383#0#HTML" expanded="true" />
-                <element signature="e#1152#1193#0#HTML" expanded="true" />
-                <element signature="e#3588#3606#0#HTML" expanded="true" />
-                <element signature="e#3676#3694#0#HTML" expanded="true" />
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register-form.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/register-form.php">
+      <file leaf-file-name="radiobutton.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/documentation/pageexamples/radiobutton.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="4046">
-              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="agency.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/schools/stthomasschoolranchi/stylesheets/agency.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5065274" vertical-offset="13865" max-vertical-offset="14450">
-              <caret line="827" column="1" selection-start-line="827" selection-start-column="1" selection-end-line="827" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.43214285" vertical-offset="81" max-vertical-offset="663">
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -99,57 +128,23 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/schools/stthomas/templates/_notes/modifications.txt" />
-        <option value="35f7f8de/scratch" />
-        <option value="$PROJECT_DIR$/templates/represent.php" />
-        <option value="$PROJECT_DIR$/templates/events/eventform-1.php" />
-        <option value="$PROJECT_DIR$/schools/admin/index.php" />
-        <option value="$PROJECT_DIR$/apps/expense-monitor/javascript/graphs.js" />
-        <option value="$PROJECT_DIR$/apps/expense-monitor/public/analyze-graphs.php" />
-        <option value="$PROJECT_DIR$/apps/expense-monitor/templates/analyze-graphs.php" />
-        <option value="$PROJECT_DIR$/templates/footer_foundation.php" />
-        <option value="$PROJECT_DIR$/templates/events.php" />
-        <option value="$PROJECT_DIR$/stylesheets/login.css" />
-        <option value="$PROJECT_DIR$/templates/login-form.php" />
-        <option value="$PROJECT_DIR$/stylesheets/events.css" />
-        <option value="$PROJECT_DIR$/stylesheets/register.css" />
-        <option value="$PROJECT_DIR$/schools/admin/templates/footer-admin.php" />
-        <option value="$PROJECT_DIR$/schools/admin/public/index.php" />
-        <option value="$PROJECT_DIR$/schools/admin/templates/tables.php" />
-        <option value="$PROJECT_DIR$/schools/admin/templates/charts.php" />
-        <option value="$PROJECT_DIR$/schools/admin/templates/bootstrap-grid.php" />
-        <option value="$PROJECT_DIR$/schools/admin/public/bootstrap-grid.php" />
-        <option value="$PROJECT_DIR$/schools/admin/public/charts.php" />
-        <option value="$PROJECT_DIR$/schools/admin/public/tables.php" />
-        <option value="$PROJECT_DIR$/schools/admin/public/forms.php" />
-        <option value="$PROJECT_DIR$/schools/admin/templates/forms.php" />
-        <option value="$PROJECT_DIR$/schools/admin/public/blank-page.php" />
-        <option value="$PROJECT_DIR$/schools/admin/templates/blank-page.php" />
-        <option value="$PROJECT_DIR$/schools/admin/public/bootstrap-elements.php" />
-        <option value="$PROJECT_DIR$/schools/admin/templates/bootstrap-elements.php" />
-        <option value="$PROJECT_DIR$/schools/admin/templates/dashboard.php" />
-        <option value="$PROJECT_DIR$/schools/admin/public/report.php" />
-        <option value="$PROJECT_DIR$/schools/admin/templates/header-admin.php" />
-        <option value="$PROJECT_DIR$/javascript/postbook.js" />
-        <option value="$PROJECT_DIR$/templates/header_foundation.php" />
-        <option value="$PROJECT_DIR$/includes/config.php" />
-        <option value="$PROJECT_DIR$/.htaccess" />
-        <option value="$PROJECT_DIR$/LICENSE.md" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/javascript/elements.js" />
-        <option value="$PROJECT_DIR$/dependencies/bootstrap/css/bootstrap.css" />
-        <option value="$PROJECT_DIR$/dependencies/foundation/css/foundation.css" />
-        <option value="$PROJECT_DIR$/stylesheets/postbook.css" />
-        <option value="$PROJECT_DIR$/represent/perfume-factory/css/products.css" />
         <option value="$PROJECT_DIR$/stylesheets/elements.css" />
-        <option value="$PROJECT_DIR$/templates/portfolio/profile.php" />
-        <option value="$PROJECT_DIR$/stylesheets/portfolio.css" />
-        <option value="$PROJECT_DIR$/javascript/noabbreviate.js" />
-        <option value="$PROJECT_DIR$/siteerrors/501.php" />
-        <option value="$PROJECT_DIR$/javascript/portfolio.js" />
-        <option value="$PROJECT_DIR$/templates/postbook/postbook.php" />
+        <option value="$PROJECT_DIR$/includes/constants.php" />
+        <option value="$PROJECT_DIR$/includes/config.php" />
+        <option value="$PROJECT_DIR$/public/login.php" />
+        <option value="$PROJECT_DIR$/datafiles/database/_user-jharvard.sql" />
+        <option value="$PROJECT_DIR$/datafiles/database/edunet.sql" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/stylesheets/register.css" />
         <option value="$PROJECT_DIR$/templates/register-form.php" />
-        <option value="$PROJECT_DIR$/schools/stthomasschoolranchi/stylesheets/agency.css" />
+        <option value="$PROJECT_DIR$/public/register.php" />
+        <option value="$PROJECT_DIR$/templates/postbook/postbook.php" />
+        <option value="$PROJECT_DIR$/public/postbook.php" />
+        <option value="$PROJECT_DIR$/.gitattributes" />
+        <option value="$PROJECT_DIR$/_licenses/attributions.md" />
+        <option value="$PROJECT_DIR$/.htaccess" />
+        <option value="$PROJECT_DIR$/javascript/elements.js" />
+        <option value="$PROJECT_DIR$/documentation/pageexamples/radiobutton.html" />
       </list>
     </option>
   </component>
@@ -208,6 +203,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -236,60 +232,88 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Website-Edunet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Website-Edunet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Website-Edunet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Website-Edunet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="javascript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Website-Edunet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Website-Edunet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="documentation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Website-Edunet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Website-Edunet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="documentation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pageexamples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Website-Edunet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Website-Edunet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="datafiles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
-    <property name="options.lastSelected" value="org.intellij.plugins.intelliLang.InjectionsSettingsUI" />
+    <property name="options.lastSelected" value="database.main" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="FullScreen" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="recentsLimit" value="5" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Animesh\Documents\Edunet\Website-Edunet\datafiles\database" />
       <recent name="C:\Users\Animesh\Documents\Edunet\Website-Edunet\schools\admin\public" />
       <recent name="C:\Users\Animesh\Documents\Edunet\Website-Edunet\schools\admin\templates" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Animesh\Documents\Edunet\Website-Edunet\_licenses" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug._trial.html">
+    <configuration default="false" name="_trial.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Website-Edunet/stylesheets/_trial.html">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
       <method />
@@ -304,9 +328,6 @@
       <BehatRunner />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="cd2c58b1-145c-49ed-940c-c5f321053e9d" server_name="Localhost">
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -315,7 +336,17 @@
       <envs />
       <method />
     </configuration>
-    <list size="0" />
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="7e1b0380-5bec-416b-af7f-2eca141e1737" server_name="Localhost">
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug._trial.html" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug._trial.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
@@ -351,55 +382,33 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32736155" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32736155" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26096824" sideWeight="0.50121653" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32952693" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26096824" sideWeight="0.49878347" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17473525" sideWeight="0.80456024" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17473525" sideWeight="0.19381107" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32736155" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32736155" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39937106" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39937106" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328125" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39937106" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -424,118 +433,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/schools/admin/public/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dependencies/graphing-plugins/morris/morris-data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="833" max-vertical-offset="3961">
-          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/elements.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="1632">
-          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/elements.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1581">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="1649">
-          <caret line="47" column="86" selection-start-line="47" selection-start-column="86" selection-end-line="47" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/represent/perfume-factory/LICENSE">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3529412" vertical-offset="17" max-vertical-offset="3536">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.687395" vertical-offset="390" max-vertical-offset="1649">
-          <caret line="47" column="86" selection-start-line="47" selection-start-column="86" selection-end-line="47" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/represent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11950791" vertical-offset="0" max-vertical-offset="569">
-          <caret line="4" column="80" selection-start-line="4" selection-start-column="80" selection-end-line="4" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/events/eventform-1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.097561" vertical-offset="0" max-vertical-offset="4059">
-          <caret line="95" column="24" selection-start-line="95" selection-start-column="24" selection-end-line="95" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dependencies/graphing-plugins/morris/morris-data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="833" max-vertical-offset="3961">
-          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/footer_foundation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.04557641" vertical-offset="0" max-vertical-offset="373">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/events.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.047222223" vertical-offset="0" max-vertical-offset="595">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login-form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.73110723" vertical-offset="451" max-vertical-offset="1088">
-          <caret line="51" column="26" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/schools/admin/templates/footer-admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="582">
-          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/schools/admin/public/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5462069" vertical-offset="0" max-vertical-offset="725">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/schools/admin/templates/charts.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.9073034" vertical-offset="4667" max-vertical-offset="5511">
@@ -599,96 +496,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/postbook.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="825">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58670986" vertical-offset="232" max-vertical-offset="891">
-          <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="850">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitattributes">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.67266184" vertical-offset="0" max-vertical-offset="556">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34812286" vertical-offset="0" max-vertical-offset="629">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LICENSE.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.4" vertical-offset="0" max-vertical-offset="442">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/postbook.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3771331" vertical-offset="0" max-vertical-offset="586">
-          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9082734" vertical-offset="1127" max-vertical-offset="1751">
-          <caret line="96" column="3" selection-start-line="96" selection-start-column="3" selection-end-line="96" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/header_foundation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3418647" vertical-offset="0" max-vertical-offset="1411">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/login.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1071">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -696,15 +507,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.30091742" vertical-offset="32102" max-vertical-offset="107746">
           <caret line="1898" column="28" selection-start-line="1898" selection-start-column="28" selection-end-line="1898" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/register.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75064933" vertical-offset="0" max-vertical-offset="799">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -712,15 +514,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.044155844" vertical-offset="0" max-vertical-offset="1054">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/postbook.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34812286" vertical-offset="0" max-vertical-offset="586">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -728,25 +521,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1088">
           <caret line="24" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/elements.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="400" max-vertical-offset="2244">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/elements.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3494" max-vertical-offset="4437">
-          <caret line="238" column="21" selection-start-line="238" selection-start-column="21" selection-end-line="238" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -754,7 +528,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18328841" vertical-offset="0" max-vertical-offset="105298">
           <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -762,40 +535,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.3884058" vertical-offset="354" max-vertical-offset="1972">
           <caret line="49" column="80" selection-start-line="49" selection-start-column="80" selection-end-line="49" selection-end-column="80" />
-          <folding>
-            <element signature="e#214#256#0#HTML" expanded="true" />
-            <element signature="e#785#810#0#HTML" expanded="true" />
-            <element signature="e#964#1019#0#HTML" expanded="true" />
-            <element signature="e#1210#1234#0#HTML" expanded="true" />
-            <element signature="e#1297#1321#0#HTML" expanded="true" />
-            <element signature="e#1545#1571#0#HTML" expanded="true" />
-            <element signature="e#2782#2804#0#HTML" expanded="true" />
-            <element signature="e#2881#2908#0#HTML" expanded="true" />
-            <element signature="e#3018#3042#0#HTML" expanded="true" />
-            <element signature="e#3326#3351#0#HTML" expanded="true" />
-            <element signature="tag#div#1;tag#div#1;tag#div#0;tag#main#0" expanded="false" />
-            <element signature="e#3621#3646#0#HTML" expanded="true" />
-            <element signature="tag#div#2;tag#div#1;tag#div#0;tag#main#0" expanded="false" />
-            <element signature="e#3928#3953#0#HTML" expanded="true" />
-            <element signature="e#4234#4259#0#HTML" expanded="true" />
-            <element signature="e#4542#4567#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/portfolio.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="765">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/noabbreviate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7760417" vertical-offset="110" max-vertical-offset="748">
-          <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -803,45 +542,267 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/portfolio.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="59" max-vertical-offset="612">
-          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#43#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/postbook/postbook.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.423077" vertical-offset="208" max-vertical-offset="1156">
-          <caret line="19" column="63" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
-          <folding>
-            <element signature="e#342#383#0#HTML" expanded="true" />
-            <element signature="e#1152#1193#0#HTML" expanded="true" />
-            <element signature="e#3588#3606#0#HTML" expanded="true" />
-            <element signature="e#3676#3694#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/register-form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="4046">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/schools/stthomasschoolranchi/stylesheets/agency.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5065274" vertical-offset="13865" max-vertical-offset="14450">
+        <state vertical-scroll-proportion="0.37030718" vertical-offset="13842" max-vertical-offset="14450">
           <caret line="827" column="1" selection-start-line="827" selection-start-column="1" selection-end-line="827" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/stocks-finance/templates/apology.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="238">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/stocks-finance/templates/buy_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="306">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/stocks-finance/templates/register_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/stocks-finance/templates/login_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="425">
+          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/stocks-finance/assets/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39740258" vertical-offset="0" max-vertical-offset="385">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/stocks-finance/templates/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.192307" vertical-offset="355" max-vertical-offset="1071">
+          <caret line="38" column="48" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/stocks-finance/public/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33236995" vertical-offset="344" max-vertical-offset="850">
+          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/stocks-finance/includes/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21710527" vertical-offset="3234" max-vertical-offset="3842">
+          <caret line="198" column="23" selection-start-line="198" selection-start-column="23" selection-end-line="198" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/stocks-finance/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6924342" vertical-offset="208" max-vertical-offset="816">
+          <caret line="37" column="84" selection-start-line="37" selection-start-column="84" selection-end-line="37" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/stocks-finance/public/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6924342" vertical-offset="310" max-vertical-offset="918">
+          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/header_foundation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.028571429" vertical-offset="459" max-vertical-offset="1411">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/elements.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37030718" vertical-offset="5682" max-vertical-offset="6290">
+          <caret line="347" column="18" selection-start-line="347" selection-start-column="18" selection-end-line="347" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/constants.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="629">
+          <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="544">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.54642856" vertical-offset="187" max-vertical-offset="1071">
+          <caret line="29" column="80" selection-start-line="29" selection-start-column="80" selection-end-line="29" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2057">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datafiles/database/_user-jharvard.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.062043797" vertical-offset="0" max-vertical-offset="548">
+          <caret line="2" column="79" selection-start-line="2" selection-start-column="79" selection-end-line="2" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datafiles/database/edunet.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.419708" vertical-offset="0" max-vertical-offset="3315">
+          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/register.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="799">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/block.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="1284" max-vertical-offset="4301">
+          <caret line="87" column="16" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/web-forms.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="9784" max-vertical-offset="10370">
+          <caret line="587" column="16" selection-start-line="587" selection-start-column="16" selection-end-line="587" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/register-form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.923077" vertical-offset="738" max-vertical-offset="1564">
+          <caret line="54" column="84" selection-start-line="54" selection-start-column="84" selection-end-line="54" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.521978" vertical-offset="293" max-vertical-offset="1241">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/postbook.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12431444" vertical-offset="0" max-vertical-offset="547">
+          <caret line="4" column="51" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/postbook/postbook.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19012797" vertical-offset="321" max-vertical-offset="1156">
+          <caret line="25" column="58" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1734">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licences/LICENSE.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18345323" vertical-offset="0" max-vertical-offset="556">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.45051193" vertical-offset="264" max-vertical-offset="850">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/construction.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitattributes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3361582" vertical-offset="0" max-vertical-offset="476">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/licences/attributions.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.9" vertical-offset="0" max-vertical-offset="561">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="23" selection-end-column="1" />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35324675" vertical-offset="0" max-vertical-offset="697">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/elements.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2346">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/documentation/pageexamples/radiobutton.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43214285" vertical-offset="81" max-vertical-offset="663">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
           <folding />
         </state>
       </provider>

@@ -11,19 +11,21 @@
 
     require_once("constants.php");
 
-    /**
-     * Apologizes to user with message.
-     */
+/**
+ * Apologizes to user with message.
+ * @param $message
+ */
     function apologize($message)
     {
         render("apology.php", array("message" => $message));
         exit;
     }
 
-    /**
-     * Facilitates debugging by dumping contents of variable
-     * to browser.
-     */
+/**
+ * Facilitates debugging by dumping contents of variable
+ * to browser.
+ * @param $variable
+ */
     function dump($variable)
     {
         require("../templates/dump.php");
@@ -49,13 +51,15 @@
         session_destroy();
     }
 
-    /**
-     * Returns a stock by symbol (case-insensitively) else false if not found.
-     */
+/**
+ * Returns a stock by symbol (case-insensitively) else false if not found.
+ * @param $symbol
+ * @return array|bool
+ */
     function lookup($symbol)
     {
         // reject symbols that start with ^
-        if (preg_match("/^\^/", $symbol))
+        if (preg_match('/^\^/', $symbol))
         {
             return false;
         }

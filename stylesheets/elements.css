@@ -1,8 +1,10 @@
- /* 
+/*
  * Add the class el-radio to a label which has a radio input element inside it.
- * Make sure to also enable the javascript library and call the radiobutton() 
- * function, before you use this class.
+ * Make sure to also enable the javascript library and either use the HTML or
+ * JavaScript initializer or call the radiobutton() function, before you use this
+ * class.
  */
+
 .el-radio li label input {
 	height:20px;
 	display:none;
@@ -34,7 +36,11 @@
 .el-radio li label.button.warning.active:hover {
 	background-color:#af4e03;
 }
-@media only screen 
+.el-radio li label.button.hoverlight.active,
+.el-radio li label.button.hoverlight.active:hover {
+	background-color:#1d9dd9;
+}
+@media only screen
 {
 	.button-group li {
 		width:100%;
@@ -49,7 +55,7 @@
 
 /*
  * Use the hoverlight class to usually with small block-like divs, to make them go from 
- * white to blue when hovered on, and the text from black or grey to white, tand give an 
+ * white to blue when hovered on, and the text from black or grey to white, and give an
  * appearance of being selected. Color goes back to white when not hovering on it.
  */
 div.hoverlight div
@@ -59,10 +65,11 @@ div.hoverlight div
 	transition-property: all;
 	transition-timing-function: linear;
 	cursor:pointer;
+	background-color:#ffffff;
 }
 div.hoverlight div:hover {
 	background-color:#008cba;
-	color:#FFF;
+	color:#ffffff;
 }
 div.hoverlight div:hover h1,
 div.hoverlight div:hover h2,
@@ -74,7 +81,24 @@ div.hoverlight div:hover small,
 div.hoverlight div:hover div,
 div.hoverlight div:hover span,
 div.hoverlight div:hover p {
-	color:#FFF;
+	color:#ffffff;
+}
+.button.hoverlight {
+	background-color: #ffffff;
+	color:#333333;
+}
+.button.hoverlight:hover {
+	background-color:#008cba;
+	color:#ffffff;
+}
+
+/*
+ * Use this on a div contained within a grid. The shadow-box class adds
+ * a diffused shadow all round the div element. You can add extra classes
+ * to control the positioning, size and darkness of shadow.
+ */
+.shadow-box {
+	box-shadow: 0 0 50px 1px #888888;
 }
 
 /*
@@ -101,7 +125,7 @@ div.hoverlight div:hover p {
 
 /* 
  * Have an anchor tag nested in a div with class side-tab.
- * This element uses -webkit properties, to check for browser compatability issues.
+ * This element uses -webkit properties, to check for browser compatibility issues.
  */
 .side-tab {
 	-webkit-transform: matrix(6.12323399573677e-17, -1, 1, 6.12323399573677e-17, 0, 0);
@@ -160,8 +184,8 @@ main.black,
 /*
  * Branding colors, you can add classes like social-github or social-googleplus to set
  * your button color to the brand color of the said service. To use it on an element to
- * which you have not applie the button class, add the class colors and use classes like
- * black-github or red-googleplus or blue-facebook.
+ * which you have not applies the button class, add the class colors and use classes like
+ * black-github or red-youtube or blue-facebook.
  */
 .colors.black-github,
 .button.social-github {
@@ -198,10 +222,10 @@ main.black,
 	color:#FFF;
 	background-color:#00aced;
 }
-.colors.green-edunet,
+.colors.grey-edunet,
 .button.social-edunet {
 	color:#FFF;
-	background-color:#227010;
+	background-color:#605651;
 }
 .colors.orange-stackoverflow,
 .button.social-stackoverflow {
@@ -216,8 +240,55 @@ main.black,
 .button.social-instagram:hover,
 .button.social-stackoverflow:hover,
 .button.social-twitter:hover,
-.button.social-vimeo:hover {
+.button.social-edunet:hover {
 	opacity:0.85;
+}
+
+/*
+ * Classes to position content, in addition to the basic grid layout provided by Zurb
+ * Foundation, but may also work after a few tweaks with Bootstrap or Angular Material
+ * Design.
+ */
+.flex-row-medium {
+	margin: 10%;
+}
+@media only screen and (min-width: 40.063em) {
+	.flex-row-medium {
+		margin: 5%;
+	}
+}
+
+.stick-left {
+	position: fixed;
+	left: 0;
+	width: auto;
+}
+.stick-right {
+	position: fixed;
+	right: 0;
+	width: auto;
+
+}
+.stick-top {
+	position: fixed;
+	top: 0;
+	width: auto;
+}
+.stick-bottom {
+	position: fixed;
+	bottom: 0;
+	width: auto;
+}
+.non-stick {
+	position: relative;
+}
+
+/*
+ * Styling classes for Bootstrap like radius in foundation. To be applied to buttons and
+ * divisions. You can use added classes for colors, containers, etc.
+ */
+.radius {
+	border-radius: 10%;
 }
 
 /*
@@ -226,13 +297,16 @@ main.black,
  * element you desire the behaviour from.
  */
 .no-margin {
-	margin:0;
+	margin: 0;
 }
 .no-padding {
-	padding:0;
+	padding: 0;
 }
 .full-width {
-	width:100%;
+	width: 100%;
+}
+.text-uppercase {
+	text-transform: uppercase;
 }
 
 /*
@@ -245,12 +319,47 @@ img.img-circle {
 }
 
 /*
- * Text Styling - if yout header texts extend out into more than one line, use these classes to
+ * Text Styling - if your header texts extend out into more than one line, use these classes to
  * decrease the line height and make it look coherent.
  */
 h1.condensed {
-	line-height:50px;
+	line-height: 50px;
 }
 h2.condensed {
-	line-height:30px;
+	line-height: 30px;
+}
+
+/*
+ * Custom Navigation bars imitating the ones used on some popular websites.
+ */
+nav.flat {
+	position: fixed;
+	width: 100%;
+	z-index: 500;
+	top: 0;
+}
+nav.flat ul {
+	list-style: none;
+	margin: 0;
+	background-color: #666666;
+	color: #ffffff;
+}
+nav.flat ul li {
+	padding: 15px;
+	margin: 0;
+	display: inline-block;
+	transition-duration: 0.1s;
+	transition-property: all;
+	transition-timing-function: linear;
+}
+nav.flat ul li:hover {
+	background-color: #000000;
+}
+nav.flat ul li.active {
+	background-color: #000000;
+}
+nav.flat ul li a,
+nav.flat ul li a:hover,
+nav.flat ul li a:visited {
+	color: #ffffff;
 }

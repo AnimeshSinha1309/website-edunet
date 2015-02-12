@@ -29,7 +29,7 @@ If you want a different URL to access our website, you can edit the hosts file, 
 for your system. On a Windows machine, you can find it in C:/Windows/System32/drivers/etc/hosts, and
 on a linux machine, in the folder /etc/hosts. Open the file, and append the following line to it:
 
-        127.0.0.1       www.sample-url.com
+        127.0.0.1       local.sample-url.com
     
 Make sure to save the file in the same folder, and with the same name. If windows doesn't allow saving
 there, save it somewhere else, and copy it to the original folder, replacing the existing file.

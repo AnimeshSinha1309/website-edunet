@@ -6,6 +6,10 @@ Options -Indexes
 Order Deny,Allow
 Deny from All
 </Files>
+<Files *functions.php>
+Order Deny,Allow
+Deny from All
+</Files>
 <Files *.xml>
 Order Deny,Allow
 Deny from All
