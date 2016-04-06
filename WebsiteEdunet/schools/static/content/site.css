@@ -1,0 +1,10 @@
+﻿a.border-box img.img-circle {
+    opacity:0.6;
+	transition-delay: 0s;
+	transition-duration: 0.3s;
+	transition-property: all;
+	transition-timing-function: linear;
+}
+a.border-box:hover img.img-circle {
+    opacity:1.0;
+}
