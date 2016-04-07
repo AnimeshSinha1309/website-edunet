@@ -47,6 +47,8 @@
     <Compile Include="WebsiteEdunet\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="db.sqlite3" />
+    <Content Include="favicon.ico" />
     <Content Include="requirements.txt" />
     <Content Include="schools\static\content\bootstrap.css" />
     <Content Include="schools\static\content\bootstrap.min.css" />
@@ -78,6 +80,9 @@
     <Content Include="schools\static\scripts\modernizr-2.6.2.js" />
     <Content Include="schools\static\scripts\respond.js" />
     <Content Include="schools\static\scripts\respond.min.js" />
+    <Content Include="storage\schools\display\jvmshyamli.jpg" />
+    <Content Include="storage\schools\display\stthomas.jpg" />
+    <Content Include="storage\schools\display\stxaviers.jpg" />
     <Content Include="schools\templates\schools\school_list.html" />
   </ItemGroup>
   <ItemGroup>
@@ -89,6 +94,9 @@
     <Folder Include="schools\static\images\" />
     <Folder Include="schools\static\images\displaypics\" />
     <Folder Include="schools\static\scripts\" />
+    <Folder Include="storage\" />
+    <Folder Include="storage\schools\" />
+    <Folder Include="storage\schools\display\" />
     <Folder Include="schools\templates\" />
     <Folder Include="schools\templates\jvmshyamli\" />
     <Folder Include="schools\templates\stxaviers\" />

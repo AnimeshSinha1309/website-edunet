@@ -1,0 +1,557 @@
+Microsoft Windows [Version 10.0.10586]
+(c) 2015 Microsoft Corporation. All rights reserved.
+
+C:\Users\Animesh Sinha>I:
+
+I:\>cd Workspace\WebsiteEdunet\WebsiteEdunet
+
+I:\Workspace\WebsiteEdunet\WebsiteEdunet>cd..
+
+I:\Workspace\WebsiteEdunet>django-admin startproject WebsiteEdunet WebsiteEdunet
+
+I:\Workspace\WebsiteEdunet>cd WebsiteEdunet
+
+I:\Workspace\WebsiteEdunet\WebsiteEdunet>django-admin startapp schools
+
+I:\Workspace\WebsiteEdunet\WebsiteEdunet>dir
+
+I:\Workspace\WebsiteEdunet\WebsiteEdunet>dir
+ Volume in drive I is Seagate
+ Volume Serial Number is 50DC-5860
+
+ Directory of I:\Workspace\WebsiteEdunet\WebsiteEdunet
+
+04/06/2016  10:36 AM    <DIR>          .
+04/06/2016  10:36 AM    <DIR>          ..
+04/06/2016  10:22 AM    <DIR>          env
+04/06/2016  10:30 AM               256 manage.py
+04/06/2016  10:17 AM    <DIR>          obj
+04/27/2015  10:02 AM                 8 requirements.txt
+04/06/2016  12:00 PM    <DIR>          schools
+04/06/2016  11:56 AM    <DIR>          WebsiteEdunet
+04/06/2016  10:23 AM             4,291 WebsiteEdunet.pyproj
+               3 File(s)          4,555 bytes
+               6 Dir(s)  516,342,558,720 bytes free
+
+I:\Workspace\WebsiteEdunet\WebsiteEdunet>python manage.py makemigrations schools
+SystemCheckError: System check identified some issues:
+
+ERRORS:
+schools.Schools.picture: (fields.E210) Cannot use ImageField because Pillow is not installed.
+        HINT: Get Pillow at https://pypi.python.org/pypi/Pillow or run command "pip install Pillow".
+
+I:\Workspace\WebsiteEdunet\WebsiteEdunet>python manage.py makemigrations schools
+Migrations for 'schools':
+  0001_initial.py:
+    - Create model Schools
+    - Create model Student
+
+I:\Workspace\WebsiteEdunet\WebsiteEdunet>python manage.py migrate
+Operations to perform:
+  Apply all migrations: schools, sessions, admin, contenttypes, auth
+Running migrations:
+  Rendering model states... DONE
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying schools.0001_initial... OK
+  Applying sessions.0001_initial... OK
+
+I:\Workspace\WebsiteEdunet\WebsiteEdunet>python manage.py createsuperuser
+Username (leave blank to use 'animeshsinha'):
+Email address: AnimeshSinha1309@gmail.com
+Password:
+Password (again):
+Superuser created successfully.
+
+I:\Workspace\WebsiteEdunet\WebsiteEdunet>python manage.py makemigrations schools
+Traceback (most recent call last):
+  File "manage.py", line 10, in <module>
+    execute_from_command_line(sys.argv)
+  File "C:\Users\Animesh Sinha\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\core\management\__init__.py", line 353, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\Animesh Sinha\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\core\management\__init__.py", line 327, in execute
+    django.setup()
+  File "C:\Users\Animesh Sinha\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\Animesh Sinha\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\apps\registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "C:\Users\Animesh Sinha\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\apps\config.py", line 202, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Users\Animesh Sinha\AppData\Local\Programs\Python\Python35-32\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 662, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "I:\Workspace\WebsiteEdunet\WebsiteEdunet\schools\models.py", line 10, in <module>
+    class Student(models.Model):
+  File "I:\Workspace\WebsiteEdunet\WebsiteEdunet\schools\models.py", line 11, in Student
+    school = models.ForeignKey(Schools)
+NameError: name 'Schools' is not defined
+
+I:\Workspace\WebsiteEdunet\WebsiteEdunet>python manage.py makemigrations schools
+Did you rename the schools.Schools model to School? [y/N] Y
+Migrations for 'schools':
+  0002_auto_20160406_1333.py:
+    - Rename model Schools to School
+
+I:\Workspace\WebsiteEdunet\WebsiteEdunet>python manage.py migrate
+Operations to perform:
+  Apply all migrations: sessions, auth, admin, schools, contenttypes
+Running migrations:
+  Rendering model states... DONE
+  Applying schools.0002_auto_20160406_1333... OK
+The following content types are stale and need to be deleted:
+
+    schools | schools
+
+Any objects related to these content types by a foreign key will also
+be deleted. Are you sure you want to delete these content types?
+If you're unsure, answer 'no'.
+
+    Type 'yes' to continue, or 'no' to cancel: yes
+
+I:\Workspace\WebsiteEdunet\WebsiteEdunet>pip install Pillow
+Collecting Pillow
+  Downloading Pillow-3.2.0-cp35-none-win32.whl (1.3MB)
+    100% |################################| 1.3MB 18kB/s
+Installing collected packages: Pillow
+Successfully installed Pillow-3.2.0
+You are using pip version 7.1.2, however version 8.1.1 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+I:\Workspace\WebsiteEdunet\WebsiteEdunet>notepad
+
+Microsoft Windows [Version 10.0.10586]
+(c) 2015 Microsoft Corporation. All rights reserved.
+
+C:\Users\Animesh Sinha>I:
+
+I:\>cd Workspace\WebsiteEdunet\WebsiteEdunet
+
+I:\Workspace\WebsiteEdunet\WebsiteEdunet>python manage.py makemigrations schools
+You are trying to add a non-nullable field 'picture' to school without a default; we can't do that (the database needs something to populate existing rows).
+Please select a fix:
+ 1) Provide a one-off default now (will be set on all existing rows)
+ 2) Quit, and let me add a default in models.py
+Select an option: 1
+Please enter the default value now, as valid Python
+The datetime and django.utils.timezone modules are available, so you can do e.g. timezone.now()
+>>> /DataRoot/schools/school/displayPics/defaultavatar.png
+Invalid input: invalid syntax (<string>, line 1)
+>>> /DataRoot/schools/school/displayPics/defaultavatar.png
+Invalid input: invalid syntax (<string>, line 1)
+>>> /DataRoot/schools/school/displayPics/defaultavatar
+Invalid input: invalid syntax (<string>, line 1)
+>>> 2
+Migrations for 'schools':
+  0003_school_picture.py:
+    - Add field picture to school
+
+I:\Workspace\WebsiteEdunet\WebsiteEdunet>python manage.py makemigrations schools
+Migrations for 'schools':
+  0004_auto_20160406_1710.py:
+    - Alter field picture on school
+
+I:\Workspace\WebsiteEdunet\WebsiteEdunet>python manage.py migrate
+Operations to perform:
+  Apply all migrations: contenttypes, schools, sessions, auth, admin
+Running migrations:
+  Applying schools.0003_school_picture... OK
+  Applying schools.0004_auto_20160406_1710... OK
+
+I:\Workspace\WebsiteEdunet\WebsiteEdunet>pip install Pillow
+Requirement already satisfied (use --upgrade to upgrade): Pillow in c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages
+You are using pip version 7.1.2, however version 8.1.1 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+I:\Workspace\WebsiteEdunet\WebsiteEdunet>netsh wlan start hostednetwork
+The hosted network started.
+
+Microsoft Windows [Version 10.0.10586]
+(c) 2015 Microsoft Corporation. All rights reserved.
+
+C:\Users\Animesh Sinha>pip freeze
+Django==1.9.4
+Pillow==3.2.0
+You are using pip version 7.1.2, however version 8.1.1 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+C:\Users\Animesh Sinha>pip show Pillow
+---
+Metadata-Version: 2.0
+Name: Pillow
+Version: 3.2.0
+Summary: Python Imaging Library (Fork)
+Home-page: http://python-pillow.org
+Author: Alex Clark (Fork Author)
+Author-email: aclark@aclark.net
+License: Standard PIL License
+Location: c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages
+Requires:
+You are using pip version 7.1.2, however version 8.1.1 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+C:\Users\Animesh Sinha>python -m pip install --upgrade pip
+Collecting pip
+  Downloading pip-8.1.1-py2.py3-none-any.whl (1.2MB)
+    100% |################################| 1.2MB 17kB/s
+Installing collected packages: pip
+  Found existing installation: pip 7.1.2
+    Uninstalling pip-7.1.2:
+      Successfully uninstalled pip-7.1.2
+Successfully installed pip-8.1.1
+
+C:\Users\Animesh Sinha>I:
+
+I:\>cd Workspace\WebsiteEdunet\WebsiteEdunet
+
+I:\Workspace\WebsiteEdunet\WebsiteEdunet>python manage.py makemigrations
+Migrations for 'schools':
+  0005_auto_20160407_0115.py:
+    - Alter field picture on school
+
+I:\Workspace\WebsiteEdunet\WebsiteEdunet>python manage.py migrate
+Operations to perform:
+  Apply all migrations: contenttypes, auth, admin, sessions, schools
+Running migrations:
+  Applying schools.0005_auto_20160407_0115... OK
+
+I:\Workspace\WebsiteEdunet\WebsiteEdunet>python manage.py migrate
+Operations to perform:
+  Apply all migrations: schools, admin, auth, sessions, contenttypes
+Running migrations:
+  No migrations to apply.
+  Your models have changes that are not yet reflected in a migration, and so won't be applied.
+  Run 'manage.py makemigrations' to make new migrations, and then re-run 'manage.py migrate' to apply them.
+
+I:\Workspace\WebsiteEdunet\WebsiteEdunet>python manage.py makemigrations
+Migrations for 'schools':
+  0006_remove_school_picture.py:
+    - Remove field picture from school
+
+I:\Workspace\WebsiteEdunet\WebsiteEdunet>python manage.py migrate
+Operations to perform:
+  Apply all migrations: auth, sessions, admin, schools, contenttypes
+Running migrations:
+  Applying schools.0006_remove_school_picture... OK
+
+Microsoft Windows [Version 10.0.10586]
+(c) 2015 Microsoft Corporation. All rights reserved.
+
+C:\Users\Animesh Sinha>pip uninstall Pillow
+Uninstalling Pillow-3.2.0:
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__init__.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\__init__.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\_binary.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\_util.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\bdffontfile.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\bmpimageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\bufrstubimageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\containerio.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\curimageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\dcximageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\ddsimageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\epsimageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\exiftags.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\features.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\fitsstubimageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\fliimageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\fontfile.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\fpximageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\fteximageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\gbrimageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\gdimagefile.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\gifimageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\gimpgradientfile.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\gimppalettefile.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\gribstubimageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\hdf5stubimageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\icnsimageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\icoimageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\image.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\imagechops.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\imagecms.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\imagecolor.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\imagedraw.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\imagedraw2.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\imageenhance.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\imagefile.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\imagefilter.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\imagefont.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\imagegrab.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\imagemath.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\imagemode.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\imagemorph.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\imageops.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\imagepalette.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\imagepath.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\imageqt.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\imagesequence.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\imageshow.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\imagestat.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\imagetk.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\imagetransform.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\imagewin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\imimageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\imtimageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\iptcimageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\jpeg2kimageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\jpegimageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\jpegpresets.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\mcidasimageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\micimageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\mpegimageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\mpoimageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\mspimageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\olefileio.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\palettefile.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\palmimageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\pcdimageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\pcffontfile.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\pcximageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\pdfimageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\pixarimageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\pngimageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\ppmimageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\psdimageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\psdraw.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\pyaccess.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\sgiimageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\spiderimageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\sunimageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\tario.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\tgaimageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\tiffimageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\tifftags.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\walimagefile.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\webpimageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\wmfimageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\xbmimageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\xpmimageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\__pycache__\xvthumbimageplugin.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\_binary.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\_imaging.cp35-win32.pyd
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\_imagingcms.cp35-win32.pyd
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\_imagingft.cp35-win32.pyd
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\_imagingmath.cp35-win32.pyd
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\_imagingmorph.cp35-win32.pyd
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\_imagingtk.cp35-win32.pyd
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\_util.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\_webp.cp35-win32.pyd
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\bdffontfile.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\bmpimageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\bufrstubimageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\containerio.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\curimageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\dcximageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\ddsimageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\epsimageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\exiftags.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\features.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\fitsstubimageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\fliimageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\fontfile.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\fpximageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\fteximageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\gbrimageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\gdimagefile.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\gifimageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\gimpgradientfile.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\gimppalettefile.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\gribstubimageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\hdf5stubimageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\icnsimageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\icoimageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\image.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\imagechops.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\imagecms.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\imagecolor.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\imagedraw.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\imagedraw2.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\imageenhance.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\imagefile.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\imagefilter.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\imagefont.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\imagegrab.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\imagemath.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\imagemode.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\imagemorph.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\imageops.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\imagepalette.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\imagepath.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\imageqt.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\imagesequence.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\imageshow.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\imagestat.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\imagetk.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\imagetransform.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\imagewin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\imimageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\imtimageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\iptcimageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\jpeg2kimageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\jpegimageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\jpegpresets.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\mcidasimageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\micimageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\mpegimageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\mpoimageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\mspimageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\olefileio-readme.md
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\olefileio.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\palettefile.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\palmimageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\pcdimageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\pcffontfile.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\pcximageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\pdfimageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\pixarimageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\pngimageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\ppmimageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\psdimageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\psdraw.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\pyaccess.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\sgiimageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\spiderimageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\sunimageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\tario.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\tgaimageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\tiffimageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\tifftags.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\walimagefile.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\webpimageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\wmfimageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\xbmimageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\xpmimageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pil\xvthumbimageplugin.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pillow-3.2.0.dist-info\description.rst
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pillow-3.2.0.dist-info\metadata
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pillow-3.2.0.dist-info\metadata.json
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pillow-3.2.0.dist-info\record
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pillow-3.2.0.dist-info\top_level.txt
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pillow-3.2.0.dist-info\wheel
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pillow-3.2.0.dist-info\zip-safe
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\scripts\__pycache__\createfontdatachunk.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\scripts\__pycache__\enhancer.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\scripts\__pycache__\explode.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\scripts\__pycache__\gifmaker.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\scripts\__pycache__\painter.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\scripts\__pycache__\pilconvert.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\scripts\__pycache__\pildriver.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\scripts\__pycache__\pilfile.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\scripts\__pycache__\pilfont.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\scripts\__pycache__\pilprint.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\scripts\__pycache__\player.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\scripts\__pycache__\thresholder.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\scripts\__pycache__\viewer.cpython-35.pyc
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\scripts\createfontdatachunk.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\scripts\enhancer.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\scripts\explode.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\scripts\gifmaker.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\scripts\painter.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\scripts\pilconvert.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\scripts\pildriver.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\scripts\pilfile.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\scripts\pilfont.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\scripts\pilprint.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\scripts\player.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\scripts\thresholder.py
+  c:\users\animesh sinha\appdata\local\programs\python\python35-32\scripts\viewer.py
+Proceed (y/n)? y
+  Successfully uninstalled Pillow-3.2.0
+
+C:\Users\Animesh Sinha>I:
+
+I:\>cd Workspace\WebsiteEdunet\WebsiteEdunet
+
+I:\Workspace\WebsiteEdunet\WebsiteEdunet>python manage.py makemigrations
+SystemCheckError: System check identified some issues:
+
+ERRORS:
+schools.School.picture: (fields.E210) Cannot use ImageField because Pillow is not installed.
+        HINT: Get Pillow at https://pypi.python.org/pypi/Pillow or run command "pip install Pillow".
+
+I:\Workspace\WebsiteEdunet\WebsiteEdunet>pip uninstall PIL
+Cannot uninstall requirement PIL, not installed
+
+I:\Workspace\WebsiteEdunet\WebsiteEdunet>brew install libtiff libjpeg webp little-cms2
+'brew' is not recognized as an internal or external command,
+operable program or batch file.
+
+I:\Workspace\WebsiteEdunet\WebsiteEdunet>easy-install --upgrade pillow
+'easy-install' is not recognized as an internal or external command,
+operable program or batch file.
+
+I:\Workspace\WebsiteEdunet\WebsiteEdunet>easy_install --upgrade pillow
+Searching for pillow
+Reading https://pypi.python.org/simple/pillow/
+Best match: Pillow 3.2.0
+Downloading https://pypi.python.org/packages/3.5/P/Pillow/Pillow-3.2.0-py3.5-win32.egg#md5=b95fcae87e4d49192131b957274e7d40
+Processing Pillow-3.2.0-py3.5-win32.egg
+Moving Pillow-3.2.0-py3.5-win32.egg to c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages
+Adding Pillow 3.2.0 to easy-install.pth file
+Installing enhancer.py script to c:\users\animesh sinha\appdata\local\programs\python\python35-32\Scripts
+Installing gifmaker.py script to c:\users\animesh sinha\appdata\local\programs\python\python35-32\Scripts
+Installing pilfont.py script to c:\users\animesh sinha\appdata\local\programs\python\python35-32\Scripts
+Installing painter.py script to c:\users\animesh sinha\appdata\local\programs\python\python35-32\Scripts
+Installing thresholder.py script to c:\users\animesh sinha\appdata\local\programs\python\python35-32\Scripts
+Installing pilconvert.py script to c:\users\animesh sinha\appdata\local\programs\python\python35-32\Scripts
+Installing player.py script to c:\users\animesh sinha\appdata\local\programs\python\python35-32\Scripts
+Installing explode.py script to c:\users\animesh sinha\appdata\local\programs\python\python35-32\Scripts
+Installing createfontdatachunk.py script to c:\users\animesh sinha\appdata\local\programs\python\python35-32\Scripts
+Installing pildriver.py script to c:\users\animesh sinha\appdata\local\programs\python\python35-32\Scripts
+Installing viewer.py script to c:\users\animesh sinha\appdata\local\programs\python\python35-32\Scripts
+Installing pilprint.py script to c:\users\animesh sinha\appdata\local\programs\python\python35-32\Scripts
+Installing pilfile.py script to c:\users\animesh sinha\appdata\local\programs\python\python35-32\Scripts
+
+Installed c:\users\animesh sinha\appdata\local\programs\python\python35-32\lib\site-packages\pillow-3.2.0-py3.5-win32.egg
+Processing dependencies for pillow
+Finished processing dependencies for pillow
+
+I:\Workspace\WebsiteEdunet\WebsiteEdunet>python manage.py makemigrations
+You are trying to add a non-nullable field 'picture' to school without a default; we can't do that (the database needs something to populate existing rows).
+Please select a fix:
+ 1) Provide a one-off default now (will be set on all existing rows)
+ 2) Quit, and let me add a default in models.py
+Select an option: 2
+
+I:\Workspace\WebsiteEdunet\WebsiteEdunet>python manage.py makemigrations
+Migrations for 'schools':
+  0007_school_picture.py:
+    - Add field picture to school
+
+I:\Workspace\WebsiteEdunet\WebsiteEdunet>python manage.py migrate
+Operations to perform:
+  Apply all migrations: sessions, admin, schools, contenttypes, auth
+Running migrations:
+  Applying schools.0007_school_picture... OK
+
+I:\Workspace\WebsiteEdunet\WebsiteEdunet>python manage.py collectstatic
+Traceback (most recent call last):
+  File "manage.py", line 10, in <module>
+    execute_from_command_line(sys.argv)
+  File "C:\Users\Animesh Sinha\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\core\management\__init__.py", line 353, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\Animesh Sinha\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\core\management\__init__.py", line 345, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "C:\Users\Animesh Sinha\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\core\management\__init__.py", line 195, in fetch_command
+    klass = load_command_class(app_name, subcommand)
+  File "C:\Users\Animesh Sinha\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\core\management\__init__.py", line 40, in load_command_class
+    return module.Command()
+  File "C:\Users\Animesh Sinha\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\contrib\staticfiles\management\commands\collectstatic.py", line 32, in __init__
+    self.storage.path('')
+  File "C:\Users\Animesh Sinha\AppData\Local\Programs\Python\Python35-32\lib\site-packages\django\contrib\staticfiles\storage.py", line 48, in path
+    raise ImproperlyConfigured("You're using the staticfiles app "
+django.core.exceptions.ImproperlyConfigured: You're using the staticfiles app without having set the STATIC_ROOT setting to a filesystem path.
