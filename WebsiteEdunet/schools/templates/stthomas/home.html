@@ -1,0 +1,150 @@
+{% extends 'stthomas/layout.html' %}
+
+{% block content %}
+
+    {% load staticfiles %}
+
+    <!-- Carousel -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="float:inherit;">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item">
+                <img src="{% static 'images/stthomas/showcase-school-01.jpg' %}" alt="First slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Heading Here.</h1>
+                        <p>Subtitles Here. Each subtitle should be around 2 lines long, no more no less. It can be different or the same for multiple images.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item active">
+                <img src="{% static 'images/stthomas/showcase-school-02.jpg' %}" alt="Second slide" />
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Another One.</h1>
+                        <p>Subtitles Here. Each subtitle should be around 2 lines long, no more no less. It can be different or the same for multiple images.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAFVVVQAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>One more for good measure.</h1>
+                        <p>More such images and heading can be added within a minute. So very little coding is required it won't be an issue.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    
+    <!-- Marketing messaging and featurettes -->
+    <div class="container marketing">
+      <!-- Three columns of text below the carousel -->
+        <div class="row">
+            <div class="col-lg-4">
+                <img class="img-circle" src="{% static 'images/stthomas/home-admissions.jpg' %}" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+                <h2>Admission Sessions</h2>
+                <p>Date and time of interactive sessions for admissions of KG-1 and KG-2 sudents (Session 2015 - 2016) are now available. You can also download the admission prospectus here.</p>
+                <p><a class="btn btn-default" href="#" role="button">View Details »</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img class="img-circle" src="{% static 'images/stthomas/home-website.jpg' %}" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+                <h2>Building Website</h2>
+                <p>We are building a new website for the schools, so we need help from students to develop and maintain it, mainly on the front end. Want to help with adding content, stylizing pages, or just giving some ideas.</p>
+                <p><a class="btn btn-default" href="#" role="button">Join in »</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img class="img-circle" src="{% static 'images/stthomas/home-events.jpg' %}" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+                <h2>Events Calender</h2>
+                <p>Both Academic and Sports calenders for the academic year 2015 - 2016 have been released, and are available as HTML, PDF, or can be integrated into your Google or Microsoft calenders. So plan out the upcoming year.</p>
+                <p><a class="btn btn-default" href="#" role="button">View Listing »</a></p>
+            </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">ICSE/ISC Results announced. <span class="text-muted">Great results for our school.</span></h2>
+                <p class="lead">This can probably contain all the stuff about the toppers and how good the result really is. I expect it to be a little detailed, not too much, but about an 4-5 lined paragraph.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" src="{% static 'images/stthomas/home-results.jpg' %}" data-holder-rendered="true" alt="Image: Results">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" src="{% static 'images/stthomas/home-sports.jpg' %}" data-holder-rendered="true" alt="Image: Sports">
+            </div>
+            <div class="col-md-7">
+                <h2 class="featurette-heading">ISCE Zonal Meet. <span class="text-muted">Everything fired up for it.</span></h2>
+                <p class="lead">Now this should be about the preparation, or maybe the participants, and all the events they have prepared for. All thiese have to be links, to blog like pages with more details, with videos and with images.</p>
+		    </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Courseware Focus. <span class="text-muted">Syllabi for the academic year.</span></h2>
+                <p class="lead">Now, I did not find much that I coud put here, so these are just placeholders. Something more relevant will be put here, so this is just for now. Online link to the syllabus should be put here.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" src="{% static 'images/stthomas/home-course.jpg' %}" data-holder-rendered="true" alt="Image: Courseware">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+
+      <!-- FOOTER -->
+        <footer>
+
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p>© ISO: 9001-2000 Educational Institution. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        </footer>
+
+    </div><!-- /.container -->
+
+    <div id="global-zeroclipboard-html-bridge" class="global-zeroclipboard-container" title="" style="position: absolute; left: 0px; top: -9999px; width: 15px; height: 15px; z-index: 999999999;" data-original-title="Copy to clipboard">
+          <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="global-zeroclipboard-flash-bridge" width="100%" height="100%">
+                 <param name="movie" value="/assets/flash/ZeroClipboard.swf?noCache=1416949783179">
+                 <param name="allowScriptAccess" value="sameDomain">
+                 <param name="scale" value="exactfit">
+                 <param name="loop" value="false">
+                 <param name="menu" value="false">
+                 <param name="quality" value="best">
+                 <param name="bgcolor" value="#ffffff">
+                 <param name="wmode" value="transparent">
+                 <param name="flashvars" value="trustedOrigins=getbootstrap.com%2C%2F%2Fgetbootstrap.com%2Chttp%3A%2F%2Fgetbootstrap.com">
+                 <embed src="/assets/flash/ZeroClipboard.swf?noCache=1416949783179" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="100%" height="100%" name="global-zeroclipboard-flash-bridge" allowscriptaccess="sameDomain" allowfullscreen="false" type="application/x-shockwave-flash" wmode="transparent" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="trustedOrigins=getbootstrap.com%2C%2F%2Fgetbootstrap.com%2Chttp%3A%2F%2Fgetbootstrap.com" scale="exactfit">
+          </object>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500" preserveAspectRatio="none" style="visibility: hidden; position: absolute; top: -100%; left: -100%;">
+        <defs></defs>
+        <text x="0" y="23" style="font-weight:bold;font-size:23pt;font-family:Arial, Helvetica, Open Sans, sans-serif;dominant-baseline:middle">500x500</text>
+    </svg>
+
+{% endblock %}
