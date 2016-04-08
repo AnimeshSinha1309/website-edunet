@@ -43,7 +43,7 @@
       <div class="row" style="margin-top:50px;">
         {% for school in object_list %}
           <div class="large-4 columns">
-	        <a href="/schools/" class="text-center border-box columns">
+	        <a href="/schools/{{ school.username }}/" class="text-center border-box columns">
               {% with 'images/displaypics/'|add:school.username|add:'.jpg' as image %}
 	          <img src="{% static image %}" class="img-circle" width="150" height="150" />
               {% endwith %}
